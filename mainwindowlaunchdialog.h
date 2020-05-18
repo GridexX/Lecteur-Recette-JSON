@@ -15,6 +15,13 @@ public:
     explicit MainWindowLaunchDialog(QWidget *parent = nullptr);
     ~MainWindowLaunchDialog();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_actionOuvrir_un_fichier_triggered();
+
+    void on_actionQuitter_triggered();
+
 private:
     Ui::MainWindowLaunchDialog *ui;
 };
