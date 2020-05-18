@@ -16,13 +16,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    lecture_json.cpp \
     main.cpp \
     mainwindow.cpp \
-    mainwindowlaunchdialog.cpp
+    mainwindowlaunchdialog.cpp \
+    recette.cpp
 
 HEADERS += \
+    lecture_json.h \
     mainwindow.h \
-    mainwindowlaunchdialog.h
+    mainwindowlaunchdialog.h \
+    recette.h
 
 FORMS += \
     mainwindow.ui \
