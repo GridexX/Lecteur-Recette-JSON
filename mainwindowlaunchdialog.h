@@ -22,6 +22,9 @@ private slots:
 
     void on_actionQuitter_triggered();
 
+    //slots pour modifs infos
+
+
 private:
     Ui::MainWindowLaunchDialog *ui;
 };

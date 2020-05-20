@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Infos">
      <attribute name="title">
@@ -77,7 +77,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="descLabel">
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -98,6 +98,26 @@
        </item>
        <item>
         <widget class="QLabel" name="keywordLabel">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Temps</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="timeLabel">
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -134,7 +154,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="listeLabel">
+        <widget class="QLabel" name="lIngLabel">
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -234,7 +254,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>20</height>
+     <height>35</height>
     </rect>
    </property>
   </widget>

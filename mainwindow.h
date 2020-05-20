@@ -13,19 +13,28 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr, int _nbEtapes=0);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    //inline void setEtapes(int _nbEtapes){nbEtapes=_nbEtapes;}
-    //inline int getEtapes(){return nbEtapes;}
+
 
 private slots:
     void on_comboEtapes_currentIndexChanged(int index);
 
+
+
+
 private:
     Ui::MainWindow *ui;
 
-    int nbEtapes;
+public slots :
+    //slots pour modifs les labels
 
+    void modifNom(QString);
+    void modifDesc(QString);
+    void modifIng(QStringList);
+    void modifEtapes(QStringList);
+    void modifTemps(QString);
+    void modifURL(QUrl *);
 
 };
 #endif // MAINWINDOW_H

@@ -12,7 +12,7 @@ QString Recette::getNom() const
 
 void Recette::setNom(const QString &value)
 {
-    nom = value;
+    emit envoieNom(value);
 }
 
 QString Recette::getDescription() const
@@ -22,7 +22,7 @@ QString Recette::getDescription() const
 
 void Recette::setDescription(const QString &value)
 {
-    description = value;
+    emit envoieDesc(value);
 }
 
 QStringList Recette::getListeIngredients() const
@@ -32,7 +32,7 @@ QStringList Recette::getListeIngredients() const
 
 void Recette::setListeIngredients(const QStringList &value)
 {
-    listeIngredients = value;
+    emit envoieIng(value);
 }
 
 QStringList Recette::getListeEtapes() const
@@ -42,7 +42,7 @@ QStringList Recette::getListeEtapes() const
 
 void Recette::setListeEtapes(const QStringList &value)
 {
-    listeEtapes = value;
+    emit envoieEtapes(value);
 }
 
 QString Recette::getTotalTime() const
@@ -52,9 +52,13 @@ QString Recette::getTotalTime() const
 
 void Recette::setTotalTime(const QString &value)
 {
-    totalTime = value;
+    emit envoieTemps(value);
 }
 
+
+/*
+ *
+ * A MODIF
 QString Recette::getURL() const
 {
     return URL;
@@ -63,4 +67,4 @@ QString Recette::getURL() const
 void Recette::setURL(const QString &value)
 {
     URL = value;
-}
+}*/

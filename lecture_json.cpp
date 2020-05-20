@@ -1,16 +1,18 @@
 #include "lecture_json.h"
 #include "mainwindow.h"
+#include "traitement.h"
 
 #include <QFile>
 #include <QJsonDocument>
 #include <QDebug>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QObject>
 
 //classe permettant la lecture du fichier JSON selectionné
 lecture_json::lecture_json(QString path)
 {
-    recette = new Recette();
+
 
     QFile fichier(path);
     QJsonParseError error;
@@ -28,36 +30,8 @@ lecture_json::lecture_json(QString path)
        }
        else
        {
-          QJsonObject obj=doc.object();
-
-            recette->setNom(obj.value("name").toString());
-            recette->setDescription(obj.value("description").toString());
-
-            QJsonValue val = obj.value("recipeIngredient");
-            QJsonArray valArray = val.toArray();
-
-            QStringList ingredient;
-            for (auto value: valArray)
-                ingredient.append(value.toString());
-
-            recette->setListeIngredients(ingredient);
-
-           val = obj.value("recipeInstructions");
-           valArray = val.toArray();
-
-           QStringList instruction;
-           for (auto value: valArray)
-               instruction.append(value.toString());
-
-           recette->setListeEtapes(instruction);
-
-           recette->setTotalTime(obj.value("totalTime").toString());
-
-           recette->setURL(obj.value("url").toString());
-
-           //ouverture de la fenetre principale
-           MainWindow * w = new MainWindow(nullptr, instruction.size());
-           w->show();
+            traitement *t = new traitement(doc);
+            t->connection();
        }
     }
     else {

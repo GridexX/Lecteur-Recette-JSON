@@ -23,8 +23,8 @@ public:
     QString getTotalTime() const;
     void setTotalTime(const QString &value);
 
-    QString getURL() const;
-    void setURL(const QString &value);
+    QUrl * getURL() const;
+    void setURL(const QUrl *value);
 
 private:
     QString nom;
@@ -32,8 +32,16 @@ private:
     QStringList listeIngredients;
     QStringList listeEtapes;
     QString totalTime;
-    QString URL;
+    QUrl *URL;
+
+
 signals:
+    void envoieNom(QString);
+    void envoieDesc(QString);
+    void envoieIng(QStringList);
+    void envoieEtapes(QStringList);
+    void envoieTemps(QString);
+    void envoieURL(QUrl *);
 
 };
 
