@@ -34,7 +34,6 @@ void MainWindowLaunchDialog::on_pushButton_clicked()
     //Si le fichier est correcte -> lecture du fichier JSON
 
      hide();
-
      lecture_json json(filePathName);
 
    // aff->enregistrerRecette(filePathName);

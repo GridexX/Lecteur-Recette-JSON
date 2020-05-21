@@ -11,8 +11,6 @@ int main(int argc, char *argv[])
     MainWindowLaunchDialog w;
     Recette r;
     w.show();
-    //QObject::connect(r,SIGNAL(envoieNom(QString)),w,SLOT(modifNom(QString)));
     return a.exec();
-
 
 }

@@ -23,26 +23,29 @@ public:
     QString getTotalTime() const;
     void setTotalTime(const QString &value);
 
-    QUrl * getURL() const;
-    void setURL(const QUrl *value);
+    QString getURL() const;
+    void setURL(const QString &value);
+
+    QString getMotsCles() const;
+    void setMotsCles(const QString &value);
 
 private:
     QString nom;
     QString description;
+    QString motsCles;
     QStringList listeIngredients;
     QStringList listeEtapes;
     QString totalTime;
-    QUrl *URL;
-
+    QString URL;
 
 signals:
     void envoieNom(QString);
     void envoieDesc(QString);
+    void envoieMotsCles(QString);
     void envoieIng(QStringList);
     void envoieEtapes(QStringList);
     void envoieTemps(QString);
-    void envoieURL(QUrl *);
-
+    void envoieURL(QString);
 };
 
 #endif // RECETTE_H

@@ -55,10 +55,6 @@ void Recette::setTotalTime(const QString &value)
     emit envoieTemps(value);
 }
 
-
-/*
- *
- * A MODIF
 QString Recette::getURL() const
 {
     return URL;
@@ -66,5 +62,15 @@ QString Recette::getURL() const
 
 void Recette::setURL(const QString &value)
 {
-    URL = value;
-}*/
+    emit envoieURL(value);
+}
+
+QString Recette::getMotsCles() const
+{
+    return motsCles;
+}
+
+void Recette::setMotsCles(const QString &value)
+{
+    emit envoieMotsCles(value);
+}

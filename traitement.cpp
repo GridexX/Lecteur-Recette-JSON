@@ -18,7 +18,8 @@ void traitement::connection()
     QObject::connect(recette,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
     QObject::connect(recette,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
     QObject::connect(recette,SIGNAL(envoieTemps(QString)),w,SLOT(modifTemps(QString)));
-    // a ajouter QObject::connect(recette,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QUrl)));
+    QObject::connect(recette,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
+    QObject::connect(recette,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
 
     //appel de la fonction de parsage du json
     this->setRecette();
@@ -32,6 +33,7 @@ void traitement::setRecette()
 
     recette->setNom(obj.value("name").toString());
     recette->setDescription(obj.value("description").toString());
+    recette->setMotsCles(obj.value("keywords").toString());
 
     QJsonValue val = obj.value("recipeIngredient");
     QJsonArray valArray = val.toArray();
@@ -53,11 +55,7 @@ void traitement::setRecette()
 
     recette->setTotalTime(obj.value("totalTime").toString());
 
-    //recette->setURL(obj.value("url").toUrl); //a modif
-    //QUrl *url=new QUrl(obj.value("url"));
-    //recette->setURL(obj.value("url").setUrl);
-
-
+    recette->setURL(obj.value("url").toString());
 
      //ouverture de la fenetre principale une fois le traitement terminé
 
