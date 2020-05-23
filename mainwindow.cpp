@@ -109,10 +109,14 @@ void MainWindow::on_comboEtapes_currentIndexChanged(int i)
     ui->listeEtapes->setText(listEtapes.at(i));
     ui->label_8->setText(QString::number(i+1) + "/" + QString::number(listEtapes.size()));
 
-    if(i==0)
+    if(i==0){
         first_state();
-    else if(i==listEtapes.size()-1)
+        last_state_exit();
+    }
+    else if(i==listEtapes.size()-1){
         last_state();
+        first_state_exit();
+    }
     else
     {
         first_state_exit();
