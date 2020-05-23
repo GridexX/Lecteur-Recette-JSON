@@ -28,6 +28,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QStateMachine *machine;
+    QStringList listEtapes;
+
 public slots :
     //slots pour modifs les labels
 

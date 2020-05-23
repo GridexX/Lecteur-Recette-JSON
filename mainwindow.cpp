@@ -17,10 +17,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_comboEtapes_currentIndexChanged(int index)
-{
-        qDebug()<<index;
-}
 
 void MainWindow::modifNom(QString str)
 {
@@ -63,13 +59,10 @@ void MainWindow::modifEtapes(QStringList list)
 {
     ui->listeEtapes->setWordWrap(true);
 
-    //modification de la liste en fonction du nombre d'étapes
-    for(int i=0; i<list.size(); i++){
-        ui->comboEtapes->addItem("Aller à l'étape "+QString::number(i+1));
-    }
-
     //création QStateMachine pour les étapes de préparation
     int size_list = list.size()-1;
+
+    listEtapes=list;
 
     machine = new QStateMachine(this);
 
@@ -104,6 +97,27 @@ void MainWindow::modifEtapes(QStringList list)
     }
 
     machine->start();
+
+    //modification de la liste en fonction du nombre d'étapes
+    for(int i=0; i<list.size(); i++){
+        ui->comboEtapes->addItem("Aller à l'étape "+QString::number(i+1));
+    }
+}
+
+void MainWindow::on_comboEtapes_currentIndexChanged(int i)
+{
+    ui->listeEtapes->setText(listEtapes.at(i));
+    ui->label_8->setText(QString::number(i+1) + "/" + QString::number(listEtapes.size()));
+
+    if(i==0)
+        first_state();
+    else if(i==listEtapes.size()-1)
+        last_state();
+    else
+    {
+        first_state_exit();
+        last_state_exit();
+    }
 }
 
 void MainWindow::first_state()
