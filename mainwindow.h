@@ -23,12 +23,16 @@ private slots:
     void first_state_exit();
     void last_state_exit();
 
+    void initializeNewMachine(QStringList, int);
 
 
 private:
     Ui::MainWindow *ui;
     QStateMachine *machine;
     QStringList listEtapes;
+
+    QList<QState *> statelist;
+    bool isEtapesInit = false;
 
 public slots :
     //slots pour modifs les labels
@@ -41,5 +45,7 @@ public slots :
     void modifTemps(QString);
     void modifURL(QString);
 
+signals:
+    void signal_state();
 };
 #endif // MAINWINDOW_H

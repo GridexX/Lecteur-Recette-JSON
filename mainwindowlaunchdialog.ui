@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>796</width>
-    <height>558</height>
+    <width>750</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>110</y>
-      <width>771</width>
-      <height>231</height>
+      <width>716</width>
+      <height>221</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -35,7 +35,22 @@
         </font>
        </property>
        <property name="text">
-        <string>Bienvenue sur le programme d'afficheur de recettes. Veuillez choisir un fichier json pour commencer</string>
+        <string>Bienvenue sur le programme d'affichage de recettes JSON.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Veuillez choisir un fichier json pour commencer</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -63,7 +78,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>796</width>
+     <width>750</width>
      <height>20</height>
     </rect>
    </property>
@@ -92,7 +107,7 @@
   </action>
   <action name="actionDes_developpeurs">
    <property name="text">
-    <string>Des developpeurs</string>
+    <string>Des développeurs</string>
    </property>
   </action>
   <action name="actionOuvrir_un_fichier">

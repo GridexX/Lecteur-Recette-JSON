@@ -1,6 +1,7 @@
 #ifndef MAINWINDOWLAUNCHDIALOG_H
 #define MAINWINDOWLAUNCHDIALOG_H
 
+#include <QDropEvent>
 #include <QMainWindow>
 
 namespace Ui {
@@ -25,8 +26,14 @@ private slots:
     //slots pour modifs infos
 
 
+    void on_actionDe_Qt_triggered();
+
+    void on_actionDes_developpeurs_triggered();
+
 private:
     Ui::MainWindowLaunchDialog *ui;
+    void dropEvent(QDropEvent *event);
+    void dragEnterEvent(QDragEnterEvent *event);
 };
 
 #endif // MAINWINDOWLAUNCHDIALOG_H
