@@ -74,7 +74,7 @@ void MainWindow::modifEtapes(QStringList list)
 void MainWindow::on_comboEtapes_currentIndexChanged(int i)
 {
     ui->listeEtapes->setText(listEtapes.at(i));
-    ui->label_8->setText(QString::number(i+1) + "/" + QString::number(listEtapes.size()));
+    ui->label_8->setText("étape "+QString::number(i+1) + "/" + QString::number(listEtapes.size()));
 
     if(i==0){
         first_state();
@@ -130,7 +130,7 @@ void MainWindow::initializeNewMachine(QStringList list, int first_state)
         QState * state = new QState();
 
         state->assignProperty(ui->listeEtapes, "text",  list.at(i));
-        state->assignProperty(ui->label_8, "text", QString::number(i+1) + "/" + QString::number(list.size()));
+        state->assignProperty(ui->label_8, "text", "étape "+QString::number(i+1) + "/" + QString::number(list.size()));
 
         statelist.append(state);
     }
