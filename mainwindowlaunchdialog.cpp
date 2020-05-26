@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QMimeData>
 #include <lecture_json.h>
 
 MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
@@ -12,6 +13,10 @@ MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
     ui(new Ui::MainWindowLaunchDialog)
 {
     ui->setupUi(this);
+    setAcceptDrops(true);
+
+    setFixedSize(750,550);  //fixe la taille de la fenêtre
+    setWindowTitle("Lecteur de recettes JSON");
 }
 
 MainWindowLaunchDialog::~MainWindowLaunchDialog()
@@ -21,7 +26,6 @@ MainWindowLaunchDialog::~MainWindowLaunchDialog()
 
 void MainWindowLaunchDialog::on_pushButton_clicked()
 {
-
     QString filePathName = QFileDialog::getOpenFileName(this, tr("Ouvrir un fichier JSON"), "/home/", tr("JSON Files (*.json)"));
 
     QFile fichier(filePathName);
@@ -35,8 +39,6 @@ void MainWindowLaunchDialog::on_pushButton_clicked()
 
      hide();
      lecture_json json(filePathName);
-
-   // aff->enregistrerRecette(filePathName);
 }
 
 void MainWindowLaunchDialog::on_actionOuvrir_un_fichier_triggered()
@@ -47,4 +49,32 @@ void MainWindowLaunchDialog::on_actionOuvrir_un_fichier_triggered()
 void MainWindowLaunchDialog::on_actionQuitter_triggered()
 {
     QApplication::quit();
+}
+
+void MainWindowLaunchDialog::dragEnterEvent(QDragEnterEvent *event)
+{
+    if (event->mimeData()->hasUrls()) {
+          event->acceptProposedAction();
+      }
+}
+
+void MainWindowLaunchDialog::dropEvent(QDropEvent* event){
+        foreach (const QUrl &url, event->mimeData()->urls()) {
+           QString fileName = url.toLocalFile();
+
+           if(QFileInfo(fileName).suffix() != "json") return;
+
+           hide();
+           lecture_json json(fileName);
+       }
+}
+
+void MainWindowLaunchDialog::on_actionDe_Qt_triggered()
+{
+    QMessageBox::information(this, "Qt", "texte d'info");
+}
+
+void MainWindowLaunchDialog::on_actionDes_developpeurs_triggered()
+{
+    QMessageBox::information(this, "Développeurs", "texte d'info");
 }
