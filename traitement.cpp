@@ -17,7 +17,7 @@ void traitement::connection()
     QObject::connect(recette,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
     QObject::connect(recette,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
     QObject::connect(recette,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
-    QObject::connect(recette,SIGNAL(envoieTemps(QString)),w,SLOT(modifTemps(QString)));
+    QObject::connect(recette,SIGNAL(envoieTemps(QStringList)),w,SLOT(modifTemps(QStringList)));
     QObject::connect(recette,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
     QObject::connect(recette,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
 
@@ -52,8 +52,12 @@ void traitement::setRecette()
         instruction.append(value.toString());
 
     recette->setListeEtapes(instruction);
+    QStringList temps ;
+    temps << (obj.value("prepTime")).toString();
+    temps << (obj.value("cookTime")).toString();
+    temps << (obj.value("totalTime")).toString();
 
-    recette->setTotalTime(obj.value("totalTime").toString());
+    recette->setTemps(temps);
 
     recette->setURL(obj.value("url").toString());
 

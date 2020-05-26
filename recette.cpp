@@ -45,12 +45,12 @@ void Recette::setListeEtapes(const QStringList &value)
     emit envoieEtapes(value);
 }
 
-QString Recette::getTotalTime() const
+QStringList Recette::getTemps() const
 {
-    return totalTime;
+    return temps;
 }
 
-void Recette::setTotalTime(const QString &value)
+void Recette::setTemps(const QStringList &value)
 {
     emit envoieTemps(value);
 }

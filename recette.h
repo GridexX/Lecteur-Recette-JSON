@@ -20,8 +20,8 @@ public:
     QStringList getListeEtapes() const;
     void setListeEtapes(const QStringList &value);
 
-    QString getTotalTime() const;
-    void setTotalTime(const QString &value);
+    QStringList getTemps() const;
+    void setTemps(const QStringList &value);
 
     QString getURL() const;
     void setURL(const QString &value);
@@ -35,7 +35,7 @@ private:
     QString motsCles;
     QStringList listeIngredients;
     QStringList listeEtapes;
-    QString totalTime;
+    QStringList temps;
     QString URL;
 
 signals:
@@ -44,7 +44,7 @@ signals:
     void envoieMotsCles(QString);
     void envoieIng(QStringList);
     void envoieEtapes(QStringList);
-    void envoieTemps(QString);
+    void envoieTemps(QStringList);
     void envoieURL(QString);
 };
 
