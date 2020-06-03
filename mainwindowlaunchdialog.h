@@ -1,3 +1,9 @@
+/**
+ *   \file mainwindowlaunchdialog.h
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe de la fenêtre permettant le choix du fichier json de recette
+ */
 #ifndef MAINWINDOWLAUNCHDIALOG_H
 #define MAINWINDOWLAUNCHDIALOG_H
 

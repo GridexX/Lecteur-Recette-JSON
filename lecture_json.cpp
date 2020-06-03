@@ -1,3 +1,9 @@
+/**
+ *   \file lecture_json.cpp
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe gérant la lecture du fichier json
+ */
 #include "lecture_json.h"
 #include "mainwindow.h"
 #include "traitement.h"
@@ -9,7 +15,6 @@
 #include <QJsonArray>
 #include <QObject>
 
-//classe permettant la lecture du fichier JSON selectionné
 lecture_json::lecture_json(QString path)
 {
 

@@ -25,19 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-        recette.cpp \
-        traitement.cpp \
-        mainwindowlaunchdialog.cpp
-
+    lecture_json.cpp \
+    main.cpp \
+    mainwindow.cpp \
+    mainwindowlaunchdialog.cpp \
+    recette.cpp \
+    traitement.cpp
 
 HEADERS += \
-        mainwindow.h \
-        recette.h \
-        traitement.h \
-        mainwindowlaunchdialog.h
+    lecture_json.h \
+    mainwindow.h \
+    mainwindowlaunchdialog.h \
+    recette.h \
+    traitement.h
 
+FORMS += \
+    mainwindow.ui \
+    mainwindowlaunchdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,3 +1,9 @@
+/**
+ *   \file mainwindow.h
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe de la fenêtre permettant l'affichage de la recette
+ */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -17,22 +23,16 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_comboEtapes_currentIndexChanged(int index);
     void first_state();
     void last_state();
     void first_state_exit();
     void last_state_exit();
 
-    void initializeNewMachine(QStringList, int);
-
-
 private:
     Ui::MainWindow *ui;
     QStateMachine *machine;
     QStringList listEtapes;
-
     QList<QState *> statelist;
-    bool isEtapesInit = false;
 
 public slots :
     //slots pour modifs les labels
@@ -44,8 +44,5 @@ public slots :
     void modifEtapes(QStringList);
     void modifTemps(QStringList);
     void modifURL(QString);
-
-signals:
-    void signal_state();
 };
 #endif // MAINWINDOW_H

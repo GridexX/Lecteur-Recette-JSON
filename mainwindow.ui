@@ -17,14 +17,14 @@
    <widget class="QTabWidget" name="Infos_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>10</y>
       <width>691</width>
       <height>501</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Infos">
      <attribute name="title">
@@ -33,10 +33,10 @@
      <widget class="QWidget" name="verticalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>50</x>
         <y>20</y>
-        <width>451</width>
-        <height>371</height>
+        <width>581</width>
+        <height>391</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -48,6 +48,11 @@
        </property>
        <item>
         <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Nom</string>
          </property>
@@ -68,6 +73,11 @@
        </item>
        <item>
         <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Description</string>
          </property>
@@ -88,6 +98,11 @@
        </item>
        <item>
         <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Mots-clefs</string>
          </property>
@@ -108,6 +123,11 @@
        </item>
        <item>
         <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Temps</string>
          </property>
@@ -146,58 +166,70 @@
      <attribute name="title">
       <string>Liste ingrédients</string>
      </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_2">
+     <widget class="QLabel" name="lIngLabel">
       <property name="geometry">
        <rect>
         <x>100</x>
-        <y>30</y>
-        <width>481</width>
-        <height>381</height>
+        <y>60</y>
+        <width>489</width>
+        <height>341</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Ingrédients :</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="lIngLabel">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>489</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ingrédients :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Etapes</string>
+      <string>Étapes</string>
      </attribute>
      <widget class="QWidget" name="verticalLayoutWidget_3">
       <property name="geometry">
        <rect>
         <x>60</x>
         <y>50</y>
-        <width>541</width>
-        <height>261</height>
+        <width>551</width>
+        <height>271</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QComboBox" name="comboEtapes"/>
-       </item>
-       <item>
         <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="layoutDirection">
           <enum>Qt::LeftToRight</enum>
          </property>
@@ -205,7 +237,7 @@
           <string>nb/total</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -226,8 +258,8 @@
        <rect>
         <x>60</x>
         <y>370</y>
-        <width>541</width>
-        <height>51</height>
+        <width>551</width>
+        <height>61</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">

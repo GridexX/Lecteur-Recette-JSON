@@ -1,3 +1,9 @@
+/**
+ *   \file recette.cpp
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant la gestion et le stockage de la recette
+ */
 #include "recette.h"
 
 Recette::Recette(QObject *parent) : QObject(parent)

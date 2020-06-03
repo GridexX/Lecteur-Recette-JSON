@@ -1,3 +1,9 @@
+/**
+ *   \file recette.h
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant la gestion et le stockage de la recette
+ */
 #ifndef RECETTE_H
 #define RECETTE_H
 

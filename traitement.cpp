@@ -1,3 +1,9 @@
+/**
+ *   \file traitement.cpp
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant le traitement json
+ */
 #include "traitement.h"
 
 traitement::traitement(QJsonDocument _doc)

@@ -1,3 +1,9 @@
+/**
+ *   \file traitement.h
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant le traitement json
+ */
 #ifndef TRAITEMENT_H
 #define TRAITEMENT_H
 
