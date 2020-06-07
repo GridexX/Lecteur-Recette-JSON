@@ -63,43 +63,50 @@ private:
 
 public slots :
     //slots pour modifs les labels
-    /* @fn modifNom(QString)
+    /**
+     * @fn modifNom(QString)
      * @brief slot qui modifie le nom de la recette
      * @param le nom sous forme de chaine de caractère
      */
     void modifNom(QString);
 
-    /* @fn modifDesc(QString)
+    /**
+     * @fn modifDesc(QString)
      * @brief slot qui modifie la description
      * @param la description sous forme de chaine de caractère
      */
     void modifDesc(QString);
 
-    /* @fn modifMotsCles(QString)
+     /**
+     * @fn modifMotsCles(QString)
      * @brief slot qui modifie les mots cles
      * @param les mots cles sous forme de chaine de caractère
      */
     void modifMotsCles(QString);
 
-    /* @fn modifIng(QStringList)
+    /**
+     * @fn modifIng(QStringList)
      * @brief slot qui modifie la liste des ingrédients
      * @param les ingrédients sous forme de liste de chaine de caractere
      */
     void modifIng(QStringList);
 
-    /* @fn modifEtapes(QStringList)
+    /**
+     * @fn modifEtapes(QStringList)
      * @brief slot qui modifie le la liste des etapes
      * @param les étapes sous formes de liste de chaine de caractere
      */
     void modifEtapes(QStringList);
 
-    /* @fn modifTemps(QStringList)
+    /**
+     * @fn modifTemps(QStringList)
      * @brief slot qui modifie le temps nécessaire pour préparer la recette
      * @param les différents temps sous forme de liste de chaine de caractère
      */
     void modifTemps(QStringList);
 
-    /* @fn modifURL(QString)
+    /**
+     * @fn modifURL(QString)
      * @brief slot qui modifie l'url pour accéder à la recette
      * @param l'url sous forme de chaine de caractère
      */
