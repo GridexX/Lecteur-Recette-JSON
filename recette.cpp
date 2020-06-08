@@ -16,9 +16,9 @@ QString Recette::getNom() const
     return nom;
 }
 
-void Recette::setNom(const QString &value)
+void Recette::setNom(const QString &_nom)
 {
-    emit envoieNom(value);
+    nom=_nom;
 }
 
 QString Recette::getDescription() const
@@ -26,9 +26,9 @@ QString Recette::getDescription() const
     return description;
 }
 
-void Recette::setDescription(const QString &value)
+void Recette::setDescription(const QString &_description)
 {
-    emit envoieDesc(value);
+    description=_description;
 }
 
 QStringList Recette::getListeIngredients() const
@@ -36,9 +36,9 @@ QStringList Recette::getListeIngredients() const
     return listeIngredients;
 }
 
-void Recette::setListeIngredients(const QStringList &value)
+void Recette::setListeIngredients(const QStringList &_listeIngredients)
 {
-    emit envoieIng(value);
+    listeIngredients=_listeIngredients;
 }
 
 QStringList Recette::getListeEtapes() const
@@ -46,9 +46,9 @@ QStringList Recette::getListeEtapes() const
     return listeEtapes;
 }
 
-void Recette::setListeEtapes(const QStringList &value)
+void Recette::setListeEtapes(const QStringList &_listeEtapes)
 {
-    emit envoieEtapes(value);
+    listeEtapes=_listeEtapes
 }
 
 QStringList Recette::getTemps() const
@@ -56,9 +56,9 @@ QStringList Recette::getTemps() const
     return temps;
 }
 
-void Recette::setTemps(const QStringList &value)
+void Recette::setTemps(const QStringList &_temps)
 {
-    emit envoieTemps(value);
+    temps=_temps
 }
 
 QString Recette::getURL() const
@@ -66,9 +66,9 @@ QString Recette::getURL() const
     return URL;
 }
 
-void Recette::setURL(const QString &value)
+void Recette::setURL(const QString &_URL)
 {
-    emit envoieURL(value);
+    URL=_URL;
 }
 
 QString Recette::getMotsCles() const
@@ -76,7 +76,7 @@ QString Recette::getMotsCles() const
     return motsCles;
 }
 
-void Recette::setMotsCles(const QString &value)
+void Recette::setMotsCles(const QString &_motsCles)
 {
-    emit envoieMotsCles(value);
+    motsCles=_motsCles;
 }
