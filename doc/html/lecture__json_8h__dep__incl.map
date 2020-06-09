@@ -1,5 +1,4 @@
 <map id="lecture_json.h" name="lecture_json.h">
-<area shape="rect" id="node1" title="Classe gérant la lecture du fichier json." alt="" coords="110,5,223,32"/>
-<area shape="rect" id="node2" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json." alt="" coords="5,80,133,107"/>
-<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette." alt="" coords="158,80,373,107"/>
+<area shape="rect" id="node2" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json. " alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="147,80,338,107"/>
 </map>

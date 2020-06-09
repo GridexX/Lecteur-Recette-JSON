@@ -6,33 +6,22 @@
  */
 #include "traitement.h"
 
-traitement::traitement(QJsonDocument _doc)
-    : docJson(_doc)
+Traitement::Traitement(QObject *parent)
+    : QObject(parent), recette(nullptr), lecJson(nullptr)
 {
-}
-
-
-void traitement::connection()
-{
-    //Initialisation de la fenetre et de la classe recette
     recette = new Recette;
-    w = new MainWindow;
+    lecJson = new lecture_json;
 
-    //connection entre les classes pour signaux/slots
-    QObject::connect(recette,SIGNAL(envoieNom(QString)),w,SLOT(modifNom(QString)));
-    QObject::connect(recette,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
-    QObject::connect(recette,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
-    QObject::connect(recette,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
-    QObject::connect(recette,SIGNAL(envoieTemps(QStringList)),w,SLOT(modifTemps(QStringList)));
-    QObject::connect(recette,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
-    QObject::connect(recette,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
+    //connect pour envoyer le chemin du fichier à la lecture
+    QObject::connect(this,SIGNAL(envoieNomFichier(QString)),lecJson,SLOT(recevoirNomFichier(QString)));
 
-    //appel de la fonction de parsage du json
-    this->setRecette();
+    //connect pour récupérer le doc au format JSON depuis la lecture
+    QObject::connect(lecJson,SIGNAL(envoieDocJson(QJsonDocument)),this,SLOT(recevoirDocJson(QJsonDocument)));
 }
 
 
-void traitement::setRecette()
+
+void Traitement::recevoirDocJson(QJsonDocument docJson)
 {
     QJsonObject obj=docJson.object();
 
@@ -67,8 +56,10 @@ void traitement::setRecette()
 
     recette->setURL(obj.value("url").toString());
 
-     //ouverture de la fenetre principale une fois le traitement terminé
-
-    w->show();
 }
 
+
+void Traitement::recevoirNomFichier(QString chemin)
+{
+    emit(envoieNomFichier(chemin));
+}

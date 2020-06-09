@@ -30,14 +30,16 @@ SOURCES += \
     mainwindow.cpp \
     mainwindowlaunchdialog.cpp \
     recette.cpp \
-    traitement.cpp
+    traitement.cpp \
+    transmission.cpp
 
 HEADERS += \
     lecture_json.h \
     mainwindow.h \
     mainwindowlaunchdialog.h \
     recette.h \
-    traitement.h
+    traitement.h \
+    transmission.h
 
 FORMS += \
     mainwindow.ui \

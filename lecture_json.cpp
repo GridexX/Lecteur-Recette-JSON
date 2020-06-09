@@ -5,20 +5,15 @@
  *   \brief Classe gérant la lecture du fichier json
  */
 #include "lecture_json.h"
-#include "mainwindow.h"
-#include "traitement.h"
 
-#include <QFile>
-#include <QJsonDocument>
-#include <QDebug>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <QObject>
 
-lecture_json::lecture_json(QString path)
+lecture_json::lecture_json(QObject *parent) : QObject(parent)
+
 {
+}
 
-
+void lecture_json::recevoirNomFichier(QString path)
+{
     QFile fichier(path);
     QJsonParseError error;
 
@@ -30,16 +25,12 @@ lecture_json::lecture_json(QString path)
        //Interprétation du fichier JSON
        QJsonDocument doc = QJsonDocument::fromJson(donnees, &error);
        if(error.error != QJsonParseError::NoError)
-       {
            qCritical() << "Impossible d’interpréter le fichier : " << error.errorString();
-       }
+
        else
-       {
-            traitement *t = new traitement(doc);
-            t->connection();
-       }
+            emit(envoieDocJson(doc));
+
     }
-    else {
+    else
         qCritical() << "Impossible de lire le fichier : " << error.errorString();
-    }
 }

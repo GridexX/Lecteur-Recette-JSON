@@ -1,4 +1,4 @@
-\hypertarget{classtraitement}{}\doxysection{traitement Class Reference}
+\hypertarget{classtraitement}{}\section{traitement Class Reference}
 \label{classtraitement}\index{traitement@{traitement}}
 
 
@@ -11,25 +11,34 @@ Collaboration diagram for traitement\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=169pt]{classtraitement__coll__graph}
+\includegraphics[height=550pt]{classtraitement__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classtraitement_aed3a0890dc897f3e1f3c254fa7adf7ca}{traitement}} (Q\+Json\+Document)
+\hyperlink{classtraitement_aed3a0890dc897f3e1f3c254fa7adf7ca}{traitement} (Q\+Json\+Document)
 \begin{DoxyCompactList}\small\item\em Constructeur du traitemment json. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtraitement_a2a9559686027b1ac30fdce7c62cb1172}{set\+Recette}} ()
+void \hyperlink{classtraitement_a2a9559686027b1ac30fdce7c62cb1172}{set\+Recette} ()
 \begin{DoxyCompactList}\small\item\em Fonction qui permet de lire le fichier et enregistrer la recette. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtraitement_a2ce2b64928d33b331a8f67857ca22e74}{connection}} ()
+void \hyperlink{classtraitement_a2ce2b64928d33b331a8f67857ca22e74}{connection} ()
 \begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}initialiser l\textquotesingle{}instance et la connexion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Json\+Document \hyperlink{classtraitement_a106b236f1bc787e5c64145c587f8c541}{doc\+Json}
+\item 
+\hyperlink{classRecette}{Recette} $\ast$ \hyperlink{classtraitement_a5cf1eecd93636a2d98963125b35b1f64}{recette}
+\item 
+\hyperlink{classMainWindow}{Main\+Window} $\ast$ \hyperlink{classtraitement_a02be510f3a7838494b6d3531f8accfbd}{w}
+\end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classtraitement_aed3a0890dc897f3e1f3c254fa7adf7ca}\label{classtraitement_aed3a0890dc897f3e1f3c254fa7adf7ca}} 
 \index{traitement@{traitement}!traitement@{traitement}}
 \index{traitement@{traitement}!traitement@{traitement}}
-\doxysubsubsection{\texorpdfstring{traitement()}{traitement()}}
+\subsubsection{\texorpdfstring{traitement()}{traitement()}}
 {\footnotesize\ttfamily traitement\+::traitement (\begin{DoxyParamCaption}\item[{Q\+Json\+Document}]{\+\_\+doc }\end{DoxyParamCaption})}
 
 
@@ -43,11 +52,11 @@ Constructeur du traitemment json.
 \end{DoxyParams}
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classtraitement_a2ce2b64928d33b331a8f67857ca22e74}\label{classtraitement_a2ce2b64928d33b331a8f67857ca22e74}} 
 \index{traitement@{traitement}!connection@{connection}}
 \index{connection@{connection}!traitement@{traitement}}
-\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+\subsubsection{\texorpdfstring{connection()}{connection()}}
 {\footnotesize\ttfamily traitement\+::connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -55,9 +64,9 @@ Constructeur du traitemment json.
 Fonction qui permet d\textquotesingle{}initialiser l\textquotesingle{}instance et la connexion. 
 
 \mbox{\Hypertarget{classtraitement_a2a9559686027b1ac30fdce7c62cb1172}\label{classtraitement_a2a9559686027b1ac30fdce7c62cb1172}} 
-\index{traitement@{traitement}!setRecette@{setRecette}}
-\index{setRecette@{setRecette}!traitement@{traitement}}
-\doxysubsubsection{\texorpdfstring{setRecette()}{setRecette()}}
+\index{traitement@{traitement}!set\+Recette@{set\+Recette}}
+\index{set\+Recette@{set\+Recette}!traitement@{traitement}}
+\subsubsection{\texorpdfstring{set\+Recette()}{setRecette()}}
 {\footnotesize\ttfamily traitement\+::set\+Recette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -66,7 +75,28 @@ Fonction qui permet de lire le fichier et enregistrer la recette.
 
 
 
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtraitement_a106b236f1bc787e5c64145c587f8c541}\label{classtraitement_a106b236f1bc787e5c64145c587f8c541}} 
+\index{traitement@{traitement}!doc\+Json@{doc\+Json}}
+\index{doc\+Json@{doc\+Json}!traitement@{traitement}}
+\subsubsection{\texorpdfstring{doc\+Json}{docJson}}
+{\footnotesize\ttfamily Q\+Json\+Document traitement\+::doc\+Json\hspace{0.3cm}{\ttfamily [private]}}
+
+doc\+Json\+: le chemin d\textquotesingle{}accès du fichier json \mbox{\Hypertarget{classtraitement_a5cf1eecd93636a2d98963125b35b1f64}\label{classtraitement_a5cf1eecd93636a2d98963125b35b1f64}} 
+\index{traitement@{traitement}!recette@{recette}}
+\index{recette@{recette}!traitement@{traitement}}
+\subsubsection{\texorpdfstring{recette}{recette}}
+{\footnotesize\ttfamily \hyperlink{classRecette}{Recette}$\ast$ traitement\+::recette\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{classRecette}{Recette} $\ast$recette\+: pointeur sur la variable recette \mbox{\Hypertarget{classtraitement_a02be510f3a7838494b6d3531f8accfbd}\label{classtraitement_a02be510f3a7838494b6d3531f8accfbd}} 
+\index{traitement@{traitement}!w@{w}}
+\index{w@{w}!traitement@{traitement}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \hyperlink{classMainWindow}{Main\+Window}$\ast$ traitement\+::w\hspace{0.3cm}{\ttfamily [private]}}
+
+Mainwindow $\ast$w\+: pointeur sur la fenetre principale 
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{traitement_8h}{traitement.\+h}}\item 
-\mbox{\hyperlink{traitement_8cpp}{traitement.\+cpp}}\end{DoxyCompactItemize}
+\hyperlink{traitement_8h}{traitement.\+h}\item 
+\hyperlink{traitement_8cpp}{traitement.\+cpp}\end{DoxyCompactItemize}

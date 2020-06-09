@@ -1,11 +1,4 @@
 <map id="traitement.h" name="traitement.h">
-<area shape="rect" id="node1" title="Classe permettant le traitement json." alt="" coords="275,5,377,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,132,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="156,80,251,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="275,80,377,107"/>
-<area shape="rect" id="node5" href="$recette_8h.html" title="Classe permettant la gestion et le stockage de la recette." alt="" coords="401,80,481,107"/>
-<area shape="rect" id="node7" href="$mainwindow_8h.html" title="Classe de la fenêtre permettant l&#39;affichage de la recette." alt="" coords="505,80,621,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="403,155,478,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="504,155,620,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="644,155,765,181"/>
+<area shape="rect" id="node5" href="$recette_8h.html" title="Classe permettant la gestion et le stockage de la recette. " alt="" coords="387,80,461,107"/>
+<area shape="rect" id="node7" href="$mainwindow_8h.html" title="Classe de la fenêtre permettant l&#39;affichage de la recette. " alt="" coords="485,80,590,107"/>
 </map>

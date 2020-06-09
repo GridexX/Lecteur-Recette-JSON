@@ -9,6 +9,13 @@
 
 #include <QDropEvent>
 #include <QMainWindow>
+#include <QFile>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMimeData>
+
+#include "ui_mainwindowlaunchdialog.h"
+#include "transmission.h"
 
 namespace Ui {
 class MainWindowLaunchDialog;
@@ -30,6 +37,8 @@ public:
       * \brief Destructeur de la fonction MainWindowLaunchDialog
       */
     ~MainWindowLaunchDialog();
+signals:
+    void envoyerNomFichier(QString);
 
 private slots:
     /**
@@ -65,6 +74,7 @@ private slots:
 private:
     Ui::MainWindowLaunchDialog *ui; /*!< Ui::MainWindowLaunchDialog *ui : variable d'instance de la fenêtre ui */
 
+    Transmission *t;
     /**
      * \fn dropEvent(QDropEvent *event)
      * \brief Fonction qui permet de gérer le drop de fichier

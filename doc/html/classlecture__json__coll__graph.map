@@ -1,3 +1,3 @@
 <map id="lecture_json" name="lecture_json">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,132,83"/>
+<area shape="rect" id="node2" href="$classRecette.html" title="{Recette\n|&#45; nom\l&#45; description\l&#45; motsCles\l&#45; listeIngredients\l&#45; listeEtapes\l&#45; temps\l&#45; URL\l|+ Recette()\l+ getNom()\l+ setNom()\l+ getDescription()\l+ setDescription()\l+ getListeIngredients()\l+ setListeIngredients()\l+ getListeEtapes()\l+ setListeEtapes()\l+ getTemps()\l+ setTemps()\l+ getURL()\l+ setURL()\l+ getMotsCles()\l+ setMotsCles()\l}" alt="" coords="5,132,157,503"/>
 </map>

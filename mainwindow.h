@@ -61,6 +61,7 @@ private:
     QStringList listEtapes; /*!< listEtapes: liste de string contenant la liste des étapes*/
     QList<QState *> statelist; /*!< statelist: stocker la liste des états*/
 
+
 public slots :
     //slots pour modifs les labels
     /**
@@ -111,5 +112,6 @@ public slots :
      * @param l'url sous forme de chaine de caractère
      */
     void modifURL(QString);
+
 };
 #endif // MAINWINDOW_H

@@ -1,5 +1,4 @@
 <map id="mainwindowlaunchdialog.h" name="mainwindowlaunchdialog.h">
-<area shape="rect" id="node1" title="Classe de la fenêtre permettant le choix du fichier json de recette." alt="" coords="33,5,233,32"/>
-<area shape="rect" id="node2" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre." alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette." alt="" coords="113,80,327,107"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre. " alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="105,80,295,107"/>
 </map>

@@ -4,15 +4,7 @@
  *
  *   \brief Classe de la fenêtre permettant le choix du fichier json de recette
  */
-#include "mainwindow.h"
 #include "mainwindowlaunchdialog.h"
-#include "ui_mainwindowlaunchdialog.h"
-
-#include <QFile>
-#include <QFileDialog>
-#include <QMessageBox>
-#include <QMimeData>
-#include <lecture_json.h>
 
 MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
     QMainWindow(parent),
@@ -23,6 +15,7 @@ MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
 
     setFixedSize(750,550);  //fixe la taille de la fenêtre
     setWindowTitle("Lecteur de recettes JSON");
+
 }
 
 MainWindowLaunchDialog::~MainWindowLaunchDialog()
@@ -44,7 +37,9 @@ void MainWindowLaunchDialog::on_pushButton_clicked()
     //Si le fichier est correcte -> lecture du fichier JSON
 
      hide();
-     lecture_json json(filePathName);
+     t = new Transmission;
+     connect(this,SIGNAL(envoyerNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
+     emit(envoyerNomFichier(filePathName));
 }
 
 void MainWindowLaunchDialog::on_actionOuvrir_un_fichier_triggered()
@@ -71,7 +66,9 @@ void MainWindowLaunchDialog::dropEvent(QDropEvent* event){
            if(QFileInfo(fileName).suffix() != "json") return;
 
            hide();
-           lecture_json json(fileName);
+           t = new Transmission;
+           connect(this,SIGNAL(envoyerNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
+           emit(envoyerNomFichier(fileName));
        }
 }
 

@@ -48,7 +48,7 @@ QStringList Recette::getListeEtapes() const
 
 void Recette::setListeEtapes(const QStringList &_listeEtapes)
 {
-    listeEtapes=_listeEtapes
+    listeEtapes=_listeEtapes;
 }
 
 QStringList Recette::getTemps() const
@@ -58,7 +58,7 @@ QStringList Recette::getTemps() const
 
 void Recette::setTemps(const QStringList &_temps)
 {
-    temps=_temps
+    temps=_temps;
 }
 
 QString Recette::getURL() const

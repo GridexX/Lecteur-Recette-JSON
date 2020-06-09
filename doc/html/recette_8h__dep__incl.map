@@ -1,10 +1,9 @@
 <map id="recette.h" name="recette.h">
-<area shape="rect" id="node1" title="Classe permettant la gestion et le stockage de la recette." alt="" coords="393,5,473,32"/>
-<area shape="rect" id="node2" href="$lecture__json_8h.html" title="Classe gérant la lecture du fichier json." alt="" coords="185,80,299,107"/>
-<area shape="rect" id="node5" href="$traitement_8h.html" title="Classe permettant le traitement json." alt="" coords="323,80,425,107"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre." alt="" coords="450,80,533,107"/>
-<area shape="rect" id="node8" href="$recette_8cpp.html" title="Classe permettant la gestion et le stockage de la recette." alt="" coords="557,80,652,107"/>
-<area shape="rect" id="node3" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json." alt="" coords="245,155,373,181"/>
-<area shape="rect" id="node4" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette." alt="" coords="5,155,220,181"/>
-<area shape="rect" id="node6" href="$traitement_8cpp.html" title="Classe permettant le traitement json." alt="" coords="397,155,516,181"/>
+<area shape="rect" id="node2" href="$lecture__json_8h.html" title="Classe gérant la lecture du fichier json. " alt="" coords="167,80,269,107"/>
+<area shape="rect" id="node5" href="$traitement_8h.html" title="Classe permettant le traitement json. " alt="" coords="294,80,385,107"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre. " alt="" coords="409,80,483,107"/>
+<area shape="rect" id="node8" href="$recette_8cpp.html" title="Classe permettant la gestion et le stockage de la recette. " alt="" coords="508,80,595,107"/>
+<area shape="rect" id="node3" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json. " alt="" coords="221,155,338,181"/>
+<area shape="rect" id="node4" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node6" href="$traitement_8cpp.html" title="Classe permettant le traitement json. " alt="" coords="361,155,467,181"/>
 </map>
