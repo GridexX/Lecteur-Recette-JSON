@@ -1,4 +1,4 @@
-\hypertarget{classMainWindowLaunchDialog}{}\section{Main\+Window\+Launch\+Dialog Class Reference}
+\hypertarget{classMainWindowLaunchDialog}{}\section{Référence de la classe Main\+Window\+Launch\+Dialog}
 \label{classMainWindowLaunchDialog}\index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
 
 
@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for Main\+Window\+Launch\+Dialog\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de Main\+Window\+Launch\+Dialog\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,22 +15,26 @@ Inheritance diagram for Main\+Window\+Launch\+Dialog\+:
 \end{figure}
 
 
-Collaboration diagram for Main\+Window\+Launch\+Dialog\+:
-\nopagebreak
+Graphe de collaboration de Main\+Window\+Launch\+Dialog\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=233pt]{classMainWindowLaunchDialog__coll__graph}
+\includegraphics[height=550pt]{classMainWindowLaunchDialog__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}{envoyer\+Nom\+Fichier} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Signal qui envoie le nom du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMainWindowLaunchDialog_a9f7ef6d5da5eff43adb6ea835f0790d0}{Main\+Window\+Launch\+Dialog} (Q\+Widget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre de lancement. \end{DoxyCompactList}\item 
 \hyperlink{classMainWindowLaunchDialog_abf8a63fe899ba6d8fcbdf179122dfcb7}{$\sim$\+Main\+Window\+Launch\+Dialog} ()
 \begin{DoxyCompactList}\small\item\em Destructeur de la fonction \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Slots}
+\subsection*{Connecteurs privés}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classMainWindowLaunchDialog_a4464510ed5080984f0af0d3c0559f9eb}{on\+\_\+push\+Button\+\_\+clicked} ()
@@ -44,21 +47,23 @@ void \hyperlink{classMainWindowLaunchDialog_a91bfa59302a3591b7b3b11b03d6f9b0e}{o
 \begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}ouvrir la fenêtre d\textquotesingle{}info sur Qt au clique. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_aaa766b56e4327b3bedf7f88c1b52cee7}{on\+\_\+action\+Des\+\_\+developpeurs\+\_\+triggered} ()
 \begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}ouvrir la fenêtre d\textquotesingle{}info sur les développeurs au clique. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\subsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classMainWindowLaunchDialog_a6b292183d418fe79b79225d9a35bd3dd}{drop\+Event} (Q\+Drop\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer le drop de fichier. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_aaf393173ffd6c63b2c4d5bdd48b8ddb4}{drag\+Enter\+Event} (Q\+Drag\+Enter\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le drag and drop. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Main\+Window\+Launch\+Dialog $\ast$ \hyperlink{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}{ui}
+\hyperlink{classUi_1_1MainWindowLaunchDialog}{Ui\+::\+Main\+Window\+Launch\+Dialog} $\ast$ \hyperlink{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}{ui}
+\item 
+\hyperlink{classTransmission}{Transmission} $\ast$ \hyperlink{classMainWindowLaunchDialog_a99241b2f7c2317788d83716301f33b1c}{t}
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
+\subsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_a9f7ef6d5da5eff43adb6ea835f0790d0}\label{classMainWindowLaunchDialog_a9f7ef6d5da5eff43adb6ea835f0790d0}} 
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
@@ -70,7 +75,7 @@ Ui\+::\+Main\+Window\+Launch\+Dialog $\ast$ \hyperlink{classMainWindowLaunchDial
 Constructeur de la fenêtre de lancement. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em Qwidget} & $\ast$parent \\
 \hline
 \end{DoxyParams}
@@ -86,7 +91,7 @@ Destructeur de la fonction \hyperlink{classMainWindowLaunchDialog}{Main\+Window\
 
 
 
-\subsection{Member Function Documentation}
+\subsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_aaf393173ffd6c63b2c4d5bdd48b8ddb4}\label{classMainWindowLaunchDialog_aaf393173ffd6c63b2c4d5bdd48b8ddb4}} 
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!drag\+Enter\+Event@{drag\+Enter\+Event}}
 \index{drag\+Enter\+Event@{drag\+Enter\+Event}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
@@ -98,7 +103,7 @@ Destructeur de la fonction \hyperlink{classMainWindowLaunchDialog}{Main\+Window\
 Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le drag and drop. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em Q\+Drag\+Enter\+Event} & instance de l\textquotesingle{}évent \\
 \hline
 \end{DoxyParams}
@@ -113,8 +118,26 @@ Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le dra
 Fonction qui permet de gérer le drop de fichier. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em Q\+Drop\+Event} & instance de l\textquotesingle{}évent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}\label{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}} 
+\index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}}
+\index{envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
+\subsubsection{\texorpdfstring{envoyer\+Nom\+Fichier}{envoyerNomFichier}}
+{\footnotesize\ttfamily void Main\+Window\+Launch\+Dialog\+::envoyer\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal qui envoie le nom du fichier Json. 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}{envoyer\+Nom\+Fichier(\+Q\+String)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & \+: le chemin du fichier json \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_a91bfa59302a3591b7b3b11b03d6f9b0e}\label{classMainWindowLaunchDialog_a91bfa59302a3591b7b3b11b03d6f9b0e}} 
@@ -169,16 +192,22 @@ Fonction qui réagit quand le bouton pour choisir un fichier est cliqué
 
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}\label{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}} 
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{classMainWindowLaunchDialog_a99241b2f7c2317788d83716301f33b1c}\label{classMainWindowLaunchDialog_a99241b2f7c2317788d83716301f33b1c}} 
+\index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!t@{t}}
+\index{t@{t}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \hyperlink{classTransmission}{Transmission}$\ast$ Main\+Window\+Launch\+Dialog\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{classTransmission}{Transmission} $\ast$t\+: pointeur sur la classe \hyperlink{classTransmission}{Transmission} \mbox{\Hypertarget{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}\label{classMainWindowLaunchDialog_ab79dbe386d19b41840ab6489ed73cacf}} 
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!ui@{ui}}
 \index{ui@{ui}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
 \subsubsection{\texorpdfstring{ui}{ui}}
-{\footnotesize\ttfamily Ui\+::\+Main\+Window\+Launch\+Dialog$\ast$ Main\+Window\+Launch\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classUi_1_1MainWindowLaunchDialog}{Ui\+::\+Main\+Window\+Launch\+Dialog}$\ast$ Main\+Window\+Launch\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
-Ui\+::\+Main\+Window\+Launch\+Dialog $\ast$ui \+: variable d\textquotesingle{}instance de la fenêtre ui 
+\hyperlink{classUi_1_1MainWindowLaunchDialog}{Ui\+::\+Main\+Window\+Launch\+Dialog} $\ast$ui \+: variable d\textquotesingle{}instance de la fenêtre ui 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{mainwindowlaunchdialog_8h}{mainwindowlaunchdialog.\+h}\item 
 \hyperlink{mainwindowlaunchdialog_8cpp}{mainwindowlaunchdialog.\+cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['traitement',['traitement',['../classtraitement.html',1,'']]]
+  ['traitement',['Traitement',['../classTraitement.html',1,'']]],
+  ['transmission',['Transmission',['../classTransmission.html',1,'']]]
 ];

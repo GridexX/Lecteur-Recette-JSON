@@ -1,0 +1,170 @@
+\hypertarget{classTransmission}{}\section{Référence de la classe Transmission}
+\label{classTransmission}\index{Transmission@{Transmission}}
+
+
+{\ttfamily \#include $<$transmission.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Transmission\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classTransmission__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Transmission\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTransmission__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classTransmission_aa442272a44f095192da5b0bf92a5bb06}{recevoir\+Nom\+Fichier} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de récupérer le chemin du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classTransmission_abf18bf1963c75b06b1e437bec51de35e}{envoie\+Nom\+Fichier} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Sinal qui Fonction qui permet d\textquotesingle{}envoyer le chemin d\textquotesingle{}accès du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransmission_a1d8087d2d09b9ddd4fd6e8261daed9f3}{Transmission} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la fonction \hyperlink{classTransmission}{Transmission}. \end{DoxyCompactList}\item 
+\hyperlink{classTransmission_adcdc6012d99ddb1d0c3159d50984e146}{$\sim$\+Transmission} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fonction \hyperlink{classTransmission}{Transmission}. \end{DoxyCompactList}\item 
+void \hyperlink{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}{set\+File\+Path} (Q\+String \+\_\+file\+Path)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de set le chemin du fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classTransmission_a14b885539e973a158c9c4c25fd99bc04}{envoyer\+Donnees} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}envoyer les informations de la recette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTraitement}{Traitement} $\ast$ \hyperlink{classTransmission_ad05ceda47dcb0763e32e03e089defdb0}{t}
+\item 
+\hyperlink{classMainWindow}{Main\+Window} $\ast$ \hyperlink{classTransmission_a46ff40b83d046581408dce2027139fe0}{w}
+\item 
+Q\+String \hyperlink{classTransmission_a3514cc6116b900b586f8cbf194cb39e7}{file\+Path} =\char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classTransmission_a1d8087d2d09b9ddd4fd6e8261daed9f3}\label{classTransmission_a1d8087d2d09b9ddd4fd6e8261daed9f3}} 
+\index{Transmission@{Transmission}!Transmission@{Transmission}}
+\index{Transmission@{Transmission}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{Transmission()}{Transmission()}}
+{\footnotesize\ttfamily Transmission\+::\+Transmission (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur de la fonction \hyperlink{classTransmission}{Transmission}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \+: objet parent de transmission \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransmission_adcdc6012d99ddb1d0c3159d50984e146}\label{classTransmission_adcdc6012d99ddb1d0c3159d50984e146}} 
+\index{Transmission@{Transmission}!````~Transmission@{$\sim$\+Transmission}}
+\index{````~Transmission@{$\sim$\+Transmission}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{$\sim$\+Transmission()}{~Transmission()}}
+{\footnotesize\ttfamily Transmission\+::$\sim$\+Transmission (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la fonction \hyperlink{classTransmission}{Transmission}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classTransmission_abf18bf1963c75b06b1e437bec51de35e}\label{classTransmission_abf18bf1963c75b06b1e437bec51de35e}} 
+\index{Transmission@{Transmission}!envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}}
+\index{envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{envoie\+Nom\+Fichier}{envoieNomFichier}}
+{\footnotesize\ttfamily Transmission\+::envoie\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Sinal qui Fonction qui permet d\textquotesingle{}envoyer le chemin d\textquotesingle{}accès du fichier Json. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & \+: chemin d\textquotesingle{}accès du fichier Json \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransmission_a14b885539e973a158c9c4c25fd99bc04}\label{classTransmission_a14b885539e973a158c9c4c25fd99bc04}} 
+\index{Transmission@{Transmission}!envoyer\+Donnees@{envoyer\+Donnees}}
+\index{envoyer\+Donnees@{envoyer\+Donnees}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{envoyer\+Donnees()}{envoyerDonnees()}}
+{\footnotesize\ttfamily void Transmission\+::envoyer\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction qui permet d\textquotesingle{}envoyer les informations de la recette. 
+
+\mbox{\Hypertarget{classTransmission_aa442272a44f095192da5b0bf92a5bb06}\label{classTransmission_aa442272a44f095192da5b0bf92a5bb06}} 
+\index{Transmission@{Transmission}!recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}}
+\index{recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{recevoir\+Nom\+Fichier}{recevoirNomFichier}}
+{\footnotesize\ttfamily void Transmission\+::recevoir\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction qui permet de récupérer le chemin du fichier Json. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & \+: chemin d\textquotesingle{}accès du fichier Json \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}\label{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}} 
+\index{Transmission@{Transmission}!set\+File\+Path@{set\+File\+Path}}
+\index{set\+File\+Path@{set\+File\+Path}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{set\+File\+Path()}{setFilePath()}}
+{\footnotesize\ttfamily void Transmission\+::set\+File\+Path (\begin{DoxyParamCaption}\item[{Q\+String}]{\+\_\+file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fonction qui permet de set le chemin du fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & \+\_\+file\+Path \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{classTransmission_a3514cc6116b900b586f8cbf194cb39e7}\label{classTransmission_a3514cc6116b900b586f8cbf194cb39e7}} 
+\index{Transmission@{Transmission}!file\+Path@{file\+Path}}
+\index{file\+Path@{file\+Path}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{file\+Path}{filePath}}
+{\footnotesize\ttfamily Q\+String Transmission\+::file\+Path =\char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+Q\+String file\+Path\+: variable qui stocke le chemin du fichier json \mbox{\Hypertarget{classTransmission_ad05ceda47dcb0763e32e03e089defdb0}\label{classTransmission_ad05ceda47dcb0763e32e03e089defdb0}} 
+\index{Transmission@{Transmission}!t@{t}}
+\index{t@{t}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \hyperlink{classTraitement}{Traitement}$\ast$ Transmission\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{classTraitement}{Traitement} $\ast$t\+: Pointeur sur la classe \hyperlink{classTraitement}{Traitement} pour pouvoir l\textquotesingle{}instancier \mbox{\Hypertarget{classTransmission_a46ff40b83d046581408dce2027139fe0}\label{classTransmission_a46ff40b83d046581408dce2027139fe0}} 
+\index{Transmission@{Transmission}!w@{w}}
+\index{w@{w}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \hyperlink{classMainWindow}{Main\+Window}$\ast$ Transmission\+::w\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{classMainWindow}{Main\+Window} $\ast$w\+: Pointeur sur la classe \hyperlink{classMainWindow}{Main\+Window} pour pouvoir l\textquotesingle{}instancier 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{transmission_8h}{transmission.\+h}\item 
+\hyperlink{transmission_8cpp}{transmission.\+cpp}\end{DoxyCompactItemize}

@@ -1,2 +1,8 @@
 <map id="mainwindowlaunchdialog.h" name="mainwindowlaunchdialog.h">
+<area shape="rect" id="node8" href="$ui__mainwindowlaunchdialog_8h.html" title="ui_mainwindowlaunchdialog.h" alt="" coords="2529,80,2724,107"/>
+<area shape="rect" id="node20" href="$transmission_8h.html" title="transmission.h" alt="" coords="839,80,945,107"/>
+<area shape="rect" id="node22" href="$mainwindow_8h.html" title="Classe de la fenêtre permettant l&#39;affichage de la recette. " alt="" coords="995,155,1101,181"/>
+<area shape="rect" id="node29" href="$traitement_8h.html" title="Classe permettant le traitement json. " alt="" coords="405,155,496,181"/>
+<area shape="rect" id="node33" href="$recette_8h.html" title="Classe permettant la gestion et le stockage de la recette. " alt="" coords="489,237,562,263"/>
+<area shape="rect" id="node34" href="$lecture__json_8h.html" title="Classe gérant la lecture du fichier json. " alt="" coords="310,237,413,263"/>
 </map>

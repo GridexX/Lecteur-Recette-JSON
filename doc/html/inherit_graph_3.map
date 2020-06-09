@@ -1,3 +1,4 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classtraitement.html" title="traitement" alt="" coords="5,5,85,32"/>
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classUi__MainWindowLaunchDialog.html" title="Ui_MainWindowLaunchDialog" alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node2" href="$classUi_1_1MainWindowLaunchDialog.html" title="Ui::MainWindowLaunchDialog" alt="" coords="249,5,447,32"/>
 </map>

@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['envoiedesc',['envoieDesc',['../classRecette.html#a4871cd68f067b53e882eb2389c11c763',1,'Recette']]],
-  ['envoieetapes',['envoieEtapes',['../classRecette.html#ab8af419707ae263fb7b273988b81bd6e',1,'Recette']]],
-  ['envoieing',['envoieIng',['../classRecette.html#a02f5f61d8c8a59b482f81da7450aa133',1,'Recette']]],
-  ['envoiemotscles',['envoieMotsCles',['../classRecette.html#a06b677268e4a76357a008460bf78bf57',1,'Recette']]],
-  ['envoienom',['envoieNom',['../classRecette.html#aaf3e04383c78a2cef6af41eac226f07d',1,'Recette']]],
-  ['envoietemps',['envoieTemps',['../classRecette.html#ad90a82b00fc7f1cc7d66ce54a3c853d8',1,'Recette']]],
-  ['envoieurl',['envoieURL',['../classRecette.html#a151a21f960ad1c36b8760dee77352d99',1,'Recette']]]
+  ['getdescription',['getDescription',['../classRecette.html#a7f3746b691f39d1b468b29819ad3c265',1,'Recette']]],
+  ['getlisteetapes',['getListeEtapes',['../classRecette.html#a3b2807fe1f55431bcd632bff2332c6e7',1,'Recette']]],
+  ['getlisteingredients',['getListeIngredients',['../classRecette.html#a3ca29579050212dea9da71e9c1f05119',1,'Recette']]],
+  ['getmotscles',['getMotsCles',['../classRecette.html#a509d4cfe5b696a08c4b6675472d6e481',1,'Recette']]],
+  ['getnom',['getNom',['../classRecette.html#afab5d7deab9130137037872a7a42ef3c',1,'Recette']]],
+  ['getrecette',['getRecette',['../classTraitement.html#aba3c99b92a3b6d429e4479294267af9d',1,'Traitement']]],
+  ['gettemps',['getTemps',['../classRecette.html#a9ac38f333d17699fb6601bca332d8567',1,'Recette']]],
+  ['geturl',['getURL',['../classRecette.html#ab06006324a8201e9967b53273dbf2751',1,'Recette']]]
 ];

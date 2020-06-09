@@ -1,4 +1,10 @@
 <map id="lecture_json.h" name="lecture_json.h">
-<area shape="rect" id="node2" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json. " alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="147,80,338,107"/>
+<area shape="rect" id="node2" href="$lecture__json_8cpp.html" title="Classe gérant la lecture du fichier json. " alt="" coords="87,80,204,107"/>
+<area shape="rect" id="node3" href="$traitement_8h.html" title="Classe permettant le traitement json. " alt="" coords="228,80,319,107"/>
+<area shape="rect" id="node4" href="$transmission_8h.html" title="transmission.h" alt="" coords="155,155,261,181"/>
+<area shape="rect" id="node9" href="$traitement_8cpp.html" title="Classe permettant le traitement json. " alt="" coords="286,155,391,181"/>
+<area shape="rect" id="node5" href="$mainwindowlaunchdialog_8h.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="33,229,210,256"/>
+<area shape="rect" id="node8" href="$transmission_8cpp.html" title="transmission.cpp" alt="" coords="234,229,355,256"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre. " alt="" coords="5,304,80,331"/>
+<area shape="rect" id="node7" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="105,304,295,331"/>
 </map>

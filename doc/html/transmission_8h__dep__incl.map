@@ -1,0 +1,6 @@
+<map id="transmission.h" name="transmission.h">
+<area shape="rect" id="node2" href="$mainwindowlaunchdialog_8h.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="33,80,210,107"/>
+<area shape="rect" id="node5" href="$transmission_8cpp.html" title="transmission.cpp" alt="" coords="234,80,355,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre. " alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node4" href="$mainwindowlaunchdialog_8cpp.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="105,155,295,181"/>
+</map>

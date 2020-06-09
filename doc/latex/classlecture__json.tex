@@ -1,4 +1,4 @@
-\hypertarget{classlecture__json}{}\section{lecture\+\_\+json Class Reference}
+\hypertarget{classlecture__json}{}\section{Référence de la classe lecture\+\_\+json}
 \label{classlecture__json}\index{lecture\+\_\+json@{lecture\+\_\+json}}
 
 
@@ -6,54 +6,108 @@
 
 
 
-Collaboration diagram for lecture\+\_\+json\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de lecture\+\_\+json\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classlecture__json__coll__graph}
+\includegraphics[width=196pt]{classlecture__json__inherit__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+
+
+Graphe de collaboration de lecture\+\_\+json\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classlecture__json__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classlecture__json_aa20851b2c129e7edad98c77302201ae1}{lecture\+\_\+json} (Q\+String path)
+void \hyperlink{classlecture__json_a9b907076c0d37125a6ab35b5906c9880}{recevoir\+Nom\+Fichier} (Q\+String)
+\begin{DoxyCompactList}\small\item\em fonction qui permet de vérifier le fichier json et de d\textquotesingle{}envoyer une demande de traitement \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlecture__json_a27d0869b75b2fcbe687888b390964f79}{envoie\+Doc\+Json} (Q\+Json\+Document)
+\begin{DoxyCompactList}\small\item\em signal d\textquotesingle{}envoie du document Json \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlecture__json_a4b8226b61ad6f1112038dde13e207b4f}{lecture\+\_\+json} (Q\+Object $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em fonction permettant l\textquotesingle{}initialisation de la lecture du fichier json \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classRecette}{Recette} $\ast$ \hyperlink{classlecture__json_a5d82d4ff42d4c8e3162428c4fa7f6f6a}{recette}
+Q\+String \hyperlink{classlecture__json_addfbc41d56e266180e4a120ba3cd1c61}{path}
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classlecture__json_aa20851b2c129e7edad98c77302201ae1}\label{classlecture__json_aa20851b2c129e7edad98c77302201ae1}} 
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classlecture__json_a4b8226b61ad6f1112038dde13e207b4f}\label{classlecture__json_a4b8226b61ad6f1112038dde13e207b4f}} 
 \index{lecture\+\_\+json@{lecture\+\_\+json}!lecture\+\_\+json@{lecture\+\_\+json}}
 \index{lecture\+\_\+json@{lecture\+\_\+json}!lecture\+\_\+json@{lecture\+\_\+json}}
 \subsubsection{\texorpdfstring{lecture\+\_\+json()}{lecture\_json()}}
-{\footnotesize\ttfamily lecture\+\_\+json\+::lecture\+\_\+json (\begin{DoxyParamCaption}\item[{Q\+String}]{path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily lecture\+\_\+json\+::lecture\+\_\+json (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
 fonction permettant l\textquotesingle{}initialisation de la lecture du fichier json 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em path} & \+: Q\+String qui renvoie le chemin du fichier \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classlecture__json_a5d82d4ff42d4c8e3162428c4fa7f6f6a}\label{classlecture__json_a5d82d4ff42d4c8e3162428c4fa7f6f6a}} 
-\index{lecture\+\_\+json@{lecture\+\_\+json}!recette@{recette}}
-\index{recette@{recette}!lecture\+\_\+json@{lecture\+\_\+json}}
-\subsubsection{\texorpdfstring{recette}{recette}}
-{\footnotesize\ttfamily \hyperlink{classRecette}{Recette}$\ast$ lecture\+\_\+json\+::recette\hspace{0.3cm}{\ttfamily [private]}}
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classlecture__json_a27d0869b75b2fcbe687888b390964f79}\label{classlecture__json_a27d0869b75b2fcbe687888b390964f79}} 
+\index{lecture\+\_\+json@{lecture\+\_\+json}!envoie\+Doc\+Json@{envoie\+Doc\+Json}}
+\index{envoie\+Doc\+Json@{envoie\+Doc\+Json}!lecture\+\_\+json@{lecture\+\_\+json}}
+\subsubsection{\texorpdfstring{envoie\+Doc\+Json}{envoieDocJson}}
+{\footnotesize\ttfamily void lecture\+\_\+json\+::envoie\+Doc\+Json (\begin{DoxyParamCaption}\item[{Q\+Json\+Document}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
-Variable permettant l\textquotesingle{}accès à l\textquotesingle{}objet \hyperlink{classRecette}{Recette} 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+
+signal d\textquotesingle{}envoie du document Json 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{classlecture__json_a27d0869b75b2fcbe687888b390964f79}{envoie\+Doc\+Json(\+Q\+Json\+Document)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+J\+Son\+Document} & \+: qui renvoie le document Json \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlecture__json_a9b907076c0d37125a6ab35b5906c9880}\label{classlecture__json_a9b907076c0d37125a6ab35b5906c9880}} 
+\index{lecture\+\_\+json@{lecture\+\_\+json}!recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}}
+\index{recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}!lecture\+\_\+json@{lecture\+\_\+json}}
+\subsubsection{\texorpdfstring{recevoir\+Nom\+Fichier}{recevoirNomFichier}}
+{\footnotesize\ttfamily lecture\+\_\+json\+::recevoir\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+fonction qui permet de vérifier le fichier json et de d\textquotesingle{}envoyer une demande de traitement 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & path \+: Q\+String qui renvoie le chemin du fichier \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{classlecture__json_addfbc41d56e266180e4a120ba3cd1c61}\label{classlecture__json_addfbc41d56e266180e4a120ba3cd1c61}} 
+\index{lecture\+\_\+json@{lecture\+\_\+json}!path@{path}}
+\index{path@{path}!lecture\+\_\+json@{lecture\+\_\+json}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily Q\+String lecture\+\_\+json\+::path\hspace{0.3cm}{\ttfamily [private]}}
+
+path\+: chemin d\textquotesingle{}accès du fichier json 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{lecture__json_8h}{lecture\+\_\+json.\+h}\item 
 \hyperlink{lecture__json_8cpp}{lecture\+\_\+json.\+cpp}\end{DoxyCompactItemize}

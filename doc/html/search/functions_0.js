@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['connection',['connection',['../classtraitement.html#a2ce2b64928d33b331a8f67857ca22e74',1,'traitement']]]
+  ['dragenterevent',['dragEnterEvent',['../classMainWindowLaunchDialog.html#aaf393173ffd6c63b2c4d5bdd48b8ddb4',1,'MainWindowLaunchDialog']]],
+  ['dropevent',['dropEvent',['../classMainWindowLaunchDialog.html#a6b292183d418fe79b79225d9a35bd3dd',1,'MainWindowLaunchDialog']]]
 ];

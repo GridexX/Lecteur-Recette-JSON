@@ -1,0 +1,8 @@
+<map id="Transmission" name="Transmission">
+<area shape="rect" id="node3" href="$classTraitement.html" title="{Traitement\n||+ Traitement()\l+ getRecette()\l+ recevoirNomFichier()\l+ recevoirDocJson()\l}" alt="" coords="72,815,227,936"/>
+<area shape="rect" id="node4" href="$classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l}" alt="" coords="72,433,227,525"/>
+<area shape="rect" id="node5" href="$classRecette.html" title="{Recette\n|&#45; nom\l&#45; description\l&#45; motsCles\l&#45; listeIngredients\l&#45; listeEtapes\l&#45; temps\l&#45; URL\l|+ Recette()\l+ getNom()\l+ setNom()\l+ getDescription()\l+ setDescription()\l+ getListeIngredients()\l+ setListeIngredients()\l+ getListeEtapes()\l+ setListeEtapes()\l+ getTemps()\l+ setTemps()\l+ getURL()\l+ setURL()\l+ getMotsCles()\l+ setMotsCles()\l}" alt="" coords="251,293,403,664"/>
+<area shape="rect" id="node6" href="$classMainWindow.html" title="{MainWindow\n|&#45; machine\l&#45; listEtapes\l&#45; currentstate\l|+ MainWindow()\l+ ~MainWindow()\l+ setImage()\l+ setImageWhenIsUpload()\l+ modifNom()\l+ modifDesc()\l+ modifMotsCles()\l+ modifIng()\l+ modifEtapes()\l+ modifTemps()\l+ modifURL()\l&#45; nextInstruct()\l&#45; lastInstruct()\l&#45; updateStep()\l}" alt="" coords="389,727,572,1024"/>
+<area shape="rect" id="node8" href="$classUi_1_1MainWindow.html" title="{Ui::MainWindow\n||}" alt="" coords="558,440,677,517"/>
+<area shape="rect" id="node9" href="$classUi__MainWindow.html" title="{Ui_MainWindow\n|+ centralwidget\l+ Infos_2\l+ Infos\l+ verticalLayoutWidget\l+ verticalLayout\l+ label_2\l+ nameLabel\l+ label_3\l+ descLabel\l+ label\let 19 de plus...\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="540,5,696,244"/>
+</map>

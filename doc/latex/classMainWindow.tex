@@ -1,4 +1,4 @@
-\hypertarget{classMainWindow}{}\section{Main\+Window Class Reference}
+\hypertarget{classMainWindow}{}\section{Référence de la classe Main\+Window}
 \label{classMainWindow}\index{Main\+Window@{Main\+Window}}
 
 
@@ -6,26 +6,28 @@
 
 
 
-Inheritance diagram for Main\+Window\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de Main\+Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{classMainWindow__inherit__graph}
+\includegraphics[width=217pt]{classMainWindow__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Main\+Window\+:
-\nopagebreak
+Graphe de collaboration de Main\+Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{classMainWindow__coll__graph}
+\includegraphics[height=550pt]{classMainWindow__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Slots}
+\subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}{set\+Image} (Q\+String)
+\item 
+void \hyperlink{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}{set\+Image\+When\+Is\+Upload} (Q\+Network\+Reply $\ast$)
 \item 
 void \hyperlink{classMainWindow_ac154b320efe8998a85a93f1c41ace7e4}{modif\+Nom} (Q\+String)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le nom de la recette \end{DoxyCompactList}\item 
@@ -37,42 +39,45 @@ void \hyperlink{classMainWindow_a64a5116401b4a54c55c6a7d34fc7ec93}{modif\+Ing} (
 \begin{DoxyCompactList}\small\item\em slot qui modifie la liste des ingrédients \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindow_a1a85241ab332ebb026638ff0a6df83e0}{modif\+Etapes} (Q\+String\+List)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le la liste des etapes \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_aa1a396598453cdc0c4571dda33504098}{modif\+Temps} (Q\+String\+List)
+void \hyperlink{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}{modif\+Temps} (Q\+String)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le temps nécessaire pour préparer la recette \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindow_a3620273f0e53b380d70df636400e8519}{modif\+U\+RL} (Q\+String)
 \begin{DoxyCompactList}\small\item\em slot qui modifie l\textquotesingle{}url pour accéder à la recette \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Public Member Functions}
+\subsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}{end\+Change\+State} ()
+\begin{DoxyCompactList}\small\item\em signal qui annonce la fin du changement d\textquotesingle{}état \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window} (Q\+Widget $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em constructeur de la fonction \hyperlink{classMainWindow}{Main\+Window} \end{DoxyCompactList}\item 
 \hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
 \begin{DoxyCompactList}\small\item\em destructeur de la fonction \hyperlink{classMainWindow}{Main\+Window} \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Slots}
+\subsection*{Connecteurs privés}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classMainWindow_a408dd139f2400ee1fb7bd0e4545b2107}{first\+\_\+state} ()
-\begin{DoxyCompactList}\small\item\em fonction liée à la Q\+State\+Machine. Permet de maquer le bouton précédent en arrivant sur la première étape \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_af3f49b394ed51e824ae8fc81d1ef252e}{last\+\_\+state} ()
-\begin{DoxyCompactList}\small\item\em fonction liée à la Q\+State\+Machine. Permet de maquer le bouton suivant en arrivant sur la dernière étape \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_af15be8ac4337837cb0ceed0b9c490e0a}{first\+\_\+state\+\_\+exit} ()
-\begin{DoxyCompactList}\small\item\em fonction liée à la Q\+State\+Machine. Permet de ré-\/afficher le bouton précédent en sortie de la première étape \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a519a0a9fd60eea17c887433feab17ce0}{last\+\_\+state\+\_\+exit} ()
-\begin{DoxyCompactList}\small\item\em fonction liée à la Q\+State\+Machine. Permet de ré-\/affichant le bouton suivant en sortie de la dernière étape \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+void \hyperlink{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}{next\+Instruct} ()
+\begin{DoxyCompactList}\small\item\em fonction qui permet de passer à l\textquotesingle{}instruction suivante \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a715f753a6c46e3f10565a5a1b849ee86}{last\+Instruct} ()
+\begin{DoxyCompactList}\small\item\em fonction qui permet de passer à l\textquotesingle{}instruction précédente \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a344d21527850380c306fe7ac165321bd}{update\+Step} ()
+\begin{DoxyCompactList}\small\item\em fonction qui met à jour l\textquotesingle{}instruction affiché à l\textquotesingle{}écran \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Main\+Window $\ast$ \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}
+\hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window} $\ast$ \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}
 \item 
 Q\+State\+Machine $\ast$ \hyperlink{classMainWindow_af5f0afb6c5f81e4438f98f93f918ea8b}{machine}
 \item 
 Q\+String\+List \hyperlink{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}{list\+Etapes}
 \item 
-Q\+List$<$ Q\+State $\ast$ $>$ \hyperlink{classMainWindow_abee312bebbed8977688608c2a26e380e}{statelist}
+int \hyperlink{classMainWindow_aa7fb75eed49d7eaa019f64577fa11b05}{currentstate} = 0
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
+\subsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
 \index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
 \index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
@@ -84,7 +89,7 @@ Q\+List$<$ Q\+State $\ast$ $>$ \hyperlink{classMainWindow_abee312bebbed897768860
 constructeur de la fonction \hyperlink{classMainWindow}{Main\+Window} 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em parent} & \+: précise si le widget hérite d\textquotesingle{}une autre fenêtre \\
 \hline
 \end{DoxyParams}
@@ -100,46 +105,29 @@ destructeur de la fonction \hyperlink{classMainWindow}{Main\+Window}
 
 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classMainWindow_a408dd139f2400ee1fb7bd0e4545b2107}\label{classMainWindow_a408dd139f2400ee1fb7bd0e4545b2107}} 
-\index{Main\+Window@{Main\+Window}!first\+\_\+state@{first\+\_\+state}}
-\index{first\+\_\+state@{first\+\_\+state}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{first\+\_\+state}{first\_state}}
-{\footnotesize\ttfamily Main\+Window\+::first\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}\label{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}} 
+\index{Main\+Window@{Main\+Window}!end\+Change\+State@{end\+Change\+State}}
+\index{end\+Change\+State@{end\+Change\+State}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{end\+Change\+State}{endChangeState}}
+{\footnotesize\ttfamily void Main\+Window\+::end\+Change\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 
-fonction liée à la Q\+State\+Machine. Permet de maquer le bouton précédent en arrivant sur la première étape 
+signal qui annonce la fin du changement d\textquotesingle{}état 
 
-\mbox{\Hypertarget{classMainWindow_af15be8ac4337837cb0ceed0b9c490e0a}\label{classMainWindow_af15be8ac4337837cb0ceed0b9c490e0a}} 
-\index{Main\+Window@{Main\+Window}!first\+\_\+state\+\_\+exit@{first\+\_\+state\+\_\+exit}}
-\index{first\+\_\+state\+\_\+exit@{first\+\_\+state\+\_\+exit}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{first\+\_\+state\+\_\+exit}{first\_state\_exit}}
-{\footnotesize\ttfamily Main\+Window\+::first\+\_\+state\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
-
-
-
-fonction liée à la Q\+State\+Machine. Permet de ré-\/afficher le bouton précédent en sortie de la première étape 
-
-\mbox{\Hypertarget{classMainWindow_af3f49b394ed51e824ae8fc81d1ef252e}\label{classMainWindow_af3f49b394ed51e824ae8fc81d1ef252e}} 
-\index{Main\+Window@{Main\+Window}!last\+\_\+state@{last\+\_\+state}}
-\index{last\+\_\+state@{last\+\_\+state}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{last\+\_\+state}{last\_state}}
-{\footnotesize\ttfamily Main\+Window\+::last\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}{end\+Change\+State()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classMainWindow_a715f753a6c46e3f10565a5a1b849ee86}\label{classMainWindow_a715f753a6c46e3f10565a5a1b849ee86}} 
+\index{Main\+Window@{Main\+Window}!last\+Instruct@{last\+Instruct}}
+\index{last\+Instruct@{last\+Instruct}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{last\+Instruct}{lastInstruct}}
+{\footnotesize\ttfamily Main\+Window\+::last\+Instruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 
-fonction liée à la Q\+State\+Machine. Permet de maquer le bouton suivant en arrivant sur la dernière étape 
-
-\mbox{\Hypertarget{classMainWindow_a519a0a9fd60eea17c887433feab17ce0}\label{classMainWindow_a519a0a9fd60eea17c887433feab17ce0}} 
-\index{Main\+Window@{Main\+Window}!last\+\_\+state\+\_\+exit@{last\+\_\+state\+\_\+exit}}
-\index{last\+\_\+state\+\_\+exit@{last\+\_\+state\+\_\+exit}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{last\+\_\+state\+\_\+exit}{last\_state\_exit}}
-{\footnotesize\ttfamily Main\+Window\+::last\+\_\+state\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
-
-
-
-fonction liée à la Q\+State\+Machine. Permet de ré-\/affichant le bouton suivant en sortie de la dernière étape 
+fonction qui permet de passer à l\textquotesingle{}instruction précédente 
 
 \mbox{\Hypertarget{classMainWindow_a77ada7a541d869ea7f3647900ba6f6df}\label{classMainWindow_a77ada7a541d869ea7f3647900ba6f6df}} 
 \index{Main\+Window@{Main\+Window}!modif\+Desc@{modif\+Desc}}
@@ -152,7 +140,7 @@ fonction liée à la Q\+State\+Machine. Permet de ré-\/affichant le bouton suiv
 slot qui modifie la description 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em la} & description sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
@@ -167,7 +155,7 @@ slot qui modifie la description
 slot qui modifie le la liste des etapes 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em les} & étapes sous formes de liste de chaine de caractere \\
 \hline
 \end{DoxyParams}
@@ -182,7 +170,7 @@ slot qui modifie le la liste des etapes
 slot qui modifie la liste des ingrédients 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em les} & ingrédients sous forme de liste de chaine de caractere \\
 \hline
 \end{DoxyParams}
@@ -197,7 +185,7 @@ slot qui modifie la liste des ingrédients
 slot qui modifie les mots cles 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em les} & mots cles sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
@@ -212,22 +200,22 @@ slot qui modifie les mots cles
 slot qui modifie le nom de la recette 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em le} & nom sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_aa1a396598453cdc0c4571dda33504098}\label{classMainWindow_aa1a396598453cdc0c4571dda33504098}} 
+\mbox{\Hypertarget{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}\label{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}} 
 \index{Main\+Window@{Main\+Window}!modif\+Temps@{modif\+Temps}}
 \index{modif\+Temps@{modif\+Temps}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Temps}{modifTemps}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Temps (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{temps\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Temps (\begin{DoxyParamCaption}\item[{Q\+String}]{temps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
 slot qui modifie le temps nécessaire pour préparer la recette 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em les} & différents temps sous forme de liste de chaine de caractère \\
 \hline
 \end{DoxyParams}
@@ -242,14 +230,52 @@ slot qui modifie le temps nécessaire pour préparer la recette
 slot qui modifie l\textquotesingle{}url pour accéder à la recette 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em l\textquotesingle{}url} & sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}\label{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}} 
+\index{Main\+Window@{Main\+Window}!next\+Instruct@{next\+Instruct}}
+\index{next\+Instruct@{next\+Instruct}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{next\+Instruct}{nextInstruct}}
+{\footnotesize\ttfamily Main\+Window\+::next\+Instruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}\label{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}} 
+
+fonction qui permet de passer à l\textquotesingle{}instruction suivante 
+
+\mbox{\Hypertarget{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}\label{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}} 
+\index{Main\+Window@{Main\+Window}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{set\+Image}{setImage}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Image (\begin{DoxyParamCaption}\item[{Q\+String}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}\label{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}} 
+\index{Main\+Window@{Main\+Window}!set\+Image\+When\+Is\+Upload@{set\+Image\+When\+Is\+Upload}}
+\index{set\+Image\+When\+Is\+Upload@{set\+Image\+When\+Is\+Upload}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{set\+Image\+When\+Is\+Upload}{setImageWhenIsUpload}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Image\+When\+Is\+Upload (\begin{DoxyParamCaption}\item[{Q\+Network\+Reply $\ast$}]{reply }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classMainWindow_a344d21527850380c306fe7ac165321bd}\label{classMainWindow_a344d21527850380c306fe7ac165321bd}} 
+\index{Main\+Window@{Main\+Window}!update\+Step@{update\+Step}}
+\index{update\+Step@{update\+Step}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{update\+Step}{updateStep}}
+{\footnotesize\ttfamily Main\+Window\+::update\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+fonction qui met à jour l\textquotesingle{}instruction affiché à l\textquotesingle{}écran 
+
+
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{classMainWindow_aa7fb75eed49d7eaa019f64577fa11b05}\label{classMainWindow_aa7fb75eed49d7eaa019f64577fa11b05}} 
+\index{Main\+Window@{Main\+Window}!currentstate@{currentstate}}
+\index{currentstate@{currentstate}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{currentstate}{currentstate}}
+{\footnotesize\ttfamily int Main\+Window\+::currentstate = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+int currentstate\+: variable du numero de l\textquotesingle{}instruction actuelle \mbox{\Hypertarget{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}\label{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}} 
 \index{Main\+Window@{Main\+Window}!list\+Etapes@{list\+Etapes}}
 \index{list\+Etapes@{list\+Etapes}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{list\+Etapes}{listEtapes}}
@@ -261,21 +287,15 @@ list\+Etapes\+: liste de string contenant la liste des étapes \mbox{\Hypertarge
 \subsubsection{\texorpdfstring{machine}{machine}}
 {\footnotesize\ttfamily Q\+State\+Machine$\ast$ Main\+Window\+::machine\hspace{0.3cm}{\ttfamily [private]}}
 
-machine\+: machine à état quand on appuie sur les boutons \mbox{\Hypertarget{classMainWindow_abee312bebbed8977688608c2a26e380e}\label{classMainWindow_abee312bebbed8977688608c2a26e380e}} 
-\index{Main\+Window@{Main\+Window}!statelist@{statelist}}
-\index{statelist@{statelist}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{statelist}{statelist}}
-{\footnotesize\ttfamily Q\+List$<$Q\+State $\ast$$>$ Main\+Window\+::statelist\hspace{0.3cm}{\ttfamily [private]}}
-
-statelist\+: stocker la liste des états \mbox{\Hypertarget{classMainWindow_a35466a70ed47252a0191168126a352a5}\label{classMainWindow_a35466a70ed47252a0191168126a352a5}} 
+machine\+: machine à état quand on appuie sur les boutons \mbox{\Hypertarget{classMainWindow_a35466a70ed47252a0191168126a352a5}\label{classMainWindow_a35466a70ed47252a0191168126a352a5}} 
 \index{Main\+Window@{Main\+Window}!ui@{ui}}
 \index{ui@{ui}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{ui}{ui}}
-{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window}$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 ui\+: \hyperlink{classMainWindow}{Main\+Window} contenant l\textquotesingle{}ui 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
 \hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
