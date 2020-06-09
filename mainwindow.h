@@ -55,8 +55,8 @@ private:
 
 public slots :
     //slots pour modifs les labels
-   // void setImage(QString);
-   // void setImageWhenIsUpload(QNetworkReply *);
+    void setImage(QString);
+    void setImageWhenIsUpload(QNetworkReply *);
 
     /**
      * @fn modifNom(QString)
@@ -98,7 +98,7 @@ public slots :
      * @brief slot qui modifie le temps nécessaire pour préparer la recette
      * @param les différents temps sous forme de liste de chaine de caractère
      */
-    void modifTemps(QStringList);
+    void modifTemps(QString);
 
     /**
      * @fn modifURL(QString)

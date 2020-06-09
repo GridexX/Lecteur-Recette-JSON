@@ -33,7 +33,7 @@ void MainWindow::modifDesc(QString str)
     ui->descLabel->setWordWrap(true);
     ui->descLabel->setText(str);
 }
-/*
+
 void MainWindow::setImage(QString url)
 {
     if(url != ""){
@@ -52,44 +52,11 @@ void MainWindow::setImageWhenIsUpload(QNetworkReply *reply)
     pixmap.loadFromData(reply->readAll());
     ui->image->setPixmap(pixmap);
 }
-*/
-void MainWindow::modifTemps(QStringList tempsList)
+
+void MainWindow::modifTemps(QString temps)
 {
-    QString tempsPrep=tempsList[0];
-    QString tempsCuis=tempsList[1];
-    QString strTP, strTC, strTT;
-    bool doitAfficheTT=true;
-    QRegExp calcM("([0-9]*)M");
-    QRegExp calcH("([0-9]*)H");                                                                     // Expréssion régulière pour récupérer les heures
+    ui->timeLabel->setText(temps);
 
-    calcM.indexIn(tempsPrep);
-    calcH.indexIn(tempsPrep);
-
-    if (calcH.cap(1).toInt() != 0 || calcM.cap(1).toInt() != 0)
-        strTP = ("Temps de préparation : " + calcH.cap(1) + "h" + calcM.cap(1));
-    else{
-        strTP="";
-        doitAfficheTT=false;
-    }
-    int tempsTotalH = calcH.cap(1).toInt();
-    int tempsTotalM = calcM.cap(1).toInt();
-
-    calcM.indexIn(tempsCuis);
-    calcH.indexIn(tempsCuis);
-    tempsTotalH += calcH.cap(1).toInt();
-    tempsTotalM += calcM.cap(1).toInt();
-
-    if (calcH.cap(1).toInt() != 0 || calcM.cap(1).toInt() != 0)
-        strTC =  " | Temps de cuisson : " + calcH.cap(1) + "h" + calcM.cap(1);
-    else {
-        strTC="";
-        doitAfficheTT=false;
-    }
-    if(doitAfficheTT)
-        strTT =  " | Temps total : " + QString::number(tempsTotalH) + " h" + QString::number(tempsTotalM);
-    else
-        strTT="";
-    ui->timeLabel->setText(strTP + strTC + strTT);
 }
 
 

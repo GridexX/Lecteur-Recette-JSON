@@ -52,7 +52,43 @@ void Traitement::recevoirDocJson(QJsonDocument docJson)
     temps << (obj.value("cookTime")).toString();
     temps << (obj.value("totalTime")).toString();
 
-    recette->setTemps(temps);
+    QString tempsPrep=temps[0];
+    QString tempsCuis=temps[1];
+    QString strTP, strTC, strTT;
+    bool doitAfficheTT=true;
+    QRegExp calcM("([0-9]*)M");
+    QRegExp calcH("([0-9]*)H");
+
+    calcM.indexIn(tempsPrep);
+    calcH.indexIn(tempsPrep);
+
+    if (calcH.cap(1).toInt() != 0 || calcM.cap(1).toInt() != 0)
+        strTP = ("Temps de préparation : " + calcH.cap(1) + "h" + calcM.cap(1));
+    else{
+        strTP="";
+        doitAfficheTT=false;
+    }
+    int tempsTotalH = calcH.cap(1).toInt();
+    int tempsTotalM = calcM.cap(1).toInt();
+
+    calcM.indexIn(tempsCuis);
+    calcH.indexIn(tempsCuis);
+    tempsTotalH += calcH.cap(1).toInt();
+    tempsTotalM += calcM.cap(1).toInt();
+
+    if (calcH.cap(1).toInt() != 0 || calcM.cap(1).toInt() != 0)
+        strTC =  " | Temps de cuisson : " + calcH.cap(1) + "h" + calcM.cap(1);
+    else {
+        strTC="";
+        doitAfficheTT=false;
+    }
+    if(doitAfficheTT)
+        strTT =  " | Temps total : " + QString::number(tempsTotalH) + " h" + QString::number(tempsTotalM);
+    else
+        strTT="";
+
+    QString allTime = strTP + strTC + strTT;
+    recette->setTemps(allTime);
 
     recette->setURL(obj.value("url").toString());
 

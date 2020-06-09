@@ -76,14 +76,14 @@ public:
      * @fn getTemps()
      * @brief fonction getter pour obtenir les différents temps de la recette
      */
-    QStringList getTemps() const;
+    QString getTemps() const;
 
     /**
      * @fn setTemps(const QStringList &)
      * @brief fonction setter pour modifier les différents temps de la recette
      * @param value : les différents temps de la recette de cuisine
      */
-    void setTemps(const QStringList &value);
+    void setTemps(const QString &value);
 
     /**
      * @fn getURL()
@@ -117,7 +117,7 @@ private:
     QString motsCles; /*!< motsCles: Les mots-clefs  de la recette */
     QStringList listeIngredients; /*!< listeIngredients: La liste des ingrédients de la recette */
     QStringList listeEtapes; /*!< listeEtapes: La liste des étapes de la recette */
-    QStringList temps; /*!< temps: les différents temps pour réaliser la recette */
+    QString temps; /*!< temps: les différents temps pour réaliser la recette */
     QString URL; /*!< URL: L'url pour accéder à la page web de la recette */
 
 };

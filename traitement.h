@@ -75,11 +75,11 @@ signals:
        void envoieEtapes(QStringList);
 
        /**
-        * @sa envoieTemps(QStringList)
+        * @sa envoieTemps(QString)
         * @brief fonction pour envoyer les temps à la classe MainWindow (voir classe MainWindow)
-        * @param temps : la liste des temps à transmettre
+        * @param temps : les temps à transmettre
         */
-       void envoieTemps(QStringList);
+       void envoieTemps(QString);
 
        /**
         * @sa envoieURL(QStringList)

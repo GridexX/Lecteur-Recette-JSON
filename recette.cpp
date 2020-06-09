@@ -51,12 +51,12 @@ void Recette::setListeEtapes(const QStringList &_listeEtapes)
     listeEtapes=_listeEtapes;
 }
 
-QStringList Recette::getTemps() const
+QString Recette::getTemps() const
 {
     return temps;
 }
 
-void Recette::setTemps(const QStringList &_temps)
+void Recette::setTemps(const QString &_temps)
 {
     temps=_temps;
 }

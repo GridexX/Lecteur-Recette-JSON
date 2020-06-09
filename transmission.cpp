@@ -16,7 +16,7 @@ Transmission::Transmission(QObject *parent)
     QObject::connect(t,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
     QObject::connect(t,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
     QObject::connect(t,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
-    QObject::connect(t,SIGNAL(envoieTemps(QStringList)),w,SLOT(modifTemps(QStringList)));
+    QObject::connect(t,SIGNAL(envoieTemps(QString)),w,SLOT(modifTemps(QString)));
     QObject::connect(t,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
     QObject::connect(t,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
 
