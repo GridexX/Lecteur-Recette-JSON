@@ -37,6 +37,11 @@ public:
       * \brief Destructeur de la fonction MainWindowLaunchDialog
       */
     ~MainWindowLaunchDialog();
+    /**
+     * \fn on_actionOuvrir_un_fichier_triggered()
+     * \brief Fonction qui réagit quand le bouton pour choisir un fichier est cliqué
+     */
+    void on_actionOuvrir_un_fichier_triggered();
 signals:
     /**
      * \sa envoyerNomFichier(QString)
@@ -51,12 +56,6 @@ private slots:
      * \brief Fonction qui réagit quand le bouton pour choisir un fichier est cliqué
      */
     void on_pushButton_clicked();
-
-    /**
-     * \fn on_actionOuvrir_un_fichier_triggered()
-     * \brief Fonction qui réagit quand le bouton pour choisir un fichier est cliqué
-     */
-    void on_actionOuvrir_un_fichier_triggered();
 
     /**
      * \fn on_actionQuitter_triggered()

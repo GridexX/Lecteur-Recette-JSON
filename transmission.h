@@ -1,3 +1,9 @@
+/**
+ *   \file transmission.h
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant le transmission des données
+ */
 #ifndef TRANSMISSION_H
 #define TRANSMISSION_H
 

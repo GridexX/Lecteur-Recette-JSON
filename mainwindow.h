@@ -84,6 +84,10 @@ private slots:
       */
     void updateStep();
 
+    void on_actionOuvir_triggered();
+
+    void on_actionQuitter_triggered();
+
 signals:
     /**
       * @sa endChangeState()
@@ -99,9 +103,6 @@ private:
 
 public slots :
     //slots pour modifs les labels
-    void setImage(QString);
-    void setImageWhenIsUpload(QNetworkReply *);
-
     /**
      * @fn modifNom(QString)
      * @brief slot qui modifie le nom de la recette

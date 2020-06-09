@@ -52,7 +52,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
-      mainwindowlaunchdialog.ui \
-      mainwindow.ui
+      mainwindowlaunchdialog.ui
 
 RC_FILE = RecipesReader.rc

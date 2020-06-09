@@ -1,3 +1,9 @@
+/**
+ *   \file transmission.cpp
+ *   \author Pollet Lucas - Fougerouse Arsène
+ *
+ *   \brief Classe permettant le transmission des données
+ */
 #include "transmission.h"
 
 Transmission::Transmission(QObject *parent)
