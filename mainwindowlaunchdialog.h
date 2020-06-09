@@ -38,6 +38,11 @@ public:
       */
     ~MainWindowLaunchDialog();
 signals:
+    /**
+     * \sa envoyerNomFichier(QString)
+     * \brief Signal qui envoie le nom du fichier Json
+     * \param QString : le chemin du fichier json
+     */
     void envoyerNomFichier(QString);
 
 private slots:
@@ -74,7 +79,8 @@ private slots:
 private:
     Ui::MainWindowLaunchDialog *ui; /*!< Ui::MainWindowLaunchDialog *ui : variable d'instance de la fenêtre ui */
 
-    Transmission *t;
+    Transmission *t; /*!< Transmission *t: pointeur sur la classe Transmission */
+
     /**
      * \fn dropEvent(QDropEvent *event)
      * \brief Fonction qui permet de gérer le drop de fichier

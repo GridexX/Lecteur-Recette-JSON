@@ -40,18 +40,34 @@ public:
     ~MainWindow();
 
 private slots:
+    /**
+      * @fn nextInstruct()
+      * @brief fonction qui permet de passer à l'instruction suivante
+      */
     void nextInstruct();
+    /**
+      * @fn lastInstruct()
+      * @brief fonction qui permet de passer à l'instruction précédente
+      */
     void lastInstruct();
+    /**
+      * @fn updateStep()
+      * @brief fonction qui met à jour l'instruction affiché à l'écran
+      */
     void updateStep();
 
 signals:
+    /**
+      * @sa endChangeState()
+      * @brief signal qui annonce la fin du changement d'état
+      */
     void endChangeState();
 
 private:
     Ui::MainWindow *ui; /*!< ui: MainWindow contenant l'ui */
     QStateMachine *machine; /*!< machine: machine à état quand on appuie sur les boutons*/
     QStringList listEtapes; /*!< listEtapes: liste de string contenant la liste des étapes*/
-    int currentstate = 0;
+    int currentstate = 0; /*!< int currentstate: variable du numero de l'instruction actuelle */
 
 public slots :
     //slots pour modifs les labels

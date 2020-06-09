@@ -88,13 +88,25 @@ signals:
         */
        void envoieURL(QString);
 
-       //void envoieDocJson(QJsonDocument);
-
+       /**
+        * @sa envoieNomFichier(QString)
+        * @brief signal pour envoyer le chemin du fichier
+        * @param QString : le chemin d'accès du fichier
+        */
        void envoieNomFichier(QString);
 
 public slots :
-
+       /**
+        * @sa recevoirNomFichier(QString)
+        * @brief fonction qui recoit le nom du fichier pour le traiter
+        * @param QString : chemin du fichier JSON
+        */
        void recevoirNomFichier(QString);
+       /**
+        * @sa recevoirDocJson(QString)
+        * @brief fonction qui recoit le document JSON pour le traiter et lire ses données
+        * @param QJsonDocument :le document JSON à traiter
+        */
        void recevoirDocJson(QJsonDocument);
 };
 

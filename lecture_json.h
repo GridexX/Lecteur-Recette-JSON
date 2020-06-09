@@ -26,11 +26,21 @@ public:
      */
     explicit lecture_json(QObject *parent = nullptr);
 private:
-    QString path;
+    QString path; /*!< path: chemin d'accès du fichier json */
 
 public slots:
+    /**
+     * @fn recevoirNomFichier(QString)
+     * @brief fonction qui permet de vérifier le fichier json et de d'envoyer une demande de traitement
+     * @param QString path : QString qui renvoie le chemin du fichier
+     */
     void recevoirNomFichier(QString);
 signals :
+    /**
+     * @sa envoieDocJson(QJsonDocument)
+     * @brief signal d'envoie du document Json
+     * @param QJSonDocument : qui renvoie le document Json
+     */
     void envoieDocJson(QJsonDocument);
 };
 
