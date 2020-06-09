@@ -9,6 +9,12 @@
 
 #include <QMainWindow>
 #include <QStateMachine>
+#include <QDebug>
+#include <QEvent>
+#include <QMessageBox>
+#include <QState>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QtNetwork/QNetworkReply>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -34,36 +40,24 @@ public:
     ~MainWindow();
 
 private slots:
-    /**
-     * @fn first_state()
-     * @brief fonction liée à la QStateMachine. Permet de maquer le bouton précédent en arrivant sur la première étape
-     */
-    void first_state();
-    /**
-     * @fn last_state()
-     * @brief fonction liée à la QStateMachine. Permet de maquer le bouton suivant en arrivant sur la dernière étape
-     */
-    void last_state();
-    /**
-     * @fn first_state_exit()
-     * @brief fonction liée à la QStateMachine. Permet de ré-afficher le bouton précédent en sortie de la première étape
-     */
-    void first_state_exit();
-    /**
-     * @fn last_state_exit()
-     * @brief fonction liée à la QStateMachine. Permet de ré-affichant le bouton suivant en sortie de la dernière étape
-     */
-    void last_state_exit();
+    void nextInstruct();
+    void lastInstruct();
+    void updateStep();
+
+signals:
+    void endChangeState();
 
 private:
     Ui::MainWindow *ui; /*!< ui: MainWindow contenant l'ui */
     QStateMachine *machine; /*!< machine: machine à état quand on appuie sur les boutons*/
     QStringList listEtapes; /*!< listEtapes: liste de string contenant la liste des étapes*/
-    QList<QState *> statelist; /*!< statelist: stocker la liste des états*/
-
+    int currentstate = 0;
 
 public slots :
     //slots pour modifs les labels
+   // void setImage(QString);
+   // void setImageWhenIsUpload(QNetworkReply *);
+
     /**
      * @fn modifNom(QString)
      * @brief slot qui modifie le nom de la recette
@@ -112,6 +106,5 @@ public slots :
      * @param l'url sous forme de chaine de caractère
      */
     void modifURL(QString);
-
 };
 #endif // MAINWINDOW_H

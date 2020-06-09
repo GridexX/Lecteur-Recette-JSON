@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Infos">
      <attribute name="title">
@@ -166,7 +166,7 @@
      <attribute name="title">
       <string>Liste ingrédients</string>
      </attribute>
-     <widget class="QLabel" name="lIngLabel">
+     <widget class="QLabel" name="lngLabel">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -224,7 +224,7 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="noEtapes">
          <property name="font">
           <font>
            <pointsize>12</pointsize>

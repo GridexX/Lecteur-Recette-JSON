@@ -6,10 +6,6 @@
  */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QDebug>
-#include <QEvent>
-#include <QMessageBox>
-#include <QState>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,7 +13,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    setWindowTitle("Votre recette: ");
     setFixedSize(750,550);
+    //setImage("https://static.750g.com/images/600-600/7b88d90630c62991df12b34c692aff0d/sucre-vanille-express.jpg");
 }
 
 MainWindow::~MainWindow()
@@ -35,8 +33,26 @@ void MainWindow::modifDesc(QString str)
     ui->descLabel->setWordWrap(true);
     ui->descLabel->setText(str);
 }
+/*
+void MainWindow::setImage(QString url)
+{
+    if(url != ""){
+        QNetworkAccessManager *acces = new QNetworkAccessManager(this);
+        connect(acces, SIGNAL(finished(QNetworkReply*)), this, SLOT(setImageWhenIsUpload(QNetworkReply*)));
 
+        const QUrl url_image = QUrl(url);
+        QNetworkRequest request(url_image);
+        acces->get(request);
+    }
+}
 
+void MainWindow::setImageWhenIsUpload(QNetworkReply *reply)
+{
+    QPixmap pixmap;
+    pixmap.loadFromData(reply->readAll());
+    ui->image->setPixmap(pixmap);
+}
+*/
 void MainWindow::modifTemps(QStringList tempsList)
 {
     QString tempsPrep=tempsList[0];
@@ -86,7 +102,8 @@ void MainWindow::modifMotsCles(QString str)
 void MainWindow::modifIng(QStringList l)
 {
     QString str = l.join("\n");
-    ui->lIngLabel->setText(str);
+    ui->IngLabel->setText(str);
+
 }
 
 void MainWindow::modifURL(QString url)
@@ -97,65 +114,83 @@ void MainWindow::modifURL(QString url)
     ui->label_url->setText("URL de la recette: <a href='"+url+"'>"+url+"</a>");
 }
 
-
+/* Machine à état */
 void MainWindow::modifEtapes(QStringList list)
 {
     ui->listeEtapes->setWordWrap(true);
 
-    //création QStateMachine pour les étapes de préparation
-    int size_list = list.size()-1;
+    listEtapes=list;
 
-    machine = new QStateMachine(this);
+    machine = new QStateMachine();
 
-    QList<QState *> statelist;
+    QState *stateStart = new QState();
+    QState *stateRunning = new QState();
+    QState *stateEnd = new QState();
+    QState *stateInRunningBefore = new QState();
+    QState *stateInRunningAfter = new QState();
 
-    for(int i=0; i <= size_list; i++){
-        QState * state = new QState();
+    stateRunning->addTransition(ui->button_suivant, SIGNAL(clicked()), stateInRunningAfter);
+    stateRunning->addTransition(ui->button_preced, SIGNAL(clicked()), stateInRunningBefore);
 
-        state->assignProperty(ui->listeEtapes, "text",  list.at(i));
-        state->assignProperty(ui->label_8, "text", "étape "+QString::number(i+1) + "/" + QString::number(list.size()));
+    stateInRunningAfter->addTransition(this, SIGNAL(endChangeState()), stateRunning);
+    stateInRunningBefore->addTransition(this, SIGNAL(endChangeState()), stateRunning);
 
-        machine->addState(state);
-        statelist.append(state);
+    stateRunning->addTransition(this, SIGNAL(endChangeState()), stateRunning);
+    stateEnd->addTransition(ui->button_preced, SIGNAL(clicked()), stateRunning);
 
-        if(i == 0){
-            machine->setInitialState(state);
-            connect(state, SIGNAL(entered()), this, SLOT(first_state()));
-            connect(state, SIGNAL(exited()), this, SLOT(first_state_exit()));
-        }
-        if(i == size_list){
-            connect(state, SIGNAL(entered()), this, SLOT(last_state()));
-            connect(state, SIGNAL(exited()), this, SLOT(last_state_exit()));
-        }
-    }
-    for(int i=0; i <= size_list; i++){
-        if(i != size_list){
-            statelist[i]->addTransition(ui->button_suivant, SIGNAL(clicked()), statelist[i+1]);
-         }
-         if(i != 0){
-            statelist[i]->addTransition(ui->button_preced, SIGNAL(clicked()), statelist[i-1]);
-         }
-    }
+    stateStart->addTransition(ui->button_suivant, SIGNAL(clicked()), stateRunning);
+    stateStart->assignProperty(ui->noEtapes, "text", "Appuyez sur suivant pour commencer les instructions.");
+    stateStart->assignProperty(ui->listeEtapes, "text", "");
+
+    machine->addState(stateStart);
+    machine->addState(stateRunning);
+    machine->addState(stateEnd);
+    machine->addState(stateInRunningBefore);
+    machine->addState(stateInRunningAfter);
+
+    machine->setInitialState(stateStart);
+
+    ui->button_preced->setDisabled(true);
+
+    connect(stateRunning, SIGNAL(entered()), this, SLOT(updateStep()));
+    connect(stateInRunningAfter, SIGNAL(entered()), this, SLOT(nextInstruct()));
+    connect(stateInRunningBefore, SIGNAL(entered()), this, SLOT(lastInstruct()));
 
     machine->start();
 }
 
-void MainWindow::first_state()
+void MainWindow::nextInstruct()
 {
-    ui->button_preced->hide();
+    ui->button_suivant->setDisabled(false);
+    ui->button_preced->setDisabled(false);
+
+    if(currentstate < listEtapes.size()-1){
+        currentstate++;
+        emit endChangeState();
+
+        if(currentstate == listEtapes.size()-1)
+            ui->button_suivant->setDisabled(true);
+    }
+    updateStep();
 }
 
-void MainWindow::last_state()
+void MainWindow::lastInstruct()
 {
-    ui->button_suivant->hide();
+    ui->button_suivant->setDisabled(false);
+    ui->button_preced->setDisabled(false);
+
+    if(currentstate > 0){
+        currentstate--;
+        emit endChangeState();
+    }
+    if(currentstate == 0)
+        ui->button_preced->setDisabled(true);
+
+    updateStep();
 }
 
-void MainWindow::first_state_exit()
+void MainWindow::updateStep()
 {
-    ui->button_preced->show();
-}
-
-void MainWindow::last_state_exit()
-{
-    ui->button_suivant->show();
+    ui->listeEtapes->setText(listEtapes[currentstate]);
+    ui->noEtapes->setText("étape "+QString::number(currentstate+1) + "/" + QString::number(listEtapes.size()));
 }

@@ -40,13 +40,14 @@ public:
     QLabel *label_5;
     QLabel *timeLabel;
     QLabel *label_url;
+    QLabel *image;
     QWidget *tab_2;
-    QLabel *lIngLabel;
+    QLabel *IngLabel;
     QLabel *label_4;
     QWidget *tab;
     QWidget *verticalLayoutWidget_3;
     QVBoxLayout *verticalLayout_3;
-    QLabel *label_8;
+    QLabel *noEtapes;
     QLabel *listeEtapes;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout_2;
@@ -134,13 +135,13 @@ public:
         Infos_2->addTab(Infos, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
-        lIngLabel = new QLabel(tab_2);
-        lIngLabel->setObjectName(QString::fromUtf8("lIngLabel"));
-        lIngLabel->setGeometry(QRect(100, 60, 489, 341));
+        IngLabel = new QLabel(tab_2);
+        IngLabel->setObjectName(QString::fromUtf8("IngLabel"));
+        IngLabel->setGeometry(QRect(100, 60, 489, 341));
         QFont font1;
         font1.setPointSize(9);
-        lIngLabel->setFont(font1);
-        lIngLabel->setAlignment(Qt::AlignCenter);
+        IngLabel->setFont(font1);
+        IngLabel->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(tab_2);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(100, 0, 489, 101));
@@ -157,13 +158,13 @@ public:
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_8 = new QLabel(verticalLayoutWidget_3);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setFont(font2);
-        label_8->setLayoutDirection(Qt::LeftToRight);
-        label_8->setAlignment(Qt::AlignCenter);
+        noEtapes = new QLabel(verticalLayoutWidget_3);
+        noEtapes->setObjectName(QString::fromUtf8("noEtapes"));
+        noEtapes->setFont(font2);
+        noEtapes->setLayoutDirection(Qt::LeftToRight);
+        noEtapes->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_3->addWidget(label_8);
+        verticalLayout_3->addWidget(noEtapes);
 
         listeEtapes = new QLabel(verticalLayoutWidget_3);
         listeEtapes->setObjectName(QString::fromUtf8("listeEtapes"));
@@ -218,10 +219,10 @@ public:
         timeLabel->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_url->setText(QApplication::translate("MainWindow", "URL", nullptr));
         Infos_2->setTabText(Infos_2->indexOf(Infos), QApplication::translate("MainWindow", "Infos", nullptr));
-        lIngLabel->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        IngLabel->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Ingr\303\251dients :", nullptr));
         Infos_2->setTabText(Infos_2->indexOf(tab_2), QApplication::translate("MainWindow", "Liste ingr\303\251dients", nullptr));
-        label_8->setText(QApplication::translate("MainWindow", "nb/total", nullptr));
+        noEtapes->setText(QApplication::translate("MainWindow", "nb/total", nullptr));
         listeEtapes->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         button_preced->setText(QApplication::translate("MainWindow", "Pr\303\251d\303\251cent", nullptr));
         button_suivant->setText(QApplication::translate("MainWindow", "Suivant", nullptr));

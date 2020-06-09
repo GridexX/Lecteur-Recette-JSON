@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -53,3 +54,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 FORMS += \
       mainwindowlaunchdialog.ui \
       mainwindow.ui
+
+RC_FILE = RecipesReader.rc
