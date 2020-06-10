@@ -13,30 +13,30 @@ Transmission::Transmission(QObject *parent)
     w = new MainWindow;
 
     //connection entre cette classe et le traitement pour envoyer le nom du fichier
-    //connect(this,SIGNAL(envoieNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
-   connect(t->getLecture(),SIGNAL(envoieDocJson(QJsonDocument)),t,SLOT(recevoirDocJson(QJsonDocument)));
-   connect(t,SIGNAL(finParsing()),this,SLOT(envoyerDonnees()));
+    //QObject::connect(this,SIGNAL(envoieNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
+    QObject::connect(t,SIGNAL(finTraitement()),this,SLOT(envoyerDonnees()));
+   //QObject::connect(t,SIGNAL(envoieNomDoc(QJsonDocument)),t,SLOT(modifNomDoc(QJsonDocument)));
 
     //connection entre signaux de la classe traitement et mainwindow
-    connect(t,SIGNAL(envoieNom(QString)),w,SLOT(modifNom(QString)));
-    connect(t,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
-    connect(t,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
-    connect(t,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
-    connect(t,SIGNAL(envoieTemps(QString)),w,SLOT(modifTemps(QString)));
-    connect(t,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
-    connect(t,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
+    QObject::connect(t,SIGNAL(envoieNom(QString)),w,SLOT(modifNom(QString)));
+    QObject::connect(t,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
+    QObject::connect(t,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
+    QObject::connect(t,SIGNAL(envoieEtapes(QStringList)),w,SLOT(modifEtapes(QStringList)));
+    QObject::connect(t,SIGNAL(envoieTemps(QString)),w,SLOT(modifTemps(QString)));
+    QObject::connect(t,SIGNAL(envoieURL(QString)),w,SLOT(modifURL(QString)));
+    QObject::connect(t,SIGNAL(envoieMotsCles(QString)),w,SLOT(modifMotsCles(QString)));
+
 
 }
-
 
 Transmission::~Transmission()
 {
 }
 
+
 void Transmission::envoyerDonnees()
 {
     //envoie le nom du fichier au traitement
-   // emit(envoieNomFichier(filePath));
 
     emit(t->envoieNom(t->getRecette()->getNom()));
     emit(t->envoieDesc(t->getRecette()->getDescription()));

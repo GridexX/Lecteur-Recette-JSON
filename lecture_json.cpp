@@ -28,7 +28,7 @@ void lecture_json::recevoirNomFichier(QString path)
            qCritical() << "Impossible d’interpréter le fichier : " << error.errorString();
 
        else
-           emit(envoieDocJson(doc));
+            emit(envoieDocJson(doc));
 
     }
     else

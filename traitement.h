@@ -94,9 +94,7 @@ signals:
         * @brief signal pour envoyer le chemin du fichier
         * @param QString : le chemin d'accès du fichier
         */
-       void envoieNomFichier(QString);
-
-       void finParsing();
+       void finTraitement();
 
 public slots :
 

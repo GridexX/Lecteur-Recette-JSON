@@ -49,7 +49,19 @@ private:
 
 
 public slots:
+    /**
+     * @fn void recevoirNomFichier(QString)
+     * @brief Fonction qui permet de récupérer le chemin du fichier Json
+     * @param QString : chemin d'accès du fichier Json
+     */
     void envoyerDonnees();
+
+signals:
+    /**
+     * @fn envoieNomFichier(QString);
+     * @brief Sinal qui Fonction qui permet d'envoyer le chemin d'accès du fichier Json
+     * @param QString : chemin d'accès du fichier Json
+     */
 
 
 };

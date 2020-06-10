@@ -13,7 +13,7 @@ Traitement::Traitement(QObject *parent)
     lecJson = new lecture_json;
 
     //connect pour envoyer le chemin du fichier à la lecture
-    QObject::connect(this,SIGNAL(envoieNomFichier(QString)),lecJson,SLOT(recevoirNomFichier(QString)));
+    //QObject::connect(this,SIGNAL(envoieNomFichier(QString)),lecJson,SLOT(recevoirNomFichier(QString)));
 
     //connect pour récupérer le doc au format JSON depuis la lecture
     QObject::connect(lecJson,SIGNAL(envoieDocJson(QJsonDocument)),this,SLOT(recevoirDocJson(QJsonDocument)));
@@ -92,7 +92,7 @@ void Traitement::recevoirDocJson(QJsonDocument docJson)
 
     recette->setURL(obj.value("url").toString());
 
-    emit(finParsing());
 
+    emit(finTraitement());
 }
 
