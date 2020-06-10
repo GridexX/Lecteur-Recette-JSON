@@ -38,7 +38,7 @@ void MainWindowLaunchDialog::on_pushButton_clicked()
 
      hide();
      t = new Transmission;
-     connect(this,SIGNAL(envoyerNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
+     connect(this,SIGNAL(envoyerNomFichier(QString)),t->getTraitement()->getLecture(),SLOT(recevoirNomFichier(QString)));
      emit(envoyerNomFichier(filePathName));
 }
 

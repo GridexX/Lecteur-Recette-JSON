@@ -36,6 +36,7 @@ public:
      * @param QString _filePath
      */
     inline void setFilePath(QString _filePath) { filePath=_filePath; }
+    inline Traitement *getTraitement() { return t; }
 
 private:
     Traitement *t; /*!< Traitement *t: Pointeur sur la classe Traitement pour pouvoir l'instancier */
@@ -45,23 +46,11 @@ private:
      * @fn void envoyerDonnees()
      * @brief Fonction qui permet d'envoyer les informations de la recette
      */
-    void envoyerDonnees();
+
 
 public slots:
-    /**
-     * @fn void recevoirNomFichier(QString)
-     * @brief Fonction qui permet de récupérer le chemin du fichier Json
-     * @param QString : chemin d'accès du fichier Json
-     */
-    void recevoirNomFichier(QString);
+    void envoyerDonnees();
 
-signals:
-    /**
-     * @fn envoieNomFichier(QString);
-     * @brief Sinal qui Fonction qui permet d'envoyer le chemin d'accès du fichier Json
-     * @param QString : chemin d'accès du fichier Json
-     */
-    void envoieNomFichier(QString);
 
 };
 

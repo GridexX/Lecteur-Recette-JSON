@@ -31,6 +31,7 @@ public :
      */
 
     inline Recette *getRecette() { return recette; }
+    inline lecture_json *getLecture() { return lecJson; }
 
 private :
 
@@ -95,13 +96,10 @@ signals:
         */
        void envoieNomFichier(QString);
 
+       void finParsing();
+
 public slots :
-       /**
-        * @sa recevoirNomFichier(QString)
-        * @brief fonction qui recoit le nom du fichier pour le traiter
-        * @param QString : chemin du fichier JSON
-        */
-       void recevoirNomFichier(QString);
+
        /**
         * @sa recevoirDocJson(QString)
         * @brief fonction qui recoit le document JSON pour le traiter et lire ses données

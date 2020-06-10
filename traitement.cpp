@@ -92,10 +92,7 @@ void Traitement::recevoirDocJson(QJsonDocument docJson)
 
     recette->setURL(obj.value("url").toString());
 
+    emit(finParsing());
+
 }
 
-
-void Traitement::recevoirNomFichier(QString chemin)
-{
-    emit(envoieNomFichier(chemin));
-}
