@@ -10,7 +10,7 @@ Graphe d\textquotesingle{}héritage de Transmission\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{classTransmission__inherit__graph}
+\includegraphics[width=185pt]{classTransmission__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -25,13 +25,8 @@ Graphe de collaboration de Transmission\+:\nopagebreak
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classTransmission_aa442272a44f095192da5b0bf92a5bb06}{recevoir\+Nom\+Fichier} (Q\+String)
-\begin{DoxyCompactList}\small\item\em Fonction qui permet de récupérer le chemin du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Signaux}
-\begin{DoxyCompactItemize}
-\item 
-void \hyperlink{classTransmission_abf18bf1963c75b06b1e437bec51de35e}{envoie\+Nom\+Fichier} (Q\+String)
-\begin{DoxyCompactList}\small\item\em Sinal qui Fonction qui permet d\textquotesingle{}envoyer le chemin d\textquotesingle{}accès du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{classTransmission_a14b885539e973a158c9c4c25fd99bc04}{envoyer\+Donnees} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}envoyer les informations de la recette. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,12 +35,9 @@ void \hyperlink{classTransmission_abf18bf1963c75b06b1e437bec51de35e}{envoie\+Nom
 \hyperlink{classTransmission_adcdc6012d99ddb1d0c3159d50984e146}{$\sim$\+Transmission} ()
 \begin{DoxyCompactList}\small\item\em Destructeur de la fonction \hyperlink{classTransmission}{Transmission}. \end{DoxyCompactList}\item 
 void \hyperlink{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}{set\+File\+Path} (Q\+String \+\_\+file\+Path)
-\begin{DoxyCompactList}\small\item\em Fonction qui permet de set le chemin du fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Fonctions membres privées}
-\begin{DoxyCompactItemize}
-\item 
-void \hyperlink{classTransmission_a14b885539e973a158c9c4c25fd99bc04}{envoyer\+Donnees} ()
-\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}envoyer les informations de la recette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de set le chemin du fichier. \end{DoxyCompactList}\item 
+\hyperlink{classTraitement}{Traitement} $\ast$ \hyperlink{classTransmission_af33687ff35d8e882db26c035ca6c053b}{get\+Traitement} ()
+\end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -86,46 +78,22 @@ Destructeur de la fonction \hyperlink{classTransmission}{Transmission}.
 
 
 \subsection{Documentation des fonctions membres}
-\mbox{\Hypertarget{classTransmission_abf18bf1963c75b06b1e437bec51de35e}\label{classTransmission_abf18bf1963c75b06b1e437bec51de35e}} 
-\index{Transmission@{Transmission}!envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}}
-\index{envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}!Transmission@{Transmission}}
-\subsubsection{\texorpdfstring{envoie\+Nom\+Fichier}{envoieNomFichier}}
-{\footnotesize\ttfamily Transmission\+::envoie\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
-
-
-
-Sinal qui Fonction qui permet d\textquotesingle{}envoyer le chemin d\textquotesingle{}accès du fichier Json. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em Q\+String} & \+: chemin d\textquotesingle{}accès du fichier Json \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classTransmission_a14b885539e973a158c9c4c25fd99bc04}\label{classTransmission_a14b885539e973a158c9c4c25fd99bc04}} 
 \index{Transmission@{Transmission}!envoyer\+Donnees@{envoyer\+Donnees}}
 \index{envoyer\+Donnees@{envoyer\+Donnees}!Transmission@{Transmission}}
-\subsubsection{\texorpdfstring{envoyer\+Donnees()}{envoyerDonnees()}}
-{\footnotesize\ttfamily void Transmission\+::envoyer\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\subsubsection{\texorpdfstring{envoyer\+Donnees}{envoyerDonnees}}
+{\footnotesize\ttfamily void Transmission\+::envoyer\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
 Fonction qui permet d\textquotesingle{}envoyer les informations de la recette. 
 
-\mbox{\Hypertarget{classTransmission_aa442272a44f095192da5b0bf92a5bb06}\label{classTransmission_aa442272a44f095192da5b0bf92a5bb06}} 
-\index{Transmission@{Transmission}!recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}}
-\index{recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}!Transmission@{Transmission}}
-\subsubsection{\texorpdfstring{recevoir\+Nom\+Fichier}{recevoirNomFichier}}
-{\footnotesize\ttfamily void Transmission\+::recevoir\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\mbox{\Hypertarget{classTransmission_af33687ff35d8e882db26c035ca6c053b}\label{classTransmission_af33687ff35d8e882db26c035ca6c053b}} 
+\index{Transmission@{Transmission}!get\+Traitement@{get\+Traitement}}
+\index{get\+Traitement@{get\+Traitement}!Transmission@{Transmission}}
+\subsubsection{\texorpdfstring{get\+Traitement()}{getTraitement()}}
+{\footnotesize\ttfamily \hyperlink{classTraitement}{Traitement}$\ast$ Transmission\+::get\+Traitement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-
-
-Fonction qui permet de récupérer le chemin du fichier Json. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em Q\+String} & \+: chemin d\textquotesingle{}accès du fichier Json \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}\label{classTransmission_a5099a8d2ae60a2f159230bf81bafebdc}} 
 \index{Transmission@{Transmission}!set\+File\+Path@{set\+File\+Path}}
 \index{set\+File\+Path@{set\+File\+Path}!Transmission@{Transmission}}

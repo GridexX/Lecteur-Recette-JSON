@@ -10,7 +10,7 @@ Graphe d\textquotesingle{}héritage de Main\+Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=217pt]{classMainWindow__inherit__graph}
+\includegraphics[width=223pt]{classMainWindow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,15 +19,11 @@ Graphe de collaboration de Main\+Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classMainWindow__coll__graph}
+\includegraphics[width=223pt]{classMainWindow__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
-\item 
-void \hyperlink{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}{set\+Image} (Q\+String)
-\item 
-void \hyperlink{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}{set\+Image\+When\+Is\+Upload} (Q\+Network\+Reply $\ast$)
 \item 
 void \hyperlink{classMainWindow_ac154b320efe8998a85a93f1c41ace7e4}{modif\+Nom} (Q\+String)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le nom de la recette \end{DoxyCompactList}\item 
@@ -63,11 +59,15 @@ void \hyperlink{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}{next\+Instruc
 void \hyperlink{classMainWindow_a715f753a6c46e3f10565a5a1b849ee86}{last\+Instruct} ()
 \begin{DoxyCompactList}\small\item\em fonction qui permet de passer à l\textquotesingle{}instruction précédente \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindow_a344d21527850380c306fe7ac165321bd}{update\+Step} ()
-\begin{DoxyCompactList}\small\item\em fonction qui met à jour l\textquotesingle{}instruction affiché à l\textquotesingle{}écran \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em fonction qui met à jour l\textquotesingle{}instruction affiché à l\textquotesingle{}écran \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}{on\+\_\+action\+Ouvir\+\_\+triggered} ()
+\item 
+void \hyperlink{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}{on\+\_\+action\+Quitter\+\_\+triggered} ()
+\end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window} $\ast$ \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}
+Ui\+::\+Main\+Window $\ast$ \hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}
 \item 
 Q\+State\+Machine $\ast$ \hyperlink{classMainWindow_af5f0afb6c5f81e4438f98f93f918ea8b}{machine}
 \item 
@@ -244,17 +244,17 @@ slot qui modifie l\textquotesingle{}url pour accéder à la recette
 
 fonction qui permet de passer à l\textquotesingle{}instruction suivante 
 
-\mbox{\Hypertarget{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}\label{classMainWindow_aaddccbd976fda27cf2d17b9f43dbc486}} 
-\index{Main\+Window@{Main\+Window}!set\+Image@{set\+Image}}
-\index{set\+Image@{set\+Image}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{set\+Image}{setImage}}
-{\footnotesize\ttfamily void Main\+Window\+::set\+Image (\begin{DoxyParamCaption}\item[{Q\+String}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\mbox{\Hypertarget{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}\label{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+action\+Ouvir\+\_\+triggered@{on\+\_\+action\+Ouvir\+\_\+triggered}}
+\index{on\+\_\+action\+Ouvir\+\_\+triggered@{on\+\_\+action\+Ouvir\+\_\+triggered}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+action\+Ouvir\+\_\+triggered}{on\_actionOuvir\_triggered}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+action\+Ouvir\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
-\mbox{\Hypertarget{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}\label{classMainWindow_ae58368ff237b1f298381a0aeaf8e7290}} 
-\index{Main\+Window@{Main\+Window}!set\+Image\+When\+Is\+Upload@{set\+Image\+When\+Is\+Upload}}
-\index{set\+Image\+When\+Is\+Upload@{set\+Image\+When\+Is\+Upload}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{set\+Image\+When\+Is\+Upload}{setImageWhenIsUpload}}
-{\footnotesize\ttfamily void Main\+Window\+::set\+Image\+When\+Is\+Upload (\begin{DoxyParamCaption}\item[{Q\+Network\+Reply $\ast$}]{reply }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+\mbox{\Hypertarget{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}\label{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+action\+Quitter\+\_\+triggered@{on\+\_\+action\+Quitter\+\_\+triggered}}
+\index{on\+\_\+action\+Quitter\+\_\+triggered@{on\+\_\+action\+Quitter\+\_\+triggered}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+action\+Quitter\+\_\+triggered}{on\_actionQuitter\_triggered}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+action\+Quitter\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 \mbox{\Hypertarget{classMainWindow_a344d21527850380c306fe7ac165321bd}\label{classMainWindow_a344d21527850380c306fe7ac165321bd}} 
 \index{Main\+Window@{Main\+Window}!update\+Step@{update\+Step}}
@@ -291,7 +291,7 @@ machine\+: machine à état quand on appuie sur les boutons \mbox{\Hypertarget{c
 \index{Main\+Window@{Main\+Window}!ui@{ui}}
 \index{ui@{ui}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{ui}{ui}}
-{\footnotesize\ttfamily \hyperlink{classUi_1_1MainWindow}{Ui\+::\+Main\+Window}$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
 ui\+: \hyperlink{classMainWindow}{Main\+Window} contenant l\textquotesingle{}ui 
 

@@ -1,6 +1,6 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node2" href="$classlecture__json.html" title="lecture_json" alt="" coords="128,5,220,32"/>
-<area shape="rect" id="node3" href="$classRecette.html" title="Recette" alt="" coords="140,56,208,83"/>
-<area shape="rect" id="node4" href="$classTraitement.html" title="Traitement" alt="" coords="132,107,216,133"/>
-<area shape="rect" id="node5" href="$classTransmission.html" title="Transmission" alt="" coords="124,157,224,184"/>
+<area shape="rect" id="node1" href="$classlecture__json.html" title="lecture_json" alt="" coords="5,56,97,83"/>
+<area shape="rect" id="node2" href="$classRecette.html" title="Recette" alt="" coords="161,5,229,32"/>
+<area shape="rect" id="node3" href="$classTraitement.html" title="Traitement" alt="" coords="153,56,237,83"/>
+<area shape="rect" id="node4" href="$classTransmission.html" title="Transmission" alt="" coords="145,107,245,133"/>
 </map>

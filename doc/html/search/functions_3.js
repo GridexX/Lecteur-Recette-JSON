@@ -1,5 +1,13 @@
 var searchData=
 [
-  ['lastinstruct',['lastInstruct',['../classMainWindow.html#a715f753a6c46e3f10565a5a1b849ee86',1,'MainWindow']]],
-  ['lecture_5fjson',['lecture_json',['../classlecture__json.html#a4b8226b61ad6f1112038dde13e207b4f',1,'lecture_json']]]
+  ['getdescription',['getDescription',['../classRecette.html#a7f3746b691f39d1b468b29819ad3c265',1,'Recette']]],
+  ['getlecture',['getLecture',['../classTraitement.html#a4392841087f03b430af24fa5233d6864',1,'Traitement']]],
+  ['getlisteetapes',['getListeEtapes',['../classRecette.html#a3b2807fe1f55431bcd632bff2332c6e7',1,'Recette']]],
+  ['getlisteingredients',['getListeIngredients',['../classRecette.html#a3ca29579050212dea9da71e9c1f05119',1,'Recette']]],
+  ['getmotscles',['getMotsCles',['../classRecette.html#a509d4cfe5b696a08c4b6675472d6e481',1,'Recette']]],
+  ['getnom',['getNom',['../classRecette.html#afab5d7deab9130137037872a7a42ef3c',1,'Recette']]],
+  ['getrecette',['getRecette',['../classTraitement.html#aba3c99b92a3b6d429e4479294267af9d',1,'Traitement']]],
+  ['gettemps',['getTemps',['../classRecette.html#a9ac38f333d17699fb6601bca332d8567',1,'Recette']]],
+  ['gettraitement',['getTraitement',['../classTransmission.html#af33687ff35d8e882db26c035ca6c053b',1,'Transmission']]],
+  ['geturl',['getURL',['../classRecette.html#ab06006324a8201e9967b53273dbf2751',1,'Recette']]]
 ];

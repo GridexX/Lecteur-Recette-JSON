@@ -10,7 +10,7 @@ Graphe d\textquotesingle{}héritage de Traitement\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{classTraitement__inherit__graph}
+\includegraphics[width=185pt]{classTraitement__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -25,8 +25,6 @@ Graphe de collaboration de Traitement\+:\nopagebreak
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classTraitement_aba97e5df1728c8062c3cb1b9fa104157}{recevoir\+Nom\+Fichier} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction qui recoit le nom du fichier pour le traiter \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_aa66e6be8e21062472a6c1e9a95097dc5}{recevoir\+Doc\+Json} (Q\+Json\+Document)
 \begin{DoxyCompactList}\small\item\em fonction qui recoit le document J\+S\+ON pour le traiter et lire ses données \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Signaux}
@@ -46,7 +44,7 @@ void \hyperlink{classTraitement_ae57543af34e05b74a7af460c0e74e87f}{envoie\+Temps
 \begin{DoxyCompactList}\small\item\em fonction pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_acc099bf1113669c2e061e8897c3eaeca}{envoie\+U\+RL} (Q\+String)
 \begin{DoxyCompactList}\small\item\em fonction pour envoyer l\textquotesingle{}url à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
-void \hyperlink{classTraitement_a7a3bc123acfc8e079ef93889d47c9829}{envoie\+Nom\+Fichier} (Q\+String)
+void \hyperlink{classTraitement_a83495c6e878e66511b8af67ee369a012}{fin\+Traitement} ()
 \begin{DoxyCompactList}\small\item\em signal pour envoyer le chemin du fichier \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
@@ -54,6 +52,8 @@ void \hyperlink{classTraitement_a7a3bc123acfc8e079ef93889d47c9829}{envoie\+Nom\+
 \hyperlink{classTraitement_a36edd9e6ce6e72cfef7f9c857c3c9cf2}{Traitement} (Q\+Object $\ast$parent=nullptr)
 \item 
 \hyperlink{classRecette}{Recette} $\ast$ \hyperlink{classTraitement_aba3c99b92a3b6d429e4479294267af9d}{get\+Recette} ()
+\item 
+\hyperlink{classlecture__json}{lecture\+\_\+json} $\ast$ \hyperlink{classTraitement_a4392841087f03b430af24fa5233d6864}{get\+Lecture} ()
 \end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
@@ -164,24 +164,6 @@ fonction pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Wind
 {\em nom} & \+: le nom à transmettre \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classTraitement_a7a3bc123acfc8e079ef93889d47c9829}\label{classTraitement_a7a3bc123acfc8e079ef93889d47c9829}} 
-\index{Traitement@{Traitement}!envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}}
-\index{envoie\+Nom\+Fichier@{envoie\+Nom\+Fichier}!Traitement@{Traitement}}
-\subsubsection{\texorpdfstring{envoie\+Nom\+Fichier}{envoieNomFichier}}
-{\footnotesize\ttfamily void Traitement\+::envoie\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
-
-
-
-signal pour envoyer le chemin du fichier 
-
-\begin{DoxySeeAlso}{Voir également}
-\hyperlink{classTraitement_a7a3bc123acfc8e079ef93889d47c9829}{envoie\+Nom\+Fichier(\+Q\+String)} 
-\end{DoxySeeAlso}
-
-\begin{DoxyParams}{Paramètres}
-{\em Q\+String} & \+: le chemin d\textquotesingle{}accès du fichier \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classTraitement_ae57543af34e05b74a7af460c0e74e87f}\label{classTraitement_ae57543af34e05b74a7af460c0e74e87f}} 
 \index{Traitement@{Traitement}!envoie\+Temps@{envoie\+Temps}}
 \index{envoie\+Temps@{envoie\+Temps}!Traitement@{Traitement}}
@@ -218,6 +200,30 @@ envoie\+U\+R\+L(\+Q\+String\+List)
 {\em url} & \+: l\textquotesingle{}url du site web de la recette à transmettre \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classTraitement_a83495c6e878e66511b8af67ee369a012}\label{classTraitement_a83495c6e878e66511b8af67ee369a012}} 
+\index{Traitement@{Traitement}!fin\+Traitement@{fin\+Traitement}}
+\index{fin\+Traitement@{fin\+Traitement}!Traitement@{Traitement}}
+\subsubsection{\texorpdfstring{fin\+Traitement}{finTraitement}}
+{\footnotesize\ttfamily void Traitement\+::fin\+Traitement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+signal pour envoyer le chemin du fichier 
+
+\begin{DoxySeeAlso}{Voir également}
+envoie\+Nom\+Fichier(\+Q\+String) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+String} & \+: le chemin d\textquotesingle{}accès du fichier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTraitement_a4392841087f03b430af24fa5233d6864}\label{classTraitement_a4392841087f03b430af24fa5233d6864}} 
+\index{Traitement@{Traitement}!get\+Lecture@{get\+Lecture}}
+\index{get\+Lecture@{get\+Lecture}!Traitement@{Traitement}}
+\subsubsection{\texorpdfstring{get\+Lecture()}{getLecture()}}
+{\footnotesize\ttfamily \hyperlink{classlecture__json}{lecture\+\_\+json}$\ast$ Traitement\+::get\+Lecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{classTraitement_aba3c99b92a3b6d429e4479294267af9d}\label{classTraitement_aba3c99b92a3b6d429e4479294267af9d}} 
 \index{Traitement@{Traitement}!get\+Recette@{get\+Recette}}
 \index{get\+Recette@{get\+Recette}!Traitement@{Traitement}}
@@ -240,24 +246,6 @@ recevoir\+Doc\+Json(\+Q\+String)
 
 \begin{DoxyParams}{Paramètres}
 {\em Q\+Json\+Document} & \+:le document J\+S\+ON à traiter \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classTraitement_aba97e5df1728c8062c3cb1b9fa104157}\label{classTraitement_aba97e5df1728c8062c3cb1b9fa104157}} 
-\index{Traitement@{Traitement}!recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}}
-\index{recevoir\+Nom\+Fichier@{recevoir\+Nom\+Fichier}!Traitement@{Traitement}}
-\subsubsection{\texorpdfstring{recevoir\+Nom\+Fichier}{recevoirNomFichier}}
-{\footnotesize\ttfamily void Traitement\+::recevoir\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{chemin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
-
-
-
-fonction qui recoit le nom du fichier pour le traiter 
-
-\begin{DoxySeeAlso}{Voir également}
-\hyperlink{classTraitement_aba97e5df1728c8062c3cb1b9fa104157}{recevoir\+Nom\+Fichier(\+Q\+String)} 
-\end{DoxySeeAlso}
-
-\begin{DoxyParams}{Paramètres}
-{\em Q\+String} & \+: chemin du fichier J\+S\+ON \\
 \hline
 \end{DoxyParams}
 
