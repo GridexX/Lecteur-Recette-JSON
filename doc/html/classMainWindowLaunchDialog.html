@@ -85,17 +85,17 @@ Graphe de collaboration de MainWindowLaunchDialog:</div>
 <map name="MainWindowLaunchDialog_coll__map" id="MainWindowLaunchDialog_coll__map">
 <area shape="rect" id="node8" href="classMainWindow.html" title="{MainWindow\n|&#45; ui\l&#45; machine\l&#45; listEtapes\l&#45; currentstate\l|+ MainWindow()\l+ ~MainWindow()\l+ modifNom()\l+ modifDesc()\l+ modifMotsCles()\l+ modifIng()\l+ modifEtapes()\l+ modifTemps()\l+ modifURL()\l&#45; nextInstruct()\l&#45; lastInstruct()\l&#45; updateStep()\l&#45; on_actionOuvir_triggered()\l&#45; on_actionQuitter_triggered()\l}" alt="" coords="124,565,315,877"/>
 <area shape="rect" id="node3" href="classTransmission.html" title="{Transmission\n|&#45; filePath\l|+ Transmission()\l+ ~Transmission()\l+ setFilePath()\l+ getTraitement()\l+ envoyerDonnees()\l}" alt="" coords="240,940,380,1076"/>
-<area shape="rect" id="node5" href="classTraitement.html" title="{Traitement\n||+ Traitement()\l+ getRecette()\l+ getLecture()\l+ recevoirDocJson()\l}" alt="" coords="419,661,559,782"/>
-<area shape="rect" id="node6" href="classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l}" alt="" coords="441,271,595,363"/>
+<area shape="rect" id="node5" href="classTraitement.html" title="{Traitement\n||+ Traitement()\l+ ~Traitement()\l+ getRecette()\l+ getLecture()\l+ recevoirDocJson()\l}" alt="" coords="419,653,559,789"/>
+<area shape="rect" id="node6" href="classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l&#45; verifFichier()\l}" alt="" coords="441,264,595,371"/>
 <area shape="rect" id="node7" href="classRecette.html" title="{Recette\n|&#45; nom\l&#45; description\l&#45; motsCles\l&#45; listeIngredients\l&#45; listeEtapes\l&#45; temps\l&#45; URL\l|+ Recette()\l+ getNom()\l+ setNom()\l+ getDescription()\l+ setDescription()\l+ getListeIngredients()\l+ setListeIngredients()\l+ getListeEtapes()\l+ setListeEtapes()\l+ getTemps()\l+ setTemps()\l+ getURL()\l+ setURL()\l+ getMotsCles()\l+ setMotsCles()\l}" alt="" coords="619,132,771,503"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signaux</h2></td></tr>
-<tr class="memitem:ab439c55ab98e6b1634de4fe64243ce48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#ab439c55ab98e6b1634de4fe64243ce48">envoyerNomFichier</a> (QString)</td></tr>
-<tr class="memdesc:ab439c55ab98e6b1634de4fe64243ce48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal qui envoie le nom du fichier Json.  <a href="#ab439c55ab98e6b1634de4fe64243ce48">Plus de détails...</a><br /></td></tr>
-<tr class="separator:ab439c55ab98e6b1634de4fe64243ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290aac8c91df612c4aeea9e4ba4a0897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#a290aac8c91df612c4aeea9e4ba4a0897">envoyerNomFichier</a> (QString path)</td></tr>
+<tr class="memdesc:a290aac8c91df612c4aeea9e4ba4a0897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal qui envoie le nom du fichier Json.  <a href="#a290aac8c91df612c4aeea9e4ba4a0897">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a290aac8c91df612c4aeea9e4ba4a0897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
@@ -127,10 +127,10 @@ Connecteurs privés</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Fonctions membres privées</h2></td></tr>
 <tr class="memitem:a6b292183d418fe79b79225d9a35bd3dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#a6b292183d418fe79b79225d9a35bd3dd">dropEvent</a> (QDropEvent *event)</td></tr>
-<tr class="memdesc:a6b292183d418fe79b79225d9a35bd3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de gérer le drop de fichier.  <a href="#a6b292183d418fe79b79225d9a35bd3dd">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a6b292183d418fe79b79225d9a35bd3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de gérer le glisser/déposer de fichier.  <a href="#a6b292183d418fe79b79225d9a35bd3dd">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a6b292183d418fe79b79225d9a35bd3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf393173ffd6c63b2c4d5bdd48b8ddb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#aaf393173ffd6c63b2c4d5bdd48b8ddb4">dragEnterEvent</a> (QDragEnterEvent *event)</td></tr>
-<tr class="memdesc:aaf393173ffd6c63b2c4d5bdd48b8ddb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet d'accepter les fichiers entrant avec le drag and drop.  <a href="#aaf393173ffd6c63b2c4d5bdd48b8ddb4">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:aaf393173ffd6c63b2c4d5bdd48b8ddb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet d'accepter les fichiers entrant avec le glisser/déposer.  <a href="#aaf393173ffd6c63b2c4d5bdd48b8ddb4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aaf393173ffd6c63b2c4d5bdd48b8ddb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -219,10 +219,10 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fonction qui permet d'accepter les fichiers entrant avec le drag and drop. </p>
+<p>Fonction qui permet d'accepter les fichiers entrant avec le glisser/déposer. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QDragEnterEvent</td><td>instance de l'évent </td></tr>
+    <tr><td class="paramname">event</td><td>instance de l'événement </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,18 +253,18 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fonction qui permet de gérer le drop de fichier. </p>
+<p>Fonction qui permet de gérer le glisser/déposer de fichier. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QDropEvent</td><td>instance de l'évent </td></tr>
+    <tr><td class="paramname">event</td><td>instance de l'événement </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab439c55ab98e6b1634de4fe64243ce48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab439c55ab98e6b1634de4fe64243ce48">&#9670;&nbsp;</a></span>envoyerNomFichier</h2>
+<a id="a290aac8c91df612c4aeea9e4ba4a0897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290aac8c91df612c4aeea9e4ba4a0897">&#9670;&nbsp;</a></span>envoyerNomFichier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +276,7 @@ Attributs privés</h2></td></tr>
           <td class="memname">void MainWindowLaunchDialog::envoyerNomFichier </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -288,10 +288,10 @@ Attributs privés</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Signal qui envoie le nom du fichier Json. </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classMainWindowLaunchDialog.html#ab439c55ab98e6b1634de4fe64243ce48" title="Signal qui envoie le nom du fichier Json. ">envoyerNomFichier(QString)</a> </dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classMainWindowLaunchDialog.html#a290aac8c91df612c4aeea9e4ba4a0897" title="Signal qui envoie le nom du fichier Json. ">envoyerNomFichier(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QString</td><td>: le chemin du fichier json </td></tr>
+    <tr><td class="paramname">path</td><td>: le chemin du fichier json </td></tr>
   </table>
   </dd>
 </dl>

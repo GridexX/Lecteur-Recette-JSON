@@ -25,36 +25,38 @@ Graphe de collaboration de Traitement\+:\nopagebreak
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classTraitement_aa66e6be8e21062472a6c1e9a95097dc5}{recevoir\+Doc\+Json} (Q\+Json\+Document)
+void \hyperlink{classTraitement_a7bbc7e2034b55a9de14c010be7d3de11}{recevoir\+Doc\+Json} (Q\+Json\+Document doc\+Json)
 \begin{DoxyCompactList}\small\item\em fonction qui recoit le document J\+S\+ON pour le traiter et lire ses données \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Signaux}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classTraitement_ab958dbb923cb1b905c260c4f54907169}{envoie\+Nom} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+void \hyperlink{classTraitement_a9f84743a77b0074f209eda21d32ee95b}{envoie\+Nom} (Q\+String nom)
+\begin{DoxyCompactList}\small\item\em Fonction (signal) pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_a81d1717924fb7a206df394afae4e19dc}{envoie\+Desc} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer la description à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fonction (signal) pour envoyer la description à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_a4df691c4f46371e6c2b6b4c4df102819}{envoie\+Mots\+Cles} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer les mots cles à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fonction (signal) pour envoyer les mots cles à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_a8db23635eb895875b0f60acece723df4}{envoie\+Ing} (Q\+String\+List)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer la liste des ingrédients à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fonction (signal) pour envoyer la liste des ingrédients à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_ae58a2b32e2632bfc11a696c186ace3b7}{envoie\+Etapes} (Q\+String\+List)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer la liste des étapes à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fonction (signal) pour envoyer la liste des étapes à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_ae57543af34e05b74a7af460c0e74e87f}{envoie\+Temps} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fonction (signal) pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_acc099bf1113669c2e061e8897c3eaeca}{envoie\+U\+RL} (Q\+String)
-\begin{DoxyCompactList}\small\item\em fonction pour envoyer l\textquotesingle{}url à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em fonction (signal) pour envoyer l\textquotesingle{}url à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) \end{DoxyCompactList}\item 
 void \hyperlink{classTraitement_a83495c6e878e66511b8af67ee369a012}{fin\+Traitement} ()
-\begin{DoxyCompactList}\small\item\em signal pour envoyer le chemin du fichier \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fonction (signal) pour envoyer le chemin du fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classTraitement_a36edd9e6ce6e72cfef7f9c857c3c9cf2}{Traitement} (Q\+Object $\ast$parent=nullptr)
-\item 
-\hyperlink{classRecette}{Recette} $\ast$ \hyperlink{classTraitement_aba3c99b92a3b6d429e4479294267af9d}{get\+Recette} ()
-\item 
-\hyperlink{classlecture__json}{lecture\+\_\+json} $\ast$ \hyperlink{classTraitement_a4392841087f03b430af24fa5233d6864}{get\+Lecture} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{classTraitement}{Traitement}. \end{DoxyCompactList}\item 
+\hyperlink{classTraitement_a7dd82f97c992d07b7032184f12c7fab9}{$\sim$\+Traitement} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{classTraitement}{Traitement}. \end{DoxyCompactList}\item 
+\hyperlink{classRecette}{Recette} $\ast$ \hyperlink{classTraitement_a587f76ba51e61307815c9e279821a744}{get\+Recette} ()
+\begin{DoxyCompactList}\small\item\em Fonction getter pour obtenir l\textquotesingle{}instance de la classe \hyperlink{classRecette}{Recette}. \end{DoxyCompactList}\item 
+\hyperlink{classlecture__json}{lecture\+\_\+json} $\ast$ \hyperlink{classTraitement_a91ecaaa93bbdc283a3eebe3c060e656d}{get\+Lecture} ()
+\begin{DoxyCompactList}\small\item\em Fonction getter pour obtenir l\textquotesingle{}instance de la classe \hyperlink{classlecture__json}{lecture\+\_\+json}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -73,6 +75,25 @@ void \hyperlink{classTraitement_a83495c6e878e66511b8af67ee369a012}{fin\+Traiteme
 
 
 
+Constructeur de la classe \hyperlink{classTraitement}{Traitement}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \+: précise si le widget hérite d\textquotesingle{}une autre fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTraitement_a7dd82f97c992d07b7032184f12c7fab9}\label{classTraitement_a7dd82f97c992d07b7032184f12c7fab9}} 
+\index{Traitement@{Traitement}!````~Traitement@{$\sim$\+Traitement}}
+\index{````~Traitement@{$\sim$\+Traitement}!Traitement@{Traitement}}
+\subsubsection{\texorpdfstring{$\sim$\+Traitement()}{~Traitement()}}
+{\footnotesize\ttfamily Traitement\+::$\sim$\+Traitement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \hyperlink{classTraitement}{Traitement}. 
+
+
+
 \subsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classTraitement_a81d1717924fb7a206df394afae4e19dc}\label{classTraitement_a81d1717924fb7a206df394afae4e19dc}} 
 \index{Traitement@{Traitement}!envoie\+Desc@{envoie\+Desc}}
@@ -82,7 +103,7 @@ void \hyperlink{classTraitement_a83495c6e878e66511b8af67ee369a012}{fin\+Traiteme
 
 
 
-fonction pour envoyer la description à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+Fonction (signal) pour envoyer la description à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classTraitement_a81d1717924fb7a206df394afae4e19dc}{envoie\+Desc(\+Q\+String)} 
@@ -100,7 +121,7 @@ fonction pour envoyer la description à la classe \hyperlink{classMainWindow}{Ma
 
 
 
-fonction pour envoyer la liste des étapes à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+fonction (signal) pour envoyer la liste des étapes à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classTraitement_ae58a2b32e2632bfc11a696c186ace3b7}{envoie\+Etapes(\+Q\+String\+List)} 
@@ -118,7 +139,7 @@ fonction pour envoyer la liste des étapes à la classe \hyperlink{classMainWind
 
 
 
-fonction pour envoyer la liste des ingrédients à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+fonction (signal) pour envoyer la liste des ingrédients à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classTraitement_a8db23635eb895875b0f60acece723df4}{envoie\+Ing(\+Q\+String\+List)} 
@@ -136,32 +157,32 @@ fonction pour envoyer la liste des ingrédients à la classe \hyperlink{classMai
 
 
 
-fonction pour envoyer les mots cles à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+fonction (signal) pour envoyer les mots cles à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classTraitement_a4df691c4f46371e6c2b6b4c4df102819}{envoie\+Mots\+Cles(\+Q\+String)} 
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
-{\em Mots\+Cles} & \+: les mots cles à transmettre \\
+{\em Mots\+Cles} & les mots cles à transmettre \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classTraitement_ab958dbb923cb1b905c260c4f54907169}\label{classTraitement_ab958dbb923cb1b905c260c4f54907169}} 
+\mbox{\Hypertarget{classTraitement_a9f84743a77b0074f209eda21d32ee95b}\label{classTraitement_a9f84743a77b0074f209eda21d32ee95b}} 
 \index{Traitement@{Traitement}!envoie\+Nom@{envoie\+Nom}}
 \index{envoie\+Nom@{envoie\+Nom}!Traitement@{Traitement}}
 \subsubsection{\texorpdfstring{envoie\+Nom}{envoieNom}}
-{\footnotesize\ttfamily void Traitement\+::envoie\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Traitement\+::envoie\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{nom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 
-fonction pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+Fonction (signal) pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
-\hyperlink{classTraitement_ab958dbb923cb1b905c260c4f54907169}{envoie\+Nom(\+Q\+String)} 
+\hyperlink{classTraitement_a9f84743a77b0074f209eda21d32ee95b}{envoie\+Nom(\+Q\+String)} 
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
-{\em nom} & \+: le nom à transmettre \\
+{\em nom} & le nom à transmettre \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classTraitement_ae57543af34e05b74a7af460c0e74e87f}\label{classTraitement_ae57543af34e05b74a7af460c0e74e87f}} 
@@ -172,7 +193,7 @@ fonction pour envoyer le nom à la classe \hyperlink{classMainWindow}{Main\+Wind
 
 
 
-fonction pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+fonction (signal) pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classTraitement_ae57543af34e05b74a7af460c0e74e87f}{envoie\+Temps(\+Q\+String)} 
@@ -190,10 +211,10 @@ fonction pour envoyer les temps à la classe \hyperlink{classMainWindow}{Main\+W
 
 
 
-fonction pour envoyer l\textquotesingle{}url à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
+fonction (signal) pour envoyer l\textquotesingle{}url à la classe \hyperlink{classMainWindow}{Main\+Window} (voir classe \hyperlink{classMainWindow}{Main\+Window}) 
 
 \begin{DoxySeeAlso}{Voir également}
-envoie\+U\+R\+L(\+Q\+String\+List) 
+\hyperlink{classTraitement_acc099bf1113669c2e061e8897c3eaeca}{envoie\+U\+R\+L(\+Q\+String)} 
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
@@ -208,7 +229,7 @@ envoie\+U\+R\+L(\+Q\+String\+List)
 
 
 
-signal pour envoyer le chemin du fichier 
+Fonction (signal) pour envoyer le chemin du fichier. 
 
 \begin{DoxySeeAlso}{Voir également}
 envoie\+Nom\+Fichier(\+Q\+String) 
@@ -218,19 +239,33 @@ envoie\+Nom\+Fichier(\+Q\+String)
 {\em Q\+String} & \+: le chemin d\textquotesingle{}accès du fichier \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classTraitement_a4392841087f03b430af24fa5233d6864}\label{classTraitement_a4392841087f03b430af24fa5233d6864}} 
+\mbox{\Hypertarget{classTraitement_a91ecaaa93bbdc283a3eebe3c060e656d}\label{classTraitement_a91ecaaa93bbdc283a3eebe3c060e656d}} 
 \index{Traitement@{Traitement}!get\+Lecture@{get\+Lecture}}
 \index{get\+Lecture@{get\+Lecture}!Traitement@{Traitement}}
 \subsubsection{\texorpdfstring{get\+Lecture()}{getLecture()}}
-{\footnotesize\ttfamily \hyperlink{classlecture__json}{lecture\+\_\+json}$\ast$ Traitement\+::get\+Lecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Traitement\+::get\+Lecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classTraitement_aba3c99b92a3b6d429e4479294267af9d}\label{classTraitement_aba3c99b92a3b6d429e4479294267af9d}} 
+
+
+Fonction getter pour obtenir l\textquotesingle{}instance de la classe \hyperlink{classlecture__json}{lecture\+\_\+json}. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur sur \hyperlink{classlecture__json}{lecture\+\_\+json} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTraitement_a587f76ba51e61307815c9e279821a744}\label{classTraitement_a587f76ba51e61307815c9e279821a744}} 
 \index{Traitement@{Traitement}!get\+Recette@{get\+Recette}}
 \index{get\+Recette@{get\+Recette}!Traitement@{Traitement}}
 \subsubsection{\texorpdfstring{get\+Recette()}{getRecette()}}
-{\footnotesize\ttfamily \hyperlink{classRecette}{Recette}$\ast$ Traitement\+::get\+Recette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Traitement\+::get\+Recette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classTraitement_aa66e6be8e21062472a6c1e9a95097dc5}\label{classTraitement_aa66e6be8e21062472a6c1e9a95097dc5}} 
+
+
+Fonction getter pour obtenir l\textquotesingle{}instance de la classe \hyperlink{classRecette}{Recette}. 
+
+\begin{DoxyReturn}{Renvoie}
+Un pointeur sur \hyperlink{classRecette}{Recette} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTraitement_a7bbc7e2034b55a9de14c010be7d3de11}\label{classTraitement_a7bbc7e2034b55a9de14c010be7d3de11}} 
 \index{Traitement@{Traitement}!recevoir\+Doc\+Json@{recevoir\+Doc\+Json}}
 \index{recevoir\+Doc\+Json@{recevoir\+Doc\+Json}!Traitement@{Traitement}}
 \subsubsection{\texorpdfstring{recevoir\+Doc\+Json}{recevoirDocJson}}
@@ -245,7 +280,7 @@ recevoir\+Doc\+Json(\+Q\+String)
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
-{\em Q\+Json\+Document} & \+:le document J\+S\+ON à traiter \\
+{\em doc\+Json} & \+:le document J\+S\+ON à traiter \\
 \hline
 \end{DoxyParams}
 

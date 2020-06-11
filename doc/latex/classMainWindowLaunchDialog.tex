@@ -25,7 +25,7 @@ Graphe de collaboration de Main\+Window\+Launch\+Dialog\+:\nopagebreak
 \subsection*{Signaux}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}{envoyer\+Nom\+Fichier} (Q\+String)
+void \hyperlink{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}{envoyer\+Nom\+Fichier} (Q\+String path)
 \begin{DoxyCompactList}\small\item\em Signal qui envoie le nom du fichier Json. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
@@ -51,9 +51,9 @@ void \hyperlink{classMainWindowLaunchDialog_aaa766b56e4327b3bedf7f88c1b52cee7}{o
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classMainWindowLaunchDialog_a6b292183d418fe79b79225d9a35bd3dd}{drop\+Event} (Q\+Drop\+Event $\ast$event)
-\begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer le drop de fichier. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer le glisser/déposer de fichier. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_aaf393173ffd6c63b2c4d5bdd48b8ddb4}{drag\+Enter\+Event} (Q\+Drag\+Enter\+Event $\ast$event)
-\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le drag and drop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le glisser/déposer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -100,11 +100,11 @@ Destructeur de la fonction \hyperlink{classMainWindowLaunchDialog}{Main\+Window\
 
 
 
-Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le drag and drop. 
+Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le glisser/déposer. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em Q\+Drag\+Enter\+Event} & instance de l\textquotesingle{}évent \\
+{\em event} & instance de l\textquotesingle{}événement \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_a6b292183d418fe79b79225d9a35bd3dd}\label{classMainWindowLaunchDialog_a6b292183d418fe79b79225d9a35bd3dd}} 
@@ -115,29 +115,29 @@ Fonction qui permet d\textquotesingle{}accepter les fichiers entrant avec le dra
 
 
 
-Fonction qui permet de gérer le drop de fichier. 
+Fonction qui permet de gérer le glisser/déposer de fichier. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em Q\+Drop\+Event} & instance de l\textquotesingle{}évent \\
+{\em event} & instance de l\textquotesingle{}événement \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}\label{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}} 
+\mbox{\Hypertarget{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}\label{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}} 
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}}
 \index{envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
 \subsubsection{\texorpdfstring{envoyer\+Nom\+Fichier}{envoyerNomFichier}}
-{\footnotesize\ttfamily void Main\+Window\+Launch\+Dialog\+::envoyer\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+{\footnotesize\ttfamily void Main\+Window\+Launch\+Dialog\+::envoyer\+Nom\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
 
 
 
 Signal qui envoie le nom du fichier Json. 
 
 \begin{DoxySeeAlso}{Voir également}
-\hyperlink{classMainWindowLaunchDialog_ab439c55ab98e6b1634de4fe64243ce48}{envoyer\+Nom\+Fichier(\+Q\+String)} 
+\hyperlink{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}{envoyer\+Nom\+Fichier(\+Q\+String)} 
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
-{\em Q\+String} & \+: le chemin du fichier json \\
+{\em path} & \+: le chemin du fichier json \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_a91bfa59302a3591b7b3b11b03d6f9b0e}\label{classMainWindowLaunchDialog_a91bfa59302a3591b7b3b11b03d6f9b0e}} 

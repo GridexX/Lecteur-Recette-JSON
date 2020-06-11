@@ -1,8 +1,8 @@
 /**
  *   \file mainwindowlaunchdialog.h
  *   \author Pollet Lucas - Fougerouse Arsène
- *
- *   \brief Classe de la fenêtre permettant le choix du fichier json de recette
+ *   \date mai 2020
+ *   \brief Classe d'affichage permettant l'importation d'un fichier de recette
  */
 #ifndef MAINWINDOWLAUNCHDIALOG_H
 #define MAINWINDOWLAUNCHDIALOG_H
@@ -27,9 +27,9 @@ class MainWindowLaunchDialog : public QMainWindow
 
 public:
     /**
-     * \fn MainWindowLaunchDialog
-     * \param Qwidget *parent
-     * \brief Constructeur de la fenêtre de lancement
+     * \fn MainWindowLaunchDialog(QWidget *parent)
+     * \param parent : précise si le widget hérite d'une autre fenêtre
+     * \brief Constructeur de la classe MainWindowLaunchDialog
      */
     explicit MainWindowLaunchDialog(QWidget *parent = nullptr);
     /**
@@ -44,11 +44,11 @@ public:
     void on_actionOuvrir_un_fichier_triggered();
 signals:
     /**
-     * \sa envoyerNomFichier(QString)
+     * \sa envoyerNomFichier(QString path)
      * \brief Signal qui envoie le nom du fichier Json
-     * \param QString : le chemin du fichier json
+     * \param path : le chemin du fichier json
      */
-    void envoyerNomFichier(QString);
+    void envoyerNomFichier(QString path);
 
 private slots:
     /**
@@ -82,14 +82,14 @@ private:
 
     /**
      * \fn dropEvent(QDropEvent *event)
-     * \brief Fonction qui permet de gérer le drop de fichier
-     * \param QDropEvent: instance de l'évent
+     * \brief Fonction qui permet de gérer le glisser/déposer de fichier
+     * \param event: instance de l'événement
      */
     void dropEvent(QDropEvent *event);
     /**
      * \fn dragEnterEvent(QDragEnterEvent *event);
-     * \brief Fonction qui permet d'accepter les fichiers entrant avec le drag and drop
-     * \param QDragEnterEvent: instance de l'évent
+     * \brief Fonction qui permet d'accepter les fichiers entrant avec le glisser/déposer
+     * \param event: instance de l'événement
      */
     void dragEnterEvent(QDragEnterEvent *event);
 };

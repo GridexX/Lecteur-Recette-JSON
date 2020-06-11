@@ -12,7 +12,12 @@ lecture_json::lecture_json(QObject *parent) : QObject(parent)
 {
 }
 
-void lecture_json::recevoirNomFichier(QString path)
+void lecture_json::recevoirNomFichier(QString _path)
+{
+    path=_path;
+}
+
+void lecture_json::verifFichier()
 {
     QFile fichier(path);
     QJsonParseError error;
@@ -29,9 +34,7 @@ void lecture_json::recevoirNomFichier(QString path)
 
        else
             emit(envoieDocJson(doc));
-
     }
     else
         qCritical() << "Impossible de lire le fichier : " << error.errorString();
 }
-

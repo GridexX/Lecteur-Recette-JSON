@@ -1,4 +1,4 @@
 <map id="Traitement" name="Traitement">
-<area shape="rect" id="node3" href="$classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l}" alt="" coords="61,271,215,363"/>
+<area shape="rect" id="node3" href="$classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l&#45; verifFichier()\l}" alt="" coords="60,264,215,371"/>
 <area shape="rect" id="node4" href="$classRecette.html" title="{Recette\n|&#45; nom\l&#45; description\l&#45; motsCles\l&#45; listeIngredients\l&#45; listeEtapes\l&#45; temps\l&#45; URL\l|+ Recette()\l+ getNom()\l+ setNom()\l+ getDescription()\l+ setDescription()\l+ getListeIngredients()\l+ setListeIngredients()\l+ getListeEtapes()\l+ setListeEtapes()\l+ getTemps()\l+ setTemps()\l+ getURL()\l+ setURL()\l+ getMotsCles()\l+ setMotsCles()\l}" alt="" coords="239,132,391,503"/>
 </map>

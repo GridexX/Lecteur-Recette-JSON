@@ -1,36 +1,9 @@
-//commentaire pour générer la page d'accueil du doxyfile
-/*! \mainpage Documentation du Projet Recette
- *
- * \section Mentions légales
- *
- * Copyright(C)2020-2021 Lucas Pollet et Arsène Fougerouse
- *
- * This is the introduction.
- *
- * \section A quoi sert ce programme ?
- *
- * Cette application s'inscrit dans le cadre du projet d'Interface
- * Homme-Machine. Ce projet à été commandité par Mr. Raffin dans le cadre
- * du semestre 2 de DUT Informatique sur le site d'Arles.
- *
- * Cette application fonctionne sous Linux et Windows à condition d'avoir
- * d'avoir un compilateur c++/ Qt Creator d'installé.
- *
- * Au lancement de l'application, l'utilisateur est amené à choisir un fichier
- * de recette au format json qu'il viendra déposer / sélectionner via le pushbouton
- * en bas. L'application ouvre ensuite une autre fenêtre affichant les informations
- * relatives afin de réaliser la recette.
- *
- * \subsection Référence des classes
- * Les classes sont référencées dans l'onglet classes en haut de cette page.
- * La conception à été spécialement pensé dans le but de la MVC.
- */
 
 /**
  *   \file mainwindow.h
  *   \author Pollet Lucas - Fougerouse Arsène
- *
- *   \brief Classe de la fenêtre permettant l'affichage de la recette
+ *   \date mai 2020
+ *   \brief Classe qui affiche les informations nécessaires pour préparer la recette
  */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
@@ -84,14 +57,22 @@ private slots:
       */
     void updateStep();
 
+    /**
+     * @fn on_actionOuvir_triggered()
+     * @brief fonction permettant l'ouverture d'un autre fichier en cliquant depuis le menu de la fenêtre
+     */
     void on_actionOuvir_triggered();
 
+    /**
+     * @fn on_actionOuvir_triggered()
+     * @brief fonction permettant la fermeture de l'application en cliquant depuis le menu de la fenêtre
+     */
     void on_actionQuitter_triggered();
 
 signals:
     /**
       * @sa endChangeState()
-      * @brief signal qui annonce la fin du changement d'état
+      * @brief signal qui annonce la fin du changement d'état de la machine
       */
     void endChangeState();
 
@@ -106,50 +87,50 @@ public slots :
     /**
      * @fn modifNom(QString)
      * @brief slot qui modifie le nom de la recette
-     * @param le nom sous forme de chaine de caractère
+     * @param nom: le nom sous forme de chaine de caractère
      */
-    void modifNom(QString);
+    void modifNom(QString nom);
 
     /**
      * @fn modifDesc(QString)
      * @brief slot qui modifie la description
-     * @param la description sous forme de chaine de caractère
+     * @param desc: la description sous forme de chaine de caractère
      */
-    void modifDesc(QString);
+    void modifDesc(QString desc);
 
      /**
      * @fn modifMotsCles(QString)
      * @brief slot qui modifie les mots cles
-     * @param les mots cles sous forme de chaine de caractère
+     * @param motsCLes: les mots cles sous forme de chaine de caractère
      */
-    void modifMotsCles(QString);
+    void modifMotsCles(QString motsCLes);
 
     /**
      * @fn modifIng(QStringList)
      * @brief slot qui modifie la liste des ingrédients
-     * @param les ingrédients sous forme de liste de chaine de caractere
+     * @param listIng: les ingrédients sous forme de liste de chaine de caractere
      */
-    void modifIng(QStringList);
+    void modifIng(QStringList listIng);
 
     /**
      * @fn modifEtapes(QStringList)
      * @brief slot qui modifie le la liste des etapes
-     * @param les étapes sous formes de liste de chaine de caractere
+     * @param listEtapes: les étapes sous formes de liste de chaine de caractere
      */
-    void modifEtapes(QStringList);
+    void modifEtapes(QStringList listEtapes);
 
     /**
-     * @fn modifTemps(QStringList)
+     * @fn modifTemps(QString)
      * @brief slot qui modifie le temps nécessaire pour préparer la recette
-     * @param les différents temps sous forme de liste de chaine de caractère
+     * @param temps: les différents temps sous forme de chaine de caractère
      */
-    void modifTemps(QString);
+    void modifTemps(QString temps);
 
     /**
      * @fn modifURL(QString)
      * @brief slot qui modifie l'url pour accéder à la recette
-     * @param l'url sous forme de chaine de caractère
+     * @param url: l'url sous forme de chaine de caractère
      */
-    void modifURL(QString);
+    void modifURL(QString url);
 };
 #endif // MAINWINDOW_H

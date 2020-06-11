@@ -82,52 +82,58 @@ Graphe de collaboration de Traitement:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTraitement__coll__graph.png" border="0" usemap="#Traitement_coll__map" alt="Collaboration graph"/></div>
 <map name="Traitement_coll__map" id="Traitement_coll__map">
-<area shape="rect" id="node3" href="classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l}" alt="" coords="61,271,215,363"/>
+<area shape="rect" id="node3" href="classlecture__json.html" title="{lecture_json\n|&#45; path\l|+ lecture_json()\l+ recevoirNomFichier()\l&#45; verifFichier()\l}" alt="" coords="60,264,215,371"/>
 <area shape="rect" id="node4" href="classRecette.html" title="{Recette\n|&#45; nom\l&#45; description\l&#45; motsCles\l&#45; listeIngredients\l&#45; listeEtapes\l&#45; temps\l&#45; URL\l|+ Recette()\l+ getNom()\l+ setNom()\l+ getDescription()\l+ setDescription()\l+ getListeIngredients()\l+ setListeIngredients()\l+ getListeEtapes()\l+ setListeEtapes()\l+ getTemps()\l+ setTemps()\l+ getURL()\l+ setURL()\l+ getMotsCles()\l+ setMotsCles()\l}" alt="" coords="239,132,391,503"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Connecteurs publics</h2></td></tr>
-<tr class="memitem:aa66e6be8e21062472a6c1e9a95097dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#aa66e6be8e21062472a6c1e9a95097dc5">recevoirDocJson</a> (QJsonDocument)</td></tr>
-<tr class="memdesc:aa66e6be8e21062472a6c1e9a95097dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction qui recoit le document JSON pour le traiter et lire ses données  <a href="#aa66e6be8e21062472a6c1e9a95097dc5">Plus de détails...</a><br /></td></tr>
-<tr class="separator:aa66e6be8e21062472a6c1e9a95097dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbc7e2034b55a9de14c010be7d3de11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a7bbc7e2034b55a9de14c010be7d3de11">recevoirDocJson</a> (QJsonDocument docJson)</td></tr>
+<tr class="memdesc:a7bbc7e2034b55a9de14c010be7d3de11"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction qui recoit le document JSON pour le traiter et lire ses données  <a href="#a7bbc7e2034b55a9de14c010be7d3de11">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7bbc7e2034b55a9de14c010be7d3de11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signaux</h2></td></tr>
-<tr class="memitem:ab958dbb923cb1b905c260c4f54907169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#ab958dbb923cb1b905c260c4f54907169">envoieNom</a> (QString)</td></tr>
-<tr class="memdesc:ab958dbb923cb1b905c260c4f54907169"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer le nom à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#ab958dbb923cb1b905c260c4f54907169">Plus de détails...</a><br /></td></tr>
-<tr class="separator:ab958dbb923cb1b905c260c4f54907169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f84743a77b0074f209eda21d32ee95b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a9f84743a77b0074f209eda21d32ee95b">envoieNom</a> (QString nom)</td></tr>
+<tr class="memdesc:a9f84743a77b0074f209eda21d32ee95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction (signal) pour envoyer le nom à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a9f84743a77b0074f209eda21d32ee95b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9f84743a77b0074f209eda21d32ee95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d1717924fb7a206df394afae4e19dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a81d1717924fb7a206df394afae4e19dc">envoieDesc</a> (QString)</td></tr>
-<tr class="memdesc:a81d1717924fb7a206df394afae4e19dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer la description à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a81d1717924fb7a206df394afae4e19dc">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a81d1717924fb7a206df394afae4e19dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction (signal) pour envoyer la description à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a81d1717924fb7a206df394afae4e19dc">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a81d1717924fb7a206df394afae4e19dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df691c4f46371e6c2b6b4c4df102819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a4df691c4f46371e6c2b6b4c4df102819">envoieMotsCles</a> (QString)</td></tr>
-<tr class="memdesc:a4df691c4f46371e6c2b6b4c4df102819"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer les mots cles à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a4df691c4f46371e6c2b6b4c4df102819">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a4df691c4f46371e6c2b6b4c4df102819"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction (signal) pour envoyer les mots cles à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a4df691c4f46371e6c2b6b4c4df102819">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4df691c4f46371e6c2b6b4c4df102819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db23635eb895875b0f60acece723df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a8db23635eb895875b0f60acece723df4">envoieIng</a> (QStringList)</td></tr>
-<tr class="memdesc:a8db23635eb895875b0f60acece723df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer la liste des ingrédients à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a8db23635eb895875b0f60acece723df4">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a8db23635eb895875b0f60acece723df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction (signal) pour envoyer la liste des ingrédients à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#a8db23635eb895875b0f60acece723df4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a8db23635eb895875b0f60acece723df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58a2b32e2632bfc11a696c186ace3b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#ae58a2b32e2632bfc11a696c186ace3b7">envoieEtapes</a> (QStringList)</td></tr>
-<tr class="memdesc:ae58a2b32e2632bfc11a696c186ace3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer la liste des étapes à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#ae58a2b32e2632bfc11a696c186ace3b7">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ae58a2b32e2632bfc11a696c186ace3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction (signal) pour envoyer la liste des étapes à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#ae58a2b32e2632bfc11a696c186ace3b7">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ae58a2b32e2632bfc11a696c186ace3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57543af34e05b74a7af460c0e74e87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#ae57543af34e05b74a7af460c0e74e87f">envoieTemps</a> (QString)</td></tr>
-<tr class="memdesc:ae57543af34e05b74a7af460c0e74e87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer les temps à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#ae57543af34e05b74a7af460c0e74e87f">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ae57543af34e05b74a7af460c0e74e87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction (signal) pour envoyer les temps à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#ae57543af34e05b74a7af460c0e74e87f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ae57543af34e05b74a7af460c0e74e87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc099bf1113669c2e061e8897c3eaeca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#acc099bf1113669c2e061e8897c3eaeca">envoieURL</a> (QString)</td></tr>
-<tr class="memdesc:acc099bf1113669c2e061e8897c3eaeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction pour envoyer l'url à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#acc099bf1113669c2e061e8897c3eaeca">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:acc099bf1113669c2e061e8897c3eaeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction (signal) pour envoyer l'url à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>)  <a href="#acc099bf1113669c2e061e8897c3eaeca">Plus de détails...</a><br /></td></tr>
 <tr class="separator:acc099bf1113669c2e061e8897c3eaeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83495c6e878e66511b8af67ee369a012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a83495c6e878e66511b8af67ee369a012">finTraitement</a> ()</td></tr>
-<tr class="memdesc:a83495c6e878e66511b8af67ee369a012"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal pour envoyer le chemin du fichier  <a href="#a83495c6e878e66511b8af67ee369a012">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a83495c6e878e66511b8af67ee369a012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction (signal) pour envoyer le chemin du fichier.  <a href="#a83495c6e878e66511b8af67ee369a012">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a83495c6e878e66511b8af67ee369a012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a36edd9e6ce6e72cfef7f9c857c3c9cf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a36edd9e6ce6e72cfef7f9c857c3c9cf2">Traitement</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a36edd9e6ce6e72cfef7f9c857c3c9cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="classTraitement.html">Traitement</a>.  <a href="#a36edd9e6ce6e72cfef7f9c857c3c9cf2">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a36edd9e6ce6e72cfef7f9c857c3c9cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3c99b92a3b6d429e4479294267af9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRecette.html">Recette</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#aba3c99b92a3b6d429e4479294267af9d">getRecette</a> ()</td></tr>
-<tr class="separator:aba3c99b92a3b6d429e4479294267af9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4392841087f03b430af24fa5233d6864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlecture__json.html">lecture_json</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a4392841087f03b430af24fa5233d6864">getLecture</a> ()</td></tr>
-<tr class="separator:a4392841087f03b430af24fa5233d6864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd82f97c992d07b7032184f12c7fab9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a7dd82f97c992d07b7032184f12c7fab9">~Traitement</a> ()</td></tr>
+<tr class="memdesc:a7dd82f97c992d07b7032184f12c7fab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la classe <a class="el" href="classTraitement.html">Traitement</a>.  <a href="#a7dd82f97c992d07b7032184f12c7fab9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7dd82f97c992d07b7032184f12c7fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587f76ba51e61307815c9e279821a744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRecette.html">Recette</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a587f76ba51e61307815c9e279821a744">getRecette</a> ()</td></tr>
+<tr class="memdesc:a587f76ba51e61307815c9e279821a744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction getter pour obtenir l'instance de la classe <a class="el" href="classRecette.html">Recette</a>.  <a href="#a587f76ba51e61307815c9e279821a744">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a587f76ba51e61307815c9e279821a744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ecaaa93bbdc283a3eebe3c060e656d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlecture__json.html">lecture_json</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTraitement.html#a91ecaaa93bbdc283a3eebe3c060e656d">getLecture</a> ()</td></tr>
+<tr class="memdesc:a91ecaaa93bbdc283a3eebe3c060e656d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction getter pour obtenir l'instance de la classe <a class="el" href="classlecture__json.html">lecture_json</a>.  <a href="#a91ecaaa93bbdc283a3eebe3c060e656d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a91ecaaa93bbdc283a3eebe3c060e656d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -161,6 +167,33 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructeur de la classe <a class="el" href="classTraitement.html">Traitement</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>: précise si le widget hérite d'une autre fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dd82f97c992d07b7032184f12c7fab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd82f97c992d07b7032184f12c7fab9">&#9670;&nbsp;</a></span>~Traitement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Traitement::~Traitement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur de la classe <a class="el" href="classTraitement.html">Traitement</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
@@ -188,8 +221,8 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer la description à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a81d1717924fb7a206df394afae4e19dc" title="fonction pour envoyer la description à la classe MainWindow (voir classe MainWindow) ...">envoieDesc(QString)</a> </dd></dl>
+<p>Fonction (signal) pour envoyer la description à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a81d1717924fb7a206df394afae4e19dc" title="Fonction (signal) pour envoyer la description à la classe MainWindow (voir classe MainWindow) ...">envoieDesc(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>: la description à transmettre </td></tr>
@@ -223,8 +256,8 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer la liste des étapes à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#ae58a2b32e2632bfc11a696c186ace3b7" title="fonction pour envoyer la liste des étapes à la classe MainWindow (voir classe MainWindow) ...">envoieEtapes(QStringList)</a> </dd></dl>
+<p>fonction (signal) pour envoyer la liste des étapes à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#ae58a2b32e2632bfc11a696c186ace3b7" title="fonction (signal) pour envoyer la liste des étapes à la classe MainWindow (voir classe MainWindow) ...">envoieEtapes(QStringList)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">étapes</td><td>: la liste des étapes à transmettre </td></tr>
@@ -258,8 +291,8 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer la liste des ingrédients à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a8db23635eb895875b0f60acece723df4" title="fonction pour envoyer la liste des ingrédients à la classe MainWindow (voir classe MainWindow) ...">envoieIng(QStringList)</a> </dd></dl>
+<p>fonction (signal) pour envoyer la liste des ingrédients à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a8db23635eb895875b0f60acece723df4" title="fonction (signal) pour envoyer la liste des ingrédients à la classe MainWindow (voir classe MainWindo...">envoieIng(QStringList)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">ingredients</td><td>: la liste des ingrédients à transmettre </td></tr>
@@ -293,19 +326,19 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer les mots cles à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a4df691c4f46371e6c2b6b4c4df102819" title="fonction pour envoyer les mots cles à la classe MainWindow (voir classe MainWindow) ...">envoieMotsCles(QString)</a> </dd></dl>
+<p>fonction (signal) pour envoyer les mots cles à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a4df691c4f46371e6c2b6b4c4df102819" title="fonction (signal) pour envoyer les mots cles à la classe MainWindow (voir classe MainWindow) ...">envoieMotsCles(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">MotsCles</td><td>: les mots cles à transmettre </td></tr>
+    <tr><td class="paramname">MotsCles</td><td>les mots cles à transmettre </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab958dbb923cb1b905c260c4f54907169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab958dbb923cb1b905c260c4f54907169">&#9670;&nbsp;</a></span>envoieNom</h2>
+<a id="a9f84743a77b0074f209eda21d32ee95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f84743a77b0074f209eda21d32ee95b">&#9670;&nbsp;</a></span>envoieNom</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +350,7 @@ Attributs privés</h2></td></tr>
           <td class="memname">void Traitement::envoieNom </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -328,11 +361,11 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer le nom à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#ab958dbb923cb1b905c260c4f54907169" title="fonction pour envoyer le nom à la classe MainWindow (voir classe MainWindow) ">envoieNom(QString)</a> </dd></dl>
+<p>Fonction (signal) pour envoyer le nom à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#a9f84743a77b0074f209eda21d32ee95b" title="Fonction (signal) pour envoyer le nom à la classe MainWindow (voir classe MainWindow) ...">envoieNom(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nom</td><td>: le nom à transmettre </td></tr>
+    <tr><td class="paramname">nom</td><td>le nom à transmettre </td></tr>
   </table>
   </dd>
 </dl>
@@ -363,8 +396,8 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer les temps à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#ae57543af34e05b74a7af460c0e74e87f" title="fonction pour envoyer les temps à la classe MainWindow (voir classe MainWindow) ">envoieTemps(QString)</a> </dd></dl>
+<p>fonction (signal) pour envoyer les temps à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#ae57543af34e05b74a7af460c0e74e87f" title="fonction (signal) pour envoyer les temps à la classe MainWindow (voir classe MainWindow) ...">envoieTemps(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">temps</td><td>: les temps à transmettre </td></tr>
@@ -398,8 +431,8 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction pour envoyer l'url à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
-<dl class="section see"><dt>Voir également</dt><dd>envoieURL(QStringList) </dd></dl>
+<p>fonction (signal) pour envoyer l'url à la classe <a class="el" href="classMainWindow.html">MainWindow</a> (voir classe <a class="el" href="classMainWindow.html">MainWindow</a>) </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classTraitement.html#acc099bf1113669c2e061e8897c3eaeca" title="fonction (signal) pour envoyer l&#39;url à la classe MainWindow (voir classe MainWindow) ...">envoieURL(QString)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>: l'url du site web de la recette à transmettre </td></tr>
@@ -432,7 +465,7 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>signal pour envoyer le chemin du fichier </p>
+<p>Fonction (signal) pour envoyer le chemin du fichier. </p>
 <dl class="section see"><dt>Voir également</dt><dd>envoieNomFichier(QString) </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
@@ -443,8 +476,8 @@ Attributs privés</h2></td></tr>
 
 </div>
 </div>
-<a id="a4392841087f03b430af24fa5233d6864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4392841087f03b430af24fa5233d6864">&#9670;&nbsp;</a></span>getLecture()</h2>
+<a id="a91ecaaa93bbdc283a3eebe3c060e656d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ecaaa93bbdc283a3eebe3c060e656d">&#9670;&nbsp;</a></span>getLecture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +486,7 @@ Attributs privés</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlecture__json.html">lecture_json</a>* Traitement::getLecture </td>
+          <td class="memname">Traitement::getLecture </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -466,10 +499,13 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Fonction getter pour obtenir l'instance de la classe <a class="el" href="classlecture__json.html">lecture_json</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur sur <a class="el" href="classlecture__json.html">lecture_json</a> </dd></dl>
+
 </div>
 </div>
-<a id="aba3c99b92a3b6d429e4479294267af9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba3c99b92a3b6d429e4479294267af9d">&#9670;&nbsp;</a></span>getRecette()</h2>
+<a id="a587f76ba51e61307815c9e279821a744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587f76ba51e61307815c9e279821a744">&#9670;&nbsp;</a></span>getRecette()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +514,7 @@ Attributs privés</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classRecette.html">Recette</a>* Traitement::getRecette </td>
+          <td class="memname">Traitement::getRecette </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -491,10 +527,13 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Fonction getter pour obtenir l'instance de la classe <a class="el" href="classRecette.html">Recette</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur sur <a class="el" href="classRecette.html">Recette</a> </dd></dl>
+
 </div>
 </div>
-<a id="aa66e6be8e21062472a6c1e9a95097dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa66e6be8e21062472a6c1e9a95097dc5">&#9670;&nbsp;</a></span>recevoirDocJson</h2>
+<a id="a7bbc7e2034b55a9de14c010be7d3de11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbc7e2034b55a9de14c010be7d3de11">&#9670;&nbsp;</a></span>recevoirDocJson</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,7 +560,7 @@ Attributs privés</h2></td></tr>
 <dl class="section see"><dt>Voir également</dt><dd>recevoirDocJson(QString) </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QJsonDocument</td><td>:le document JSON à traiter </td></tr>
+    <tr><td class="paramname">docJson</td><td>:le document JSON à traiter </td></tr>
   </table>
   </dd>
 </dl>

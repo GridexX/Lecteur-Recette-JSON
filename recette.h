@@ -1,8 +1,8 @@
 /**
  *   \file recette.h
  *   \author Pollet Lucas - Fougerouse Arsène
- *
- *   \brief Classe permettant la gestion et le stockage de la recette
+ *   \date mai 2020
+ *   \brief Classe qui stocke sous forme d'attribut les informations d'une recette
  */
 #ifndef RECETTE_H
 #define RECETTE_H
@@ -15,101 +15,108 @@ class Recette : public QObject
 public:
     /**
      * @fn Recette(QObject *parent)
-     * @brief constructeur de la classe Recette
-     * @param parent : précise si le widget hérite d'une autre fenêtre
+     * @brief Constructeur de la classe Recette
+     * @param parent : précise si le widget hérite d'un autre object
      */
     explicit Recette(QObject *parent = nullptr);
 
     /**
      * @fn getNom()
-     * @brief fonction getter pour obtenir le nom de la recette
+     * @brief Fonction getter pour obtenir le nom de la recette
+     * @return Le nom en chaine de caractères
      */
     QString getNom() const;
 
     /**
-     * @fn setNom(const QStringList &)
+     * @fn setNom(const QString &nom)
      * @brief fonction setter pour modifier le nom de la recette
-     * @param value : le nom de la recette de cuisine
+     * @param nom: le nom de la recette de cuisine
      */
-    void setNom(const QString &value);
+    void setNom(const QString &nom);
 
     /**
      * @fn getDescription() const
-     * @brief fonction getter pour obtenir la description de la recette
+     * @brief Fonction getter pour obtenir la description de la recette
+     * @return La description
      */
     QString getDescription() const;
 
     /**
-     * @fn setDescription(const QStringList &)
+     * @fn setDescription(const QString &desc)
      * @brief fonction setter pour modifier le nom de la recette
-     * @param value : la description de la recette de cuisine
+     * @param desc: la description de la recette de cuisine
      */
-    void setDescription(const QString &value);
+    void setDescription(const QString &desc);
 
     /**
      * @fn getListeIngredients()
-     * @brief fonction getter pour obtenir la liste des ingrédient de la recette
+     * @brief Fonction getter pour obtenir la liste des ingrédient de la recette
+     * @return La liste des ingrédients
      */
     QStringList getListeIngredients() const;
 
     /**
-     * @fn setListeIngredients(const QStringList &)
-     * @brief fonction setter pour modifier le nom de la recette
-     * @param value : la liste d'ingrédient de la recette de cuisine
+     * @fn setListeIngredients(const QStringList &listeIng)
+     * @brief Fonction setter pour modifier le nom de la recette
+     * @param listeIng: la liste d'ingrédient de la recette de cuisine
      */
-    void setListeIngredients(const QStringList &value);
+    void setListeIngredients(const QStringList &listeIng);
 
     /**
      * @fn getListeEtapes()
-     * @brief fonction getter pour obtenir la liste des étapes de la recette
+     * @brief Fonction getter pour obtenir la liste des étapes de la recette
+     * @return La liste des étapes
      */
     QStringList getListeEtapes() const;
 
     /**
-     * @fn setListeEtapes(const QStringList &)
-     * @brief fonction setter pour modifier la liste des étapes de la recette
-     * @param value : la liste d'étapes de la recette de cuisine
+     * @fn setListeEtapes(const QStringList &listeEtapes)
+     * @brief Fonction setter pour modifier la liste des étapes de la recette
+     * @param listEtapes: la liste d'étapes de la recette de cuisine
      */
-    void setListeEtapes(const QStringList &value);
+    void setListeEtapes(const QStringList &listeEtapes);
 
     /**
      * @fn getTemps()
-     * @brief fonction getter pour obtenir les différents temps de la recette
+     * @brief Fonction getter pour obtenir les différents temps de la recette
+     * @return Les temps de préparation, cuisson et totaux
      */
     QString getTemps() const;
 
     /**
-     * @fn setTemps(const QStringList &)
-     * @brief fonction setter pour modifier les différents temps de la recette
-     * @param value : les différents temps de la recette de cuisine
+     * @fn setTemps(const QString &temps)
+     * @brief Fonction setter pour modifier les différents temps de la recette
+     * @param temps: les différents temps de la recette de cuisine
      */
-    void setTemps(const QString &value);
+    void setTemps(const QString &temps);
 
     /**
      * @fn getURL()
-     * @brief fonction getter pour obtenir l'url de la recette
+     * @brief Fonction getter pour obtenir l'url de la recette
+     * @return L'url du site web
      */
     QString getURL() const;
 
     /**
-     * @fn setURL(const QString &)
-     * @brief fonction setter pour modifier les différents temps de la recette
-     * @param value : l'url de la recette de cuisine
+     * @fn setURL(const QString &url)
+     * @brief Fonction setter pour modifier les différents temps de la recette
+     * @param url: l'url de la recette de cuisine
      */
-    void setURL(const QString &value);
+    void setURL(const QString &url);
 
     /**
      * @fn getMotsCles()
-     * @brief fonction getter pour obtenir les mots clés de la recette
+     * @brief Fonction getter pour obtenir les mots-clés de la recette
+     * @return Les mots-clés
      */
     QString getMotsCles() const;
 
     /**
-     * @fn setMotsCles(const QString &)
-     * @brief fonction setter pour modifier les mots clés de la recette
-     * @param value : les mots clés de la recette de cuisine
+     * @fn setMotsCles(const QString &motsCles)
+     * @brief Fonction setter pour modifier les mots clés de la recette
+     * @param motsCles: les mots clés de la recette de cuisine
      */
-    void setMotsCles(const QString &value);
+    void setMotsCles(const QString &motsCles);
 
 private:
     QString nom; /*!< nom: Le nom de la recette */

@@ -1,7 +1,7 @@
 <map id="traitement.h" name="traitement.h">
 <area shape="rect" id="node2" href="$transmission_8h.html" title="Classe permettant le transmission des données. " alt="" coords="197,80,304,107"/>
 <area shape="rect" id="node8" href="$traitement_8cpp.html" title="Classe permettant le traitement json. " alt="" coords="329,80,434,107"/>
-<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8h.html" title="Classe de la fenêtre permettant le choix du fichier json de recette. " alt="" coords="75,155,253,181"/>
+<area shape="rect" id="node3" href="$mainwindowlaunchdialog_8h.html" title="Classe d&#39;affichage permettant l&#39;importation d&#39;un fichier de recette. " alt="" coords="75,155,253,181"/>
 <area shape="rect" id="node7" href="$transmission_8cpp.html" title="Classe permettant le transmission des données. " alt="" coords="277,155,398,181"/>
 <area shape="rect" id="node4" href="$main_8cpp.html" title="Classe principale qui permet de lancer la première fenetre. " alt="" coords="5,229,80,256"/>
 <area shape="rect" id="node5" href="$mainwindow_8cpp.html" title="Classe de la fenêtre permettant l&#39;affichage de la recette. " alt="" coords="105,229,223,256"/>

@@ -1,4 +1,4 @@
 <map id="traitement.h" name="traitement.h">
-<area shape="rect" id="node6" href="$recette_8h.html" title="Classe permettant la gestion et le stockage de la recette. " alt="" coords="625,80,698,107"/>
+<area shape="rect" id="node6" href="$recette_8h.html" title="Classe qui stocke sous forme d&#39;attribut les informations d&#39;une recette. " alt="" coords="625,80,698,107"/>
 <area shape="rect" id="node7" href="$lecture__json_8h.html" title="Classe gérant la lecture du fichier json. " alt="" coords="363,80,466,107"/>
 </map>

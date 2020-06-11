@@ -25,25 +25,25 @@ Graphe de collaboration de Main\+Window\+:\nopagebreak
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classMainWindow_ac154b320efe8998a85a93f1c41ace7e4}{modif\+Nom} (Q\+String)
+void \hyperlink{classMainWindow_a38a15d5bcba3d46fef95cb060c8cfb81}{modif\+Nom} (Q\+String nom)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le nom de la recette \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a77ada7a541d869ea7f3647900ba6f6df}{modif\+Desc} (Q\+String)
+void \hyperlink{classMainWindow_a8c1e21671da1da3ebb91417ed1745ac2}{modif\+Desc} (Q\+String desc)
 \begin{DoxyCompactList}\small\item\em slot qui modifie la description \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_ae9b5aeb3f3b89a40008486d1329a68bc}{modif\+Mots\+Cles} (Q\+String)
+void \hyperlink{classMainWindow_af8df6e9620b77968cc947db8bbaa6ea7}{modif\+Mots\+Cles} (Q\+String mots\+C\+Les)
 \begin{DoxyCompactList}\small\item\em slot qui modifie les mots cles \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a64a5116401b4a54c55c6a7d34fc7ec93}{modif\+Ing} (Q\+String\+List)
+void \hyperlink{classMainWindow_af9c1008d472c1cbe3ee63a2ee691eebb}{modif\+Ing} (Q\+String\+List list\+Ing)
 \begin{DoxyCompactList}\small\item\em slot qui modifie la liste des ingrédients \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a1a85241ab332ebb026638ff0a6df83e0}{modif\+Etapes} (Q\+String\+List)
+void \hyperlink{classMainWindow_a323b852ca5189a18a81107f72857a7d8}{modif\+Etapes} (Q\+String\+List \hyperlink{classMainWindow_a1290f4c9df65fb27c870753aa2b24a88}{list\+Etapes})
 \begin{DoxyCompactList}\small\item\em slot qui modifie le la liste des etapes \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}{modif\+Temps} (Q\+String)
+void \hyperlink{classMainWindow_a8bd5bdfbeb09cb4899069f18e07a5f66}{modif\+Temps} (Q\+String temps)
 \begin{DoxyCompactList}\small\item\em slot qui modifie le temps nécessaire pour préparer la recette \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a3620273f0e53b380d70df636400e8519}{modif\+U\+RL} (Q\+String)
+void \hyperlink{classMainWindow_ac1923d4f0d0f7f91deeac773e2cb16df}{modif\+U\+RL} (Q\+String url)
 \begin{DoxyCompactList}\small\item\em slot qui modifie l\textquotesingle{}url pour accéder à la recette \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Signaux}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}{end\+Change\+State} ()
-\begin{DoxyCompactList}\small\item\em signal qui annonce la fin du changement d\textquotesingle{}état \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em signal qui annonce la fin du changement d\textquotesingle{}état de la machine \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,8 +60,8 @@ void \hyperlink{classMainWindow_a715f753a6c46e3f10565a5a1b849ee86}{last\+Instruc
 \begin{DoxyCompactList}\small\item\em fonction qui permet de passer à l\textquotesingle{}instruction précédente \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindow_a344d21527850380c306fe7ac165321bd}{update\+Step} ()
 \begin{DoxyCompactList}\small\item\em fonction qui met à jour l\textquotesingle{}instruction affiché à l\textquotesingle{}écran \end{DoxyCompactList}\item 
-void \hyperlink{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}{on\+\_\+action\+Ouvir\+\_\+triggered} ()
-\item 
+void \hyperlink{classMainWindow_aacde03c39958646fddec981b89d37238}{on\+\_\+action\+Ouvir\+\_\+triggered} ()
+\begin{DoxyCompactList}\small\item\em fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un autre fichier en cliquant depuis le menu de la fenêtre \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}{on\+\_\+action\+Quitter\+\_\+triggered} ()
 \end{DoxyCompactItemize}
 \subsection*{Attributs privés}
@@ -114,7 +114,7 @@ destructeur de la fonction \hyperlink{classMainWindow}{Main\+Window}
 
 
 
-signal qui annonce la fin du changement d\textquotesingle{}état 
+signal qui annonce la fin du changement d\textquotesingle{}état de la machine 
 
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{classMainWindow_a2cd7fd54c497cd6a073ad43857266890}{end\+Change\+State()} 
@@ -129,11 +129,11 @@ signal qui annonce la fin du changement d\textquotesingle{}état
 
 fonction qui permet de passer à l\textquotesingle{}instruction précédente 
 
-\mbox{\Hypertarget{classMainWindow_a77ada7a541d869ea7f3647900ba6f6df}\label{classMainWindow_a77ada7a541d869ea7f3647900ba6f6df}} 
+\mbox{\Hypertarget{classMainWindow_a8c1e21671da1da3ebb91417ed1745ac2}\label{classMainWindow_a8c1e21671da1da3ebb91417ed1745ac2}} 
 \index{Main\+Window@{Main\+Window}!modif\+Desc@{modif\+Desc}}
 \index{modif\+Desc@{modif\+Desc}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Desc}{modifDesc}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Desc (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Desc (\begin{DoxyParamCaption}\item[{Q\+String}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
@@ -141,14 +141,14 @@ slot qui modifie la description
 
 
 \begin{DoxyParams}{Paramètres}
-{\em la} & description sous forme de chaine de caractère \\
+{\em desc} & la description sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_a1a85241ab332ebb026638ff0a6df83e0}\label{classMainWindow_a1a85241ab332ebb026638ff0a6df83e0}} 
+\mbox{\Hypertarget{classMainWindow_a323b852ca5189a18a81107f72857a7d8}\label{classMainWindow_a323b852ca5189a18a81107f72857a7d8}} 
 \index{Main\+Window@{Main\+Window}!modif\+Etapes@{modif\+Etapes}}
 \index{modif\+Etapes@{modif\+Etapes}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Etapes}{modifEtapes}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Etapes (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Etapes (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{list\+Etapes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
@@ -156,14 +156,14 @@ slot qui modifie le la liste des etapes
 
 
 \begin{DoxyParams}{Paramètres}
-{\em les} & étapes sous formes de liste de chaine de caractere \\
+{\em list\+Etapes} & les étapes sous formes de liste de chaine de caractere \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_a64a5116401b4a54c55c6a7d34fc7ec93}\label{classMainWindow_a64a5116401b4a54c55c6a7d34fc7ec93}} 
+\mbox{\Hypertarget{classMainWindow_af9c1008d472c1cbe3ee63a2ee691eebb}\label{classMainWindow_af9c1008d472c1cbe3ee63a2ee691eebb}} 
 \index{Main\+Window@{Main\+Window}!modif\+Ing@{modif\+Ing}}
 \index{modif\+Ing@{modif\+Ing}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Ing}{modifIng}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Ing (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Ing (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{list\+Ing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
@@ -171,14 +171,14 @@ slot qui modifie la liste des ingrédients
 
 
 \begin{DoxyParams}{Paramètres}
-{\em les} & ingrédients sous forme de liste de chaine de caractere \\
+{\em list\+Ing} & les ingrédients sous forme de liste de chaine de caractere \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_ae9b5aeb3f3b89a40008486d1329a68bc}\label{classMainWindow_ae9b5aeb3f3b89a40008486d1329a68bc}} 
+\mbox{\Hypertarget{classMainWindow_af8df6e9620b77968cc947db8bbaa6ea7}\label{classMainWindow_af8df6e9620b77968cc947db8bbaa6ea7}} 
 \index{Main\+Window@{Main\+Window}!modif\+Mots\+Cles@{modif\+Mots\+Cles}}
 \index{modif\+Mots\+Cles@{modif\+Mots\+Cles}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Mots\+Cles}{modifMotsCles}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Mots\+Cles (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Mots\+Cles (\begin{DoxyParamCaption}\item[{Q\+String}]{mots\+C\+Les }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
@@ -186,14 +186,14 @@ slot qui modifie les mots cles
 
 
 \begin{DoxyParams}{Paramètres}
-{\em les} & mots cles sous forme de chaine de caractère \\
+{\em mots\+C\+Les} & les mots cles sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_ac154b320efe8998a85a93f1c41ace7e4}\label{classMainWindow_ac154b320efe8998a85a93f1c41ace7e4}} 
+\mbox{\Hypertarget{classMainWindow_a38a15d5bcba3d46fef95cb060c8cfb81}\label{classMainWindow_a38a15d5bcba3d46fef95cb060c8cfb81}} 
 \index{Main\+Window@{Main\+Window}!modif\+Nom@{modif\+Nom}}
 \index{modif\+Nom@{modif\+Nom}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Nom}{modifNom}}
-{\footnotesize\ttfamily Main\+Window\+::modif\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::modif\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{nom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 
 
@@ -201,10 +201,10 @@ slot qui modifie le nom de la recette
 
 
 \begin{DoxyParams}{Paramètres}
-{\em le} & nom sous forme de chaine de caractère \\
+{\em nom} & le nom sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}\label{classMainWindow_ab49cf9603a1a539ca19623eac88b86c2}} 
+\mbox{\Hypertarget{classMainWindow_a8bd5bdfbeb09cb4899069f18e07a5f66}\label{classMainWindow_a8bd5bdfbeb09cb4899069f18e07a5f66}} 
 \index{Main\+Window@{Main\+Window}!modif\+Temps@{modif\+Temps}}
 \index{modif\+Temps@{modif\+Temps}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+Temps}{modifTemps}}
@@ -216,10 +216,10 @@ slot qui modifie le temps nécessaire pour préparer la recette
 
 
 \begin{DoxyParams}{Paramètres}
-{\em les} & différents temps sous forme de liste de chaine de caractère \\
+{\em temps} & les différents temps sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMainWindow_a3620273f0e53b380d70df636400e8519}\label{classMainWindow_a3620273f0e53b380d70df636400e8519}} 
+\mbox{\Hypertarget{classMainWindow_ac1923d4f0d0f7f91deeac773e2cb16df}\label{classMainWindow_ac1923d4f0d0f7f91deeac773e2cb16df}} 
 \index{Main\+Window@{Main\+Window}!modif\+U\+RL@{modif\+U\+RL}}
 \index{modif\+U\+RL@{modif\+U\+RL}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{modif\+U\+RL}{modifURL}}
@@ -231,7 +231,7 @@ slot qui modifie l\textquotesingle{}url pour accéder à la recette
 
 
 \begin{DoxyParams}{Paramètres}
-{\em l\textquotesingle{}url} & sous forme de chaine de caractère \\
+{\em url} & l\textquotesingle{}url sous forme de chaine de caractère \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}\label{classMainWindow_a0b79b7ea071fc3a4baa45f8394052ffd}} 
@@ -244,13 +244,17 @@ slot qui modifie l\textquotesingle{}url pour accéder à la recette
 
 fonction qui permet de passer à l\textquotesingle{}instruction suivante 
 
-\mbox{\Hypertarget{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}\label{classMainWindow_a7870a8093d512baa96412b5fcadaaa87}} 
+\mbox{\Hypertarget{classMainWindow_aacde03c39958646fddec981b89d37238}\label{classMainWindow_aacde03c39958646fddec981b89d37238}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+action\+Ouvir\+\_\+triggered@{on\+\_\+action\+Ouvir\+\_\+triggered}}
 \index{on\+\_\+action\+Ouvir\+\_\+triggered@{on\+\_\+action\+Ouvir\+\_\+triggered}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{on\+\_\+action\+Ouvir\+\_\+triggered}{on\_actionOuvir\_triggered}}
-{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+action\+Ouvir\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+{\footnotesize\ttfamily Main\+Window\+::on\+\_\+action\+Ouvir\+\_\+triggered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
-\mbox{\Hypertarget{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}\label{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}} 
+
+
+fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un autre fichier en cliquant depuis le menu de la fenêtre 
+
+fonction permettant la fermeture de l\textquotesingle{}application en cliquant depuis le menu de la fenêtre \mbox{\Hypertarget{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}\label{classMainWindow_afe9d9d46e61e2460e636619577a9e8fd}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+action\+Quitter\+\_\+triggered@{on\+\_\+action\+Quitter\+\_\+triggered}}
 \index{on\+\_\+action\+Quitter\+\_\+triggered@{on\+\_\+action\+Quitter\+\_\+triggered}!Main\+Window@{Main\+Window}}
 \subsubsection{\texorpdfstring{on\+\_\+action\+Quitter\+\_\+triggered}{on\_actionQuitter\_triggered}}

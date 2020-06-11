@@ -1,7 +1,7 @@
 /**
  *   \file traitement.h
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe permettant le traitement json
  */
 #ifndef TRAITEMENT_H
@@ -20,92 +20,102 @@ Q_OBJECT
 public :
 
     /**
-     * \fn traitement(QJsonDocument)
-     * \brief Constructeur du traitemment json
-     * \param QJsonDocument : chemin d'accès du fichier json de la recette
+     * \fn Traitement(QObject *parent)
+     * \brief Constructeur de la classe Traitement
+     * \param parent : précise si le widget hérite d'une autre fenêtre
      */
     explicit Traitement(QObject *parent = nullptr);
 
-    ~Traitement();
     /**
-     * \fn setRecette()
-     * \brief Fonction qui permet de lire le fichier et enregistrer la recette
+     * \fn ~Traitement()
+     * \brief Destructeur de la classe Traitement
      */
+    ~Traitement();
 
+    /**
+     * @fn getRecette()
+     * @brief Fonction getter pour obtenir l'instance de la classe Recette
+     * @return Un pointeur sur Recette
+     */
     inline Recette *getRecette() { return recette; }
+
+    /**
+     * @fn getLecture()
+     * @brief Fonction getter pour obtenir l'instance de la classe lecture_json
+     * @return Un pointeur sur lecture_json
+     */
     inline lecture_json *getLecture() { return lecJson; }
 
 private :
 
-    Recette *recette; /*!< Recette *recette: pointeur sur la variable recette */
-    lecture_json *lecJson;                 /*!< Mainwindow *w: pointeur sur la fenetre principale */
+    Recette *recette;         /*!< Recette *recette: pointeur sur la variable recette */
+    lecture_json *lecJson;    /*!< Mainwindow *w: pointeur sur la fenetre principale */
 
 
 signals:
     /**
-        * @sa envoieNom(QString)
-        * @brief fonction pour envoyer le nom à la classe MainWindow (voir classe MainWindow)
-        * @param nom : le nom à transmettre
+        * @sa envoieNom(QString nom)
+        * @brief Fonction (signal) pour envoyer le nom à la classe MainWindow (voir classe MainWindow)
+        * @param nom: le nom à transmettre
         */
-       void envoieNom(QString);
+       void envoieNom(QString nom);
 
        /**
-        * @sa envoieDesc(QString)
-        * @brief fonction pour envoyer la description à la classe MainWindow (voir classe MainWindow)
-        * @param desc : la description à transmettre
+        * @sa envoieDesc(QString desc)
+        * @brief Fonction (signal) pour envoyer la description à la classe MainWindow (voir classe MainWindow)
+        * @param desc: la description à transmettre
         */
-       void envoieDesc(QString);
+       void envoieDesc(QString desc);
 
        /**
-        * @sa envoieMotsCles(QString)
-        * @brief fonction pour envoyer les mots cles à la classe MainWindow (voir classe MainWindow)
-        * @param MotsCles : les mots cles à transmettre
+        * @sa envoieMotsCles(QString motsCles)
+        * @brief Fonction (signal) pour envoyer les mots cles à la classe MainWindow (voir classe MainWindow)
+        * @param MotsCles: les mots cles à transmettre
         */
-       void envoieMotsCles(QString);
+       void envoieMotsCles(QString motsCles);
 
        /**
-        * @sa envoieIng(QStringList)
-        * @brief fonction pour envoyer la liste des ingrédients à la classe MainWindow (voir classe MainWindow)
-        * @param ingredients : la liste des ingrédients à transmettre
+        * @sa envoieIng(QStringList listIng)
+        * @brief Fonction (signal) pour envoyer la liste des ingrédients à la classe MainWindow (voir classe MainWindow)
+        * @param listIng: la liste des ingrédients à transmettre
         */
-       void envoieIng(QStringList);
+       void envoieIng(QStringList listIng);
 
        /**
-        * @sa envoieEtapes(QStringList)
-        * @brief fonction pour envoyer la liste des étapes à la classe MainWindow (voir classe MainWindow)
-        * @param étapes : la liste des étapes à transmettre
+        * @sa envoieEtapes(QStringList listEtapes)
+        * @brief Fonction (signal) pour envoyer la liste des étapes à la classe MainWindow (voir classe MainWindow)
+        * @param listEtapes: la liste des étapes à transmettre
         */
-       void envoieEtapes(QStringList);
+       void envoieEtapes(QStringList listEtapes);
 
        /**
-        * @sa envoieTemps(QString)
-        * @brief fonction pour envoyer les temps à la classe MainWindow (voir classe MainWindow)
-        * @param temps : les temps à transmettre
+        * @sa envoieTemps(QString temps)
+        * @brief Fonction (signal) pour envoyer les temps à la classe MainWindow (voir classe MainWindow)
+        * @param temps: les temps à transmettre
         */
-       void envoieTemps(QString);
+       void envoieTemps(QString temps);
 
        /**
-        * @sa envoieURL(QStringList)
-        * @brief fonction pour envoyer l'url à la classe MainWindow (voir classe MainWindow)
-        * @param url : l'url du site web de la recette à transmettre
+        * @sa envoieURL(QString url)
+        * @brief Fonction (signal) pour envoyer l'url à la classe MainWindow (voir classe MainWindow)
+        * @param url: l'url du site web de la recette à transmettre
         */
-       void envoieURL(QString);
+       void envoieURL(QString url);
 
        /**
-        * @sa envoieNomFichier(QString)
-        * @brief signal pour envoyer le chemin du fichier
-        * @param QString : le chemin d'accès du fichier
+        * @sa finTraitement
+        * @brief Fonction (signal) qui est émis quand le traitement est terminé
         */
        void finTraitement();
 
 public slots :
 
        /**
-        * @sa recevoirDocJson(QString)
-        * @brief fonction qui recoit le document JSON pour le traiter et lire ses données
-        * @param QJsonDocument :le document JSON à traiter
+        * @sa recevoirDocJson(QJsonDocument docJson)
+        * @brief Fonction qui recoit le document JSON pour le traiter et lire ses données
+        * @param docJson :le document JSON à traiter
         */
-       void recevoirDocJson(QJsonDocument);
+       void recevoirDocJson(QJsonDocument docJson);
 };
 
 #endif // TRAITEMENT_H

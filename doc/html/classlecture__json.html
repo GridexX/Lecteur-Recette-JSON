@@ -64,6 +64,7 @@ $(function() {
 <a href="#pub-slots">Connecteurs publics</a> &#124;
 <a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
 <a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="classlecture__json-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
@@ -85,21 +86,27 @@ Graphe de collaboration de lecture_json:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Connecteurs publics</h2></td></tr>
-<tr class="memitem:a9b907076c0d37125a6ab35b5906c9880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a9b907076c0d37125a6ab35b5906c9880">recevoirNomFichier</a> (QString)</td></tr>
-<tr class="memdesc:a9b907076c0d37125a6ab35b5906c9880"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction qui permet de vérifier le fichier json et de d'envoyer une demande de traitement  <a href="#a9b907076c0d37125a6ab35b5906c9880">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a9b907076c0d37125a6ab35b5906c9880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539bb092addd4ee4c75834e4ca413ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a539bb092addd4ee4c75834e4ca413ee7">recevoirNomFichier</a> (QString <a class="el" href="classlecture__json.html#addfbc41d56e266180e4a120ba3cd1c61">path</a>)</td></tr>
+<tr class="memdesc:a539bb092addd4ee4c75834e4ca413ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot qui modifie la donnée membre path  <a href="#a539bb092addd4ee4c75834e4ca413ee7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a539bb092addd4ee4c75834e4ca413ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signaux</h2></td></tr>
-<tr class="memitem:a27d0869b75b2fcbe687888b390964f79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a27d0869b75b2fcbe687888b390964f79">envoieDocJson</a> (QJsonDocument)</td></tr>
-<tr class="memdesc:a27d0869b75b2fcbe687888b390964f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal d'envoie du document Json  <a href="#a27d0869b75b2fcbe687888b390964f79">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a27d0869b75b2fcbe687888b390964f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f7f4bea2c9579c37bea5b14177a5db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a62f7f4bea2c9579c37bea5b14177a5db">envoieDocJson</a> (QJsonDocument docJson)</td></tr>
+<tr class="memdesc:a62f7f4bea2c9579c37bea5b14177a5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal qui envoie le fichier de recette  <a href="#a62f7f4bea2c9579c37bea5b14177a5db">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a62f7f4bea2c9579c37bea5b14177a5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a4b8226b61ad6f1112038dde13e207b4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a4b8226b61ad6f1112038dde13e207b4f">lecture_json</a> (QObject *parent=nullptr)</td></tr>
-<tr class="memdesc:a4b8226b61ad6f1112038dde13e207b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction permettant l'initialisation de la lecture du fichier json  <a href="#a4b8226b61ad6f1112038dde13e207b4f">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a4b8226b61ad6f1112038dde13e207b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur de la fonction <a class="el" href="classlecture__json.html">lecture_json</a>  <a href="#a4b8226b61ad6f1112038dde13e207b4f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4b8226b61ad6f1112038dde13e207b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a88650de275287dc5ddd31f50bdd6d767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlecture__json.html#a88650de275287dc5ddd31f50bdd6d767">verifFichier</a> ()</td></tr>
+<tr class="memdesc:a88650de275287dc5ddd31f50bdd6d767"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction qui vérifie si le fichier est lisible et interpretable.  <a href="#a88650de275287dc5ddd31f50bdd6d767">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a88650de275287dc5ddd31f50bdd6d767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -131,10 +138,10 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction permettant l'initialisation de la lecture du fichier json </p>
+<p>constructeur de la fonction <a class="el" href="classlecture__json.html">lecture_json</a> </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>: QString qui renvoie le chemin du fichier </td></tr>
+    <tr><td class="paramname">parent</td><td>: précise si le widget hérite d'une autre fenêtre </td></tr>
   </table>
   </dd>
 </dl>
@@ -142,8 +149,8 @@ Attributs privés</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="a27d0869b75b2fcbe687888b390964f79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d0869b75b2fcbe687888b390964f79">&#9670;&nbsp;</a></span>envoieDocJson</h2>
+<a id="a62f7f4bea2c9579c37bea5b14177a5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f7f4bea2c9579c37bea5b14177a5db">&#9670;&nbsp;</a></span>envoieDocJson</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +162,7 @@ Attributs privés</h2></td></tr>
           <td class="memname">void lecture_json::envoieDocJson </td>
           <td>(</td>
           <td class="paramtype">QJsonDocument&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>docJson</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -166,19 +173,19 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>signal d'envoie du document Json </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classlecture__json.html#a27d0869b75b2fcbe687888b390964f79" title="signal d&#39;envoie du document Json ">envoieDocJson(QJsonDocument)</a> </dd></dl>
+<p>signal qui envoie le fichier de recette </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classlecture__json.html#a62f7f4bea2c9579c37bea5b14177a5db" title="signal qui envoie le fichier de recette ">envoieDocJson(QJsonDocument)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QJSonDocument</td><td>: qui renvoie le document Json </td></tr>
+    <tr><td class="paramname">docJson</td><td>: le document au format json </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a9b907076c0d37125a6ab35b5906c9880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b907076c0d37125a6ab35b5906c9880">&#9670;&nbsp;</a></span>recevoirNomFichier</h2>
+<a id="a539bb092addd4ee4c75834e4ca413ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539bb092addd4ee4c75834e4ca413ee7">&#9670;&nbsp;</a></span>recevoirNomFichier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,13 +208,40 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fonction qui permet de vérifier le fichier json et de d'envoyer une demande de traitement </p>
+<p>slot qui modifie la donnée membre path </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">QString</td><td>path : QString qui renvoie le chemin du fichier </td></tr>
+    <tr><td class="paramname">path</td><td>: QString qui spécifie le chemin du fichier </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a88650de275287dc5ddd31f50bdd6d767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88650de275287dc5ddd31f50bdd6d767">&#9670;&nbsp;</a></span>verifFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lecture_json::verifFichier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fonction qui vérifie si le fichier est lisible et interpretable. </p>
 
 </div>
 </div>

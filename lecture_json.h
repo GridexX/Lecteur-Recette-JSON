@@ -31,7 +31,7 @@
 /**
  *   \file lecture_json.h
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe gérant la lecture du fichier json
  */
 #ifndef LECTURE_JSON_H
@@ -50,29 +50,36 @@ class lecture_json : public QObject
     Q_OBJECT
 public:
     /**
-     * @fn lecture_json(QString path)
-     * @brief fonction permettant l'initialisation de la lecture du fichier json
-     * @param path : QString qui renvoie le chemin du fichier
+     * @fn lecture_json(QObject *parent)
+     * @brief constructeur de la fonction lecture_json
+     * @param parent : précise si le widget hérite d'un autre object
      */
     explicit lecture_json(QObject *parent = nullptr);
+
 
 private:
     QString path; /*!< path: chemin d'accès du fichier json */
 
+    /**
+     * @fn verifFichier
+     * @brief fonction qui vérifie si le fichier est lisible et interpretable.
+     */
+    void verifFichier();
+
 public slots:
     /**
-     * @fn recevoirNomFichier(QString)
-     * @brief fonction qui permet de vérifier le fichier json et de d'envoyer une demande de traitement
-     * @param QString path : QString qui renvoie le chemin du fichier
+     * @fn recevoirNomFichier(QString path)
+     * @brief slot qui modifie la donnée membre path
+     * @param path : QString qui spécifie le chemin du fichier
      */
-    void recevoirNomFichier(QString);
+    void recevoirNomFichier(QString path);
 signals :
     /**
-     * @sa envoieDocJson(QJsonDocument)
-     * @brief signal d'envoie du document Json
-     * @param QJSonDocument : qui renvoie le document Json
+     * @sa envoieDocJson(QJsonDocument docJson)
+     * @brief signal qui envoie le fichier de recette
+     * @param docJson : le document au format json
      */
-    void envoieDocJson(QJsonDocument);
+    void envoieDocJson(QJsonDocument docJson);
 };
 
 #endif // LECTURE_JSON_H

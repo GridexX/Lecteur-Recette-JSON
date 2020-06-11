@@ -1,5 +1,5 @@
 <map id="traitement.cpp" name="traitement.cpp">
 <area shape="rect" id="node2" href="$traitement_8h.html" title="Classe permettant le traitement json. " alt="" coords="316,80,407,107"/>
-<area shape="rect" id="node7" href="$recette_8h.html" title="Classe permettant la gestion et le stockage de la recette. " alt="" coords="625,155,698,181"/>
+<area shape="rect" id="node7" href="$recette_8h.html" title="Classe qui stocke sous forme d&#39;attribut les informations d&#39;une recette. " alt="" coords="625,155,698,181"/>
 <area shape="rect" id="node8" href="$lecture__json_8h.html" title="Classe gérant la lecture du fichier json. " alt="" coords="363,155,466,181"/>
 </map>
