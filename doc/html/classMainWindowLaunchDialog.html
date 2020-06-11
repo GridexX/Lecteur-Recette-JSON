@@ -100,7 +100,7 @@ Signaux</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a9f7ef6d5da5eff43adb6ea835f0790d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#a9f7ef6d5da5eff43adb6ea835f0790d0">MainWindowLaunchDialog</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a9f7ef6d5da5eff43adb6ea835f0790d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la fenêtre de lancement.  <a href="#a9f7ef6d5da5eff43adb6ea835f0790d0">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a9f7ef6d5da5eff43adb6ea835f0790d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="classMainWindowLaunchDialog.html">MainWindowLaunchDialog</a>.  <a href="#a9f7ef6d5da5eff43adb6ea835f0790d0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a9f7ef6d5da5eff43adb6ea835f0790d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf8a63fe899ba6d8fcbdf179122dfcb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#abf8a63fe899ba6d8fcbdf179122dfcb7">~MainWindowLaunchDialog</a> ()</td></tr>
 <tr class="memdesc:abf8a63fe899ba6d8fcbdf179122dfcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la fonction <a class="el" href="classMainWindowLaunchDialog.html">MainWindowLaunchDialog</a>.  <a href="#abf8a63fe899ba6d8fcbdf179122dfcb7">Plus de détails...</a><br /></td></tr>
@@ -126,6 +126,9 @@ Connecteurs privés</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a8425a23d4ed5ab00f471a1f295e72143"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#a8425a23d4ed5ab00f471a1f295e72143">envoieEtTransmission</a> (QString fileName)</td></tr>
+<tr class="memdesc:a8425a23d4ed5ab00f471a1f295e72143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui instancie la classe <a class="el" href="classTransmission.html">Transmission</a> et envoie le nom du fichier à la classe lecture.  <a href="#a8425a23d4ed5ab00f471a1f295e72143">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8425a23d4ed5ab00f471a1f295e72143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b292183d418fe79b79225d9a35bd3dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindowLaunchDialog.html#a6b292183d418fe79b79225d9a35bd3dd">dropEvent</a> (QDropEvent *event)</td></tr>
 <tr class="memdesc:a6b292183d418fe79b79225d9a35bd3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de gérer le glisser/déposer de fichier.  <a href="#a6b292183d418fe79b79225d9a35bd3dd">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a6b292183d418fe79b79225d9a35bd3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,10 +168,10 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructeur de la fenêtre de lancement. </p>
+<p>Constructeur de la classe <a class="el" href="classMainWindowLaunchDialog.html">MainWindowLaunchDialog</a>. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Qwidget</td><td>*parent </td></tr>
+    <tr><td class="paramname">parent</td><td>: précise si le widget hérite d'une autre fenêtre </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,6 +266,40 @@ Attributs privés</h2></td></tr>
 
 </div>
 </div>
+<a id="a8425a23d4ed5ab00f471a1f295e72143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8425a23d4ed5ab00f471a1f295e72143">&#9670;&nbsp;</a></span>envoieEtTransmission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindowLaunchDialog::envoieEtTransmission </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fonction qui instancie la classe <a class="el" href="classTransmission.html">Transmission</a> et envoie le nom du fichier à la classe lecture. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>le nom du fichier à parser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a290aac8c91df612c4aeea9e4ba4a0897"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a290aac8c91df612c4aeea9e4ba4a0897">&#9670;&nbsp;</a></span>envoyerNomFichier</h2>
 
@@ -288,7 +325,7 @@ Attributs privés</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Signal qui envoie le nom du fichier Json. </p>
-<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classMainWindowLaunchDialog.html#a290aac8c91df612c4aeea9e4ba4a0897" title="Signal qui envoie le nom du fichier Json. ">envoyerNomFichier(QString)</a> </dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="classMainWindowLaunchDialog.html#a290aac8c91df612c4aeea9e4ba4a0897" title="Signal qui envoie le nom du fichier Json. ">envoyerNomFichier(QString path)</a> </dd></dl>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>: le chemin du fichier json </td></tr>

@@ -14,8 +14,6 @@
 #include <QEvent>
 #include <QMessageBox>
 #include <QState>
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkReply>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

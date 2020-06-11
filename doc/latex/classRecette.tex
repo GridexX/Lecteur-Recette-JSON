@@ -45,11 +45,11 @@ void \hyperlink{classRecette_a3a5b4231baeeae0a30588d1ca29c7e4e}{set\+Liste\+Etap
 \begin{DoxyCompactList}\small\item\em Fonction setter pour modifier la liste des étapes de la recette. \end{DoxyCompactList}\item 
 Q\+String \hyperlink{classRecette_a9ac38f333d17699fb6601bca332d8567}{get\+Temps} () const
 \begin{DoxyCompactList}\small\item\em Fonction getter pour obtenir les différents temps de la recette. \end{DoxyCompactList}\item 
-void \hyperlink{classRecette_a51b797af44e9bc45811e44bd42f461af}{set\+Temps} (const Q\+String \&value)
+void \hyperlink{classRecette_a9556fdb039545e6010b8ee1ab36068b7}{set\+Temps} (const Q\+String \&\hyperlink{classRecette_a6165aaa32628fc48e4467f59c4cdcf99}{temps})
 \begin{DoxyCompactList}\small\item\em Fonction setter pour modifier les différents temps de la recette. \end{DoxyCompactList}\item 
 Q\+String \hyperlink{classRecette_ab06006324a8201e9967b53273dbf2751}{get\+U\+RL} () const
 \begin{DoxyCompactList}\small\item\em Fonction getter pour obtenir l\textquotesingle{}url de la recette. \end{DoxyCompactList}\item 
-void \hyperlink{classRecette_ac910b38482d259cba788f41669e765b1}{set\+U\+RL} (const Q\+String \&value)
+void \hyperlink{classRecette_aa8439657ab66d74a3fd38df05b8594d1}{set\+U\+RL} (const Q\+String \&url)
 \begin{DoxyCompactList}\small\item\em Fonction setter pour modifier les différents temps de la recette. \end{DoxyCompactList}\item 
 Q\+String \hyperlink{classRecette_a509d4cfe5b696a08c4b6675472d6e481}{get\+Mots\+Cles} () const
 \begin{DoxyCompactList}\small\item\em Fonction getter pour obtenir les mots-\/clés de la recette. \end{DoxyCompactList}\item 
@@ -87,7 +87,7 @@ Constructeur de la classe \hyperlink{classRecette}{Recette}.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em parent} & \+: précise si le widget hérite d\textquotesingle{}une autre fenêtre \\
+{\em parent} & \+: précise si le widget hérite d\textquotesingle{}un autre object \\
 \hline
 \end{DoxyParams}
 
@@ -181,6 +181,9 @@ Les temps de préparation, cuisson et totaux
 
 Fonction getter pour obtenir l\textquotesingle{}url de la recette. 
 
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}url du site web 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classRecette_afb1113cbbe6f3a0cda8eb47a5c9025a4}\label{classRecette_afb1113cbbe6f3a0cda8eb47a5c9025a4}} 
 \index{Recette@{Recette}!set\+Description@{set\+Description}}
 \index{set\+Description@{set\+Description}!Recette@{Recette}}
@@ -256,11 +259,11 @@ fonction setter pour modifier le nom de la recette
 {\em nom} & le nom de la recette de cuisine \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classRecette_a51b797af44e9bc45811e44bd42f461af}\label{classRecette_a51b797af44e9bc45811e44bd42f461af}} 
+\mbox{\Hypertarget{classRecette_a9556fdb039545e6010b8ee1ab36068b7}\label{classRecette_a9556fdb039545e6010b8ee1ab36068b7}} 
 \index{Recette@{Recette}!set\+Temps@{set\+Temps}}
 \index{set\+Temps@{set\+Temps}!Recette@{Recette}}
 \subsubsection{\texorpdfstring{set\+Temps()}{setTemps()}}
-{\footnotesize\ttfamily Recette\+::set\+Temps (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Recette\+::set\+Temps (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{temps }\end{DoxyParamCaption})}
 
 
 
@@ -268,14 +271,14 @@ Fonction setter pour modifier les différents temps de la recette.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em value} & les différents temps de la recette de cuisine \\
+{\em temps} & les différents temps de la recette de cuisine \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classRecette_ac910b38482d259cba788f41669e765b1}\label{classRecette_ac910b38482d259cba788f41669e765b1}} 
+\mbox{\Hypertarget{classRecette_aa8439657ab66d74a3fd38df05b8594d1}\label{classRecette_aa8439657ab66d74a3fd38df05b8594d1}} 
 \index{Recette@{Recette}!set\+U\+RL@{set\+U\+RL}}
 \index{set\+U\+RL@{set\+U\+RL}!Recette@{Recette}}
 \subsubsection{\texorpdfstring{set\+U\+R\+L()}{setURL()}}
-{\footnotesize\ttfamily Recette\+::set\+U\+RL (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Recette\+::set\+U\+RL (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{url }\end{DoxyParamCaption})}
 
 
 
@@ -283,7 +286,7 @@ Fonction setter pour modifier les différents temps de la recette.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em value} & l\textquotesingle{}url de la recette de cuisine \\
+{\em url} & l\textquotesingle{}url de la recette de cuisine \\
 \hline
 \end{DoxyParams}
 

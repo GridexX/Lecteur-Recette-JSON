@@ -2,15 +2,14 @@
 \label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
 
 
-Classe principale qui permet de lancer la première fenetre.  
+Fichier main qui instancie la classe \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}.  
 
 
-{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}mainwindowlaunchdialog.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}recette.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$Q\+Application$>$}\newline
 {\ttfamily \#include $<$Q\+Object$>$}\newline
-Graphe des dépendances par inclusion de main.\+cpp\+:\nopagebreak
+Graphe des dépendances par inclusion de main.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,15 +20,18 @@ Graphe des dépendances par inclusion de main.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fonction dans laquelle le programme sera executé. Instancie la \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog} qu peremet à l\textquotesingle{}utilisateur de sélectionner un fichier de recette. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
-Classe principale qui permet de lancer la première fenetre. 
+Fichier main qui instancie la classe \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}. 
 
 \begin{DoxyAuthor}{Auteur}
 Pollet Lucas -\/ Fougerouse Arsène 
 \end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+mai 2020 
+\end{DoxyDate}
 
 
 \subsection{Documentation des fonctions}
@@ -39,3 +41,17 @@ Pollet Lucas -\/ Fougerouse Arsène
 \subsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
+
+
+Fonction dans laquelle le programme sera executé. Instancie la \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog} qu peremet à l\textquotesingle{}utilisateur de sélectionner un fichier de recette. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & entier \\
+\hline
+{\em argv} & pointeur sur caractères \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un entier correspondant à l\textquotesingle{}état d\textquotesingle{}execution du programme 
+\end{DoxyReturn}

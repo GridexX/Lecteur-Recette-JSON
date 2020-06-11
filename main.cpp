@@ -4,9 +4,7 @@
  *   \date mai 2020
  *   \brief Fichier main qui instancie la classe MainWindowLaunchDialog
  */
-#include "mainwindow.h"
 #include "mainwindowlaunchdialog.h"
-#include "recette.h"
 
 #include <QApplication>
 #include <QObject>

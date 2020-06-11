@@ -31,7 +31,7 @@ void \hyperlink{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}{e
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMainWindowLaunchDialog_a9f7ef6d5da5eff43adb6ea835f0790d0}{Main\+Window\+Launch\+Dialog} (Q\+Widget $\ast$parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre de lancement. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}. \end{DoxyCompactList}\item 
 \hyperlink{classMainWindowLaunchDialog_abf8a63fe899ba6d8fcbdf179122dfcb7}{$\sim$\+Main\+Window\+Launch\+Dialog} ()
 \begin{DoxyCompactList}\small\item\em Destructeur de la fonction \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_a0cfb74c6cb22582d2b1047332008b9c0}{on\+\_\+action\+Ouvrir\+\_\+un\+\_\+fichier\+\_\+triggered} ()
@@ -50,6 +50,8 @@ void \hyperlink{classMainWindowLaunchDialog_aaa766b56e4327b3bedf7f88c1b52cee7}{o
 \subsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{classMainWindowLaunchDialog_a8425a23d4ed5ab00f471a1f295e72143}{envoie\+Et\+Transmission} (Q\+String file\+Name)
+\begin{DoxyCompactList}\small\item\em Fonction qui instancie la classe \hyperlink{classTransmission}{Transmission} et envoie le nom du fichier à la classe lecture. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_a6b292183d418fe79b79225d9a35bd3dd}{drop\+Event} (Q\+Drop\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer le glisser/déposer de fichier. \end{DoxyCompactList}\item 
 void \hyperlink{classMainWindowLaunchDialog_aaf393173ffd6c63b2c4d5bdd48b8ddb4}{drag\+Enter\+Event} (Q\+Drag\+Enter\+Event $\ast$event)
@@ -72,11 +74,11 @@ Ui\+::\+Main\+Window\+Launch\+Dialog $\ast$ \hyperlink{classMainWindowLaunchDial
 
 
 
-Constructeur de la fenêtre de lancement. 
+Constructeur de la classe \hyperlink{classMainWindowLaunchDialog}{Main\+Window\+Launch\+Dialog}. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em Qwidget} & $\ast$parent \\
+{\em parent} & \+: précise si le widget hérite d\textquotesingle{}une autre fenêtre \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_abf8a63fe899ba6d8fcbdf179122dfcb7}\label{classMainWindowLaunchDialog_abf8a63fe899ba6d8fcbdf179122dfcb7}} 
@@ -122,6 +124,21 @@ Fonction qui permet de gérer le glisser/déposer de fichier.
 {\em event} & instance de l\textquotesingle{}événement \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classMainWindowLaunchDialog_a8425a23d4ed5ab00f471a1f295e72143}\label{classMainWindowLaunchDialog_a8425a23d4ed5ab00f471a1f295e72143}} 
+\index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!envoie\+Et\+Transmission@{envoie\+Et\+Transmission}}
+\index{envoie\+Et\+Transmission@{envoie\+Et\+Transmission}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
+\subsubsection{\texorpdfstring{envoie\+Et\+Transmission()}{envoieEtTransmission()}}
+{\footnotesize\ttfamily Main\+Window\+Launch\+Dialog\+::envoie\+Et\+Transmission (\begin{DoxyParamCaption}\item[{Q\+String}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction qui instancie la classe \hyperlink{classTransmission}{Transmission} et envoie le nom du fichier à la classe lecture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file\+Name} & le nom du fichier à parser \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}\label{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}} 
 \index{Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}!envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}}
 \index{envoyer\+Nom\+Fichier@{envoyer\+Nom\+Fichier}!Main\+Window\+Launch\+Dialog@{Main\+Window\+Launch\+Dialog}}
@@ -133,7 +150,7 @@ Fonction qui permet de gérer le glisser/déposer de fichier.
 Signal qui envoie le nom du fichier Json. 
 
 \begin{DoxySeeAlso}{Voir également}
-\hyperlink{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}{envoyer\+Nom\+Fichier(\+Q\+String)} 
+\hyperlink{classMainWindowLaunchDialog_a290aac8c91df612c4aeea9e4ba4a0897}{envoyer\+Nom\+Fichier(\+Q\+String path)} 
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Paramètres}
