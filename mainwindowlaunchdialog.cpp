@@ -21,6 +21,7 @@ MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
 MainWindowLaunchDialog::~MainWindowLaunchDialog()
 {
     delete ui;
+    delete t;
 }
 
 void MainWindowLaunchDialog::on_pushButton_clicked()

@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete machine;
 }
 
 void MainWindow::modifNom(QString str)

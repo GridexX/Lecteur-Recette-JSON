@@ -25,6 +25,8 @@ public :
      * \param QJsonDocument : chemin d'accès du fichier json de la recette
      */
     explicit Traitement(QObject *parent = nullptr);
+
+    ~Traitement();
     /**
      * \fn setRecette()
      * \brief Fonction qui permet de lire le fichier et enregistrer la recette

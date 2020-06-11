@@ -25,6 +25,7 @@ public:
      * @param parent : objet parent de transmission
      */
     explicit Transmission(QObject *parent = nullptr);
+
     /**
       * @fn ~Transmission()
       * @brief Destructeur de la fonction Transmission

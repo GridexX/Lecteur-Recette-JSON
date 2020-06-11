@@ -31,6 +31,8 @@ Transmission::Transmission(QObject *parent)
 
 Transmission::~Transmission()
 {
+    delete t;
+    delete w;
 }
 
 

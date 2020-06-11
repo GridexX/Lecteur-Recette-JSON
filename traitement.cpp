@@ -19,7 +19,11 @@ Traitement::Traitement(QObject *parent)
     QObject::connect(lecJson,SIGNAL(envoieDocJson(QJsonDocument)),this,SLOT(recevoirDocJson(QJsonDocument)));
 }
 
-
+Traitement::~Traitement()
+{
+    delete recette;
+    delete lecJson;
+}
 
 void Traitement::recevoirDocJson(QJsonDocument docJson)
 {

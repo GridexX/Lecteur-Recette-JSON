@@ -55,6 +55,7 @@ public:
      * @param path : QString qui renvoie le chemin du fichier
      */
     explicit lecture_json(QObject *parent = nullptr);
+
 private:
     QString path; /*!< path: chemin d'accès du fichier json */
 

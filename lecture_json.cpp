@@ -34,3 +34,4 @@ void lecture_json::recevoirNomFichier(QString path)
     else
         qCritical() << "Impossible de lire le fichier : " << error.errorString();
 }
+
