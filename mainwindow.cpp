@@ -1,7 +1,7 @@
 /**
  *   \file mainwindow.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe de la fenêtre permettant l'affichage de la recette
  */
 #include "mainwindow.h"
@@ -62,7 +62,7 @@ void MainWindow::modifURL(QString url)
     ui->label_url->setText("URL de la recette: <a href='"+url+"'>"+url+"</a>");
 }
 
-/* Machine à état */
+//Fonctions relatives à la machine à états
 void MainWindow::modifEtapes(QStringList list)
 {
     ui->listeEtapes->setWordWrap(true);

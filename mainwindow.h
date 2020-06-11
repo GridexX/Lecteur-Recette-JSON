@@ -81,7 +81,6 @@ private:
     QStateMachine *machine; /*!< machine: machine à état quand on appuie sur les boutons*/
     QStringList listEtapes; /*!< listEtapes: liste de string contenant la liste des étapes*/
     int currentstate = 0; /*!< int currentstate: variable du numero de l'instruction actuelle */
-
 public slots :
     //slots pour modifs les labels
     /**

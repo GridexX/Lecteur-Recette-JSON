@@ -1,7 +1,7 @@
 /**
  *   \file mainwindowlaunchdialog.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe de la fenêtre permettant le choix du fichier json de recette
  */
 #include "mainwindowlaunchdialog.h"
@@ -11,7 +11,7 @@ MainWindowLaunchDialog::MainWindowLaunchDialog(QWidget *parent) :
     ui(new Ui::MainWindowLaunchDialog)
 {
     ui->setupUi(this);
-    setAcceptDrops(true);
+    setAcceptDrops(true);  //autorise le glisser-déposer de fichier
 
     setFixedSize(750,550);  //fixe la taille de la fenêtre
     setWindowTitle("Lecteur de recettes JSON");
@@ -26,21 +26,15 @@ MainWindowLaunchDialog::~MainWindowLaunchDialog()
 
 void MainWindowLaunchDialog::on_pushButton_clicked()
 {
-    QString filePathName = QFileDialog::getOpenFileName(this, tr("Ouvrir un fichier JSON"), "/home/", tr("JSON Files (*.json)"));
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Ouvrir un fichier JSON"), "/home/", tr("JSON Files (*.json)"));
 
-    QFile fichier(filePathName);
+    QFile fichier(fileName);
 
     if(!(fichier.open(QFile::ReadOnly) || fichier.exists())) {
         QMessageBox::warning(this, "Erreur", "Pas de fichier selectionné ou impossible de le lire");
         return;
-    }
-
-    //Si le fichier est correcte -> lecture du fichier JSON
-
-     hide();
-     t = new Transmission;
-     connect(this,SIGNAL(envoyerNomFichier(QString)),t->getTraitement()->getLecture(),SLOT(recevoirNomFichier(QString)));
-     emit(envoyerNomFichier(filePathName));
+    }     
+     envoieEtTransmission(fileName);
 }
 
 void MainWindowLaunchDialog::on_actionOuvrir_un_fichier_triggered()
@@ -65,12 +59,17 @@ void MainWindowLaunchDialog::dropEvent(QDropEvent* event){
            QString fileName = url.toLocalFile();
 
            if(QFileInfo(fileName).suffix() != "json") return;
-
-           hide();
-           t = new Transmission;
-           connect(this,SIGNAL(envoyerNomFichier(QString)),t->getTraitement()->getLecture(),SLOT(recevoirNomFichier(QString)));
-           emit(envoyerNomFichier(fileName));
+           envoieEtTransmission(fileName);
        }
+}
+
+void MainWindowLaunchDialog::envoieEtTransmission(QString fileName)
+{
+    //Quand le programme arrive à lire le fichier, il instancie la classe Transmission et transmet le nom à la classe lecture avec un signal
+     hide();
+     t = new Transmission;
+     connect(this,SIGNAL(envoyerNomFichier(QString)),t->getTraitement()->getLecture(),SLOT(recevoirNomFichier(QString)));
+     emit(envoyerNomFichier(fileName));
 }
 
 void MainWindowLaunchDialog::on_actionDe_Qt_triggered()

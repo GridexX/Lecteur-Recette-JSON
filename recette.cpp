@@ -1,7 +1,7 @@
 /**
  *   \file recette.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe permettant la gestion et le stockage de la recette
  */
 #include "recette.h"

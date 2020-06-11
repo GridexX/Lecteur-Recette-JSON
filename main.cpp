@@ -1,8 +1,8 @@
 /**
  *   \file main.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
- *   \brief Classe principale qui permet de lancer la première fenetre
+ *   \date mai 2020
+ *   \brief Fichier main qui instancie la classe MainWindowLaunchDialog
  */
 #include "mainwindow.h"
 #include "mainwindowlaunchdialog.h"
@@ -12,12 +12,12 @@
 #include <QObject>
 
 /**
- * \fn int main
- * \brief Fonction de lancement d'instance d'une MainWindow
+ * \fn int main(int argc, char *argv[])
+ * \brief Fonction dans laquelle le programme sera executé. Instancie la MainWindowLaunchDialog qu peremet à l'utilisateur de sélectionner un fichier de recette
  *
- * \param argc int
- * \param argv pointeur sur char
- * \return int
+ * \param argc: entier
+ * \param argv: pointeur sur caractères
+ * \return Un entier correspondant à l'état d'execution du programme
  */
 int main(int argc, char *argv[])
 {

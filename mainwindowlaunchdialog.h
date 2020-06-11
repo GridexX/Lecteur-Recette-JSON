@@ -80,6 +80,13 @@ private:
 
     Transmission *t; /*!< Transmission *t: pointeur sur la classe Transmission */
 
+
+    /** @fn envoieEtTransmission(QString fileName)
+      * @brief Fonction qui instancie la classe Transmission et envoie le nom du fichier à la classe lecture
+      *@param fileName: le nom du fichier à parser
+      */
+     void envoieEtTransmission(QString fileName);
+
     /**
      * \fn dropEvent(QDropEvent *event)
      * \brief Fonction qui permet de gérer le glisser/déposer de fichier

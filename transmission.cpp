@@ -1,7 +1,7 @@
 /**
  *   \file transmission.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe permettant le transmission des données
  */
 #include "transmission.h"
@@ -12,12 +12,10 @@ Transmission::Transmission(QObject *parent)
     t = new Traitement;
     w = new MainWindow;
 
-    //connection entre cette classe et le traitement pour envoyer le nom du fichier
-    //QObject::connect(this,SIGNAL(envoieNomFichier(QString)),t,SLOT(recevoirNomFichier(QString)));
+    //connection entre cette classe et le traitement pour envoyer les données
     QObject::connect(t,SIGNAL(finTraitement()),this,SLOT(envoyerDonnees()));
-   //QObject::connect(t,SIGNAL(envoieNomDoc(QJsonDocument)),t,SLOT(modifNomDoc(QJsonDocument)));
 
-    //connection entre signaux de la classe traitement et mainwindow
+    //connection entre signaux de la classe traitement et mainwindow pour changer les champs
     QObject::connect(t,SIGNAL(envoieNom(QString)),w,SLOT(modifNom(QString)));
     QObject::connect(t,SIGNAL(envoieDesc(QString)),w,SLOT(modifDesc(QString)));
     QObject::connect(t,SIGNAL(envoieIng(QStringList)),w,SLOT(modifIng(QStringList)));
@@ -38,7 +36,6 @@ Transmission::~Transmission()
 
 void Transmission::envoyerDonnees()
 {
-    //envoie le nom du fichier au traitement
 
     emit(t->envoieNom(t->getRecette()->getNom()));
     emit(t->envoieDesc(t->getRecette()->getDescription()));
@@ -48,5 +45,6 @@ void Transmission::envoyerDonnees()
     emit(t->envoieURL(t->getRecette()->getURL()));
     emit(t->envoieMotsCles(t->getRecette()->getMotsCles()));
 
+    //ouverture de la fenêtre une fois les opérations terminées
     w->show();
 }

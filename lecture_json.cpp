@@ -1,20 +1,19 @@
 /**
  *   \file lecture_json.cpp
  *   \author Pollet Lucas - Fougerouse Arsène
- *
+ *   \date mai 2020
  *   \brief Classe gérant la lecture du fichier json
  */
 #include "lecture_json.h"
 
 
 lecture_json::lecture_json(QObject *parent) : QObject(parent)
-
-{
-}
+{}
 
 void lecture_json::recevoirNomFichier(QString _path)
 {
     path=_path;
+    verifFichier();
 }
 
 void lecture_json::verifFichier()
@@ -33,7 +32,7 @@ void lecture_json::verifFichier()
            qCritical() << "Impossible d’interpréter le fichier : " << error.errorString();
 
        else
-            emit(envoieDocJson(doc));
+            emit(envoieDocJson(doc)); //renvoie le document json à la classe Traitement
     }
     else
         qCritical() << "Impossible de lire le fichier : " << error.errorString();
